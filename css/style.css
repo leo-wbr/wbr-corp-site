@@ -1,0 +1,51 @@
+/* General Styling */
+body{background:#fbfbfb; font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";font-size:16px;}
+body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+h1,h2,h3,h4,h5{font-weight:600;letter-spacing: .025em;color: #545454;}
+.content p, .content ul, .content ol, .content li, .content table, .content address, .content blockquote, .content cite {color: #7b818a;font-size:16px;font-family:'Open Sans','Helvetica Neue','Helvetica','Arial','sans-serif'!important;}
+
+/* Backgrounds */
+.bg-slant {position: relative; z-index: 1; margin-top:-2em; }
+.bg-slant:before, .bg-slant:after { background: inherit; display: block; height: 50%; left: 0; position: absolute; right: 0; z-index: -1; -webkit-backface-visibility: hidden;}
+.bg-slant:before { top: 0; -webkit-transform: skewY(1.5deg); transform: skewY(1.5deg); -webkit-transform-origin: 100% 0; transform-origin: 100% 0;}
+.bg-slant:after {bottom: 0; -webkit-transform: skewY(-1.5deg); transform: skewY(-1.5deg); -webkit-transform-origin: 100%; transform-origin: 100%;}
+.bg-white{background:#fff;}
+.btn-xl{padding: .35em .85em!important;font-size:1.45em!important;}
+
+/* Img Filters */
+.img-grey{filter:url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale")!important;filter:grayscale(100%)!important;-webkit-filter:grayscale(100%)!important;-moz-filter:grayscale(100%)!important;-ms-filter:grayscale(100%)!important;-o-filter:grayscale(100%)!important;filter:gray!important;}
+.img-grey:hover { filter:initial !important; }
+.img-shadow { background-color:#fff; padding:20px; border-radius:5px; box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); transition: all .15s ease;}
+.img-shadow:hover {color: #e2ffe2; transform: translateY(-1px); box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
+
+
+/* Typography */
+.fa-lg,.fa-2x,.fa-3x,.fa-4x,.fa-5x,.fa-6x,.fa-7x,.fa-8x,.fa-9x,.fa-10x{line-height:1.25em!important;} .fa-lg{font-size:1.33333333em!important;} .fa-1x{font-size:1.5em!important;} .fa-2x{font-size:2em!important;} .fa-3x{font-size:3em!important;}.fa-4x{font-size:4em!important;}.fa-5x{font-size:5em!important;}.fa-6x{font-size:6em!important;}.fa-7x{font-size:7em!important;}.fa-8x{font-size:8em!important;}.fa-9x{font-size:9em!important;}.fa-10x{font-size:10em!important;}
+.text-spacing{letter-spacing: .025em;}
+.text-light {font-weight:300 !important;}
+.text-normal {font-weight:400 !important;}
+.text-bold {font-weight:700 !important;}
+.text-bolder {font-weight:900 !important;}
+.text-orange {color:#f1b570 !important;}
+.bg-sm {padding-top: 2.5em; padding-bottom: 2.5em;}
+.bg-md {padding-top: 5em; padding-bottom:5em;}
+
+/* Buttons*/
+.btn-wbr {line-height: 40px;padding: 0 14px;box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);background: #64cc64;color: #fff;font-size: 15px;font-weight: 600;text-transform: uppercase;letter-spacing: .025em;transition: all .15s ease;}
+.btn-wbr:hover {color: #e2ffe2; transform: translateY(-1px); box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
+
+/* Social Nav Bar */
+.topnav{overflow:hidden;padding:0 .5em; background-color:#3564c5;}
+.topnav .social{float:right;margin-top:.5em;}
+.topnav .social a{display:block;float:left;padding: 5px 5px;margin: 0px 5px 5px 0;}
+.topnav a {color:#fff; }
+.topnav a:hover{color:#f7c996;background:transparent;}
+
+/* Nav Bar */
+#mainnav .nav-item, #mainnav .navhome {position:relative; top:-1.7em; }.mainnav li{padding:0 .8em;}
+.mainnav li a {color:#fff;}
+
+/* Hero Image Section */
+.hero-section {height: 65vh;min-height: 300px;background: url('http://logipharmaeu.wbresearch.com/UploadedFiles/EventPage/1004315/images/bg-img-hero-c.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
+.hero-section h1{color:#fff;margin:0;padding:.8em 0;text-shadow:0 0 0.5em rgba(0,0,0,1);font-weight:500;}
+.hero-section h1{float: left;background:transparent;margin-top: 2.5em;}
