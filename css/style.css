@@ -2,7 +2,7 @@
 body{background:#fbfbfb; font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";font-size:16px;}
 body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 h1,h2,h3,h4,h5{font-weight:600;letter-spacing: .025em;color: #545454;}
-.content p, .content ul, .content ol, .content li, .content table, .content address, .content blockquote, .content cite {color: #7b818a;font-size:16px;font-family:'Open Sans','Helvetica Neue','Helvetica','Arial','sans-serif'!important;}
+p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;font-family:'Open Sans','Helvetica Neue','Helvetica','Arial','sans-serif'!important;}
 
 /* Backgrounds */
 .bg-slant {position: relative; z-index: 1; margin-top:-2em; }
