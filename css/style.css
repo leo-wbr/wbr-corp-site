@@ -47,6 +47,28 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .hero-section h1{color:#fff;margin:0;padding:.8em 0;text-shadow:0 0 0.5em rgba(0,0,0,1);font-weight:500;}
 .hero-section h1{float: left;background:transparent;margin-top: 2.5em;}
 
+/* Footer  */
+footer {margin-top:100px;}
+footer p{padding:1em;font-size:.9em; }
+footer img{height:42px;margin-top:10px;transition:200ms linear;opacity:.7;} 
+footer img:hover{opacity:1;}
+nav.footernav{height:65px;background:#3564c5;color:#fff; padding-top:5px;} 
+nav.footernav li a:hover{color:#f7c996;background:transparent;}
+
+/* Desktop View Nav Positioning */
+#desknav{position:relative;}
+#desknav .footerimg{position:absolute;left:50%;display:block;top:0;padding:0;1em;}
+#desknav li a{padding:1em .5em;}
+
+/* Mobile View Nav Positioning */
+#mobilenav ul{margin:0 auto;overflow:hidden;padding:.3em;}
+#mobilenav li{text-align:center;width:18%;padding:0 1%;}
+#mobilenav li a{padding:1em 0;}
+#mobilenav .navbar-brand{padding:0;float:none;}
+#mobilenav img{margin:5px auto 0;}
+
+
+
 /* Home Page Illustrations */
 #market-illustrations { position: absolute; display: -ms-flexbox; display: flex; width: 1287px; left: 45%; margin-top:-100px; margin-left: -644px; transform: scale(.5) rotate(-12deg) translateX(50px); transform-origin: 50% 20%;}
 #market-illustrations div { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; border-radius: 38px; background: #f3f3f3; box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05);}
