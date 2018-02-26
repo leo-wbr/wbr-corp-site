@@ -61,21 +61,12 @@ nav.footernav li a:hover{color:#f7c996;background:transparent;}
 #desknav li a{padding:1em .5em;}
 
 /* Mobile View Nav Positioning */
-#mobilenav ul{margin:0 auto;overflow:hidden;padding:.3em;}
-#mobilenav li{text-align:center;width:18%;padding:0 1%;}
-#mobilenav li a{padding:1em 0;}
-#mobilenav .navbar-brand{padding:0;float:none;}
-#mobilenav img{margin:5px auto 0;}
-
-
+#mobilenav {background-color:#3563c5;}
 
 /* Home Page Illustrations */
 #market-illustrations { position: absolute; display: -ms-flexbox; display: flex; width: 1287px; left: 45%; margin-top:-100px; margin-left: -644px; transform: scale(.5) rotate(-12deg) translateX(50px); transform-origin: 50% 20%;}
 #market-illustrations div { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; border-radius: 38px; background: #f3f3f3; box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05);}
 #market-illustrations div img { width:94%; height:94%; border-radius:15px;}
-
-
-
 
 /* col-xs-* */
 @media only screen and (min-width :320px){
