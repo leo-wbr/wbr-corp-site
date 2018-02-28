@@ -5,11 +5,14 @@ h1,h2,h3,h4,h5{font-weight:600;letter-spacing: .025em;color: #545454;}
 p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;font-family:'Open Sans','Helvetica Neue','Helvetica','Arial','sans-serif'!important;}
 
 /* Backgrounds */
-.bg-slant {position: relative; z-index: 1; margin-top:-2em; }
-.bg-slant:before, .bg-slant:after { background: inherit; display: block; height: 50%; left: 0; position: absolute; right: 0; z-index: -1; -webkit-backface-visibility: hidden;}
-.bg-slant:before { top: 0; -webkit-transform: skewY(1.5deg); transform: skewY(1.5deg); -webkit-transform-origin: 100% 0; transform-origin: 100% 0;}
-.bg-slant:after {bottom: 0; -webkit-transform: skewY(-1.5deg); transform: skewY(-1.5deg); -webkit-transform-origin: 100%; transform-origin: 100%;}
+.bg-slanted { position: relative; z-index: 1; }
+.bg-slanted:before, .bg-slanted:after { background: inherit; content: ''; display: block; height: 50%; left: 0; position: absolute; right: 0; z-index: -1; -webkit-backface-visibility: hidden;}
+.bg-slanted:before { top: 0; -webkit-transform: skewY(1.5deg); transform: skewY(1.5deg); -webkit-transform-origin: 100% 0; transform-origin: 100% 0;}
+.bg-slanted:after {bottom: 0; -webkit-transform: skewY(-1.5deg); transform: skewY(-1.5deg);-webkit-transform-origin: 100%; transform-origin: 100%;}
+
 .bg-white{background:#fff;}
+.bg-grey{background:#F9FBFB;}
+.bg-red{background:red;}
 .btn-xl{padding: .35em .85em!important;font-size:1.45em!important;}
 
 /* Img Filters */
@@ -18,12 +21,15 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .img-shadow { background-color:#fff; padding:20px; border-radius:5px; box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); transition: all .15s ease;}
 .img-shadow:hover {color: #e2ffe2; transform: translateY(-1px); box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
 
+/* Misc Support Classes */
+.overflow-hidden { overflow: hidden; }
 
 /* Typography */
 .fa-lg,.fa-2x,.fa-3x,.fa-4x,.fa-5x,.fa-6x,.fa-7x,.fa-8x,.fa-9x,.fa-10x{line-height:1.25em!important;} .fa-lg{font-size:1.33333333em!important;} .fa-1x{font-size:1.5em!important;} .fa-2x{font-size:2em!important;} .fa-3x{font-size:3em!important;}.fa-4x{font-size:4em!important;}.fa-5x{font-size:5em!important;}.fa-6x{font-size:6em!important;}.fa-7x{font-size:7em!important;}.fa-8x{font-size:8em!important;}.fa-9x{font-size:9em!important;}.fa-10x{font-size:10em!important;}
 .text-spacing{letter-spacing: .025em;}
 .font-weight-light {font-weight:300 !important;}
 .text-orange {color:#f1b570 !important;}
+.text-white {color:#fff !important;}
 .bg-sm {padding-top: 2.5em; padding-bottom: 2.5em;}
 .bg-md {padding-top: 5em; padding-bottom:5em;}
 
@@ -64,7 +70,7 @@ nav.footernav li a:hover{color:#f7c996;background:transparent;}
 #mobilenav {background-color:#3563c5;}
 
 /* Home Page Illustrations */
-#market-illustrations { position: absolute; display: -ms-flexbox; display: flex; width: 1287px; left: 45%; margin-top:-100px; margin-left: -644px; transform: scale(.5) rotate(-12deg) translateX(50px); transform-origin: 50% 20%;}
+#market-illustrations { position: absolute; display: -ms-flexbox; display: flex; width: 1287px; left: 45%; margin-top:-100px; margin-left: -644px; transform: scale(.5) rotate(-12deg) translateX(50px); transform-origin: 50% 20%; overflow:hidden;}
 #market-illustrations div { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; border-radius: 38px; background: #f3f3f3; box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05);}
 #market-illustrations div img { width:94%; height:94%; border-radius:15px;}
 
@@ -83,7 +89,7 @@ nav.footernav li a:hover{color:#f7c996;background:transparent;}
         margin-left: 50px;
         top: 285px;
         transform: rotate(-12deg);
-        transform-origin: 100% 0;
+        transform-origin: 100% 0; 
     }
 
     #market-illustrations .whitepaper-1 {
@@ -136,3 +142,10 @@ nav.footernav li a:hover{color:#f7c996;background:transparent;}
     .topnav {display:none;}
     
 }
+
+
+
+
+
+
+
