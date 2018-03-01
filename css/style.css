@@ -10,8 +10,10 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .bg-slanted:before { top: 0; -webkit-transform: skewY(1.5deg); transform: skewY(1.5deg); -webkit-transform-origin: 100% 0; transform-origin: 100% 0;}
 .bg-slanted:after {bottom: 0; -webkit-transform: skewY(-1.5deg); transform: skewY(-1.5deg);-webkit-transform-origin: 100%; transform-origin: 100%;}
 
+.bg-blue {background:#112042; }
 .bg-white{background:#fff;}
 .bg-grey{background:#F9FBFB;}
+.bg-dgrey{background: #f3f3f3;}
 .bg-red{background:red;}
 .btn-xl{padding: .35em .85em!important;font-size:1.45em!important;}
 
