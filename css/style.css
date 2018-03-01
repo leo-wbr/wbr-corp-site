@@ -38,11 +38,11 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .btn-wbr:hover {color: #e2ffe2; transform: translateY(-1px); box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
 
 /* Social Nav Bar */
-.topnav{overflow:hidden;padding:0 .5em; background-color:#3564c5;}
-.topnav .social{float:right;margin-top:.5em;}
-.topnav .social a{display:block;float:left;padding: 5px 5px;margin: 0px 5px 5px 0;}
-.topnav a {color:#fff; }
-.topnav a:hover{color:#f7c996;background:transparent;}
+.topnav-social{overflow:hidden;padding:0 .5em; background-color:#3564c5;}
+.topnav-social .social{float:right;margin-top:.5em;}
+.topnav-social .social a{display:block;float:left;padding: 5px 5px;margin: 0px 5px 5px 0;}
+.topnav-social a {color:#fff; }
+.topnav-social a:hover{color:#f7c996;background:transparent;}
 
 /* Nav Bar */
 #mainnav .nav-item, #mainnav .navhome {position:relative; top:-1.7em; }.mainnav li{padding:0 .8em;}
@@ -58,13 +58,8 @@ footer {margin-top:100px;}
 footer p{padding:1em;font-size:.9em; }
 footer img{height:42px;margin-top:10px;transition:200ms linear;opacity:.7;} 
 footer img:hover{opacity:1;}
-nav.footernav{height:65px;background:#3564c5;color:#fff; padding-top:5px;} 
+nav.footernav{height:65px;background:#3564c5;/* color:#fff; *//* padding-top:5px; */} 
 nav.footernav li a:hover{color:#f7c996;background:transparent;}
-
-/* Desktop View Nav Positioning */
-#desknav{position:relative;}
-#desknav .footerimg{position:absolute;left:50%;display:block;top:0;padding:0;1em;}
-#desknav li a{padding:1em .5em;}
 
 /* Mobile View Nav Positioning */
 #mobilenav {background-color:#3563c5;}
@@ -105,7 +100,11 @@ nav.footernav li a:hover{color:#f7c996;background:transparent;}
 
 
 /* col-sm-* */                            
-@media only screen and (min-width :768px){}
+@media only screen and (min-width :768px){
+
+
+
+}
 
 /*  */
 @media (min-width:880px) {
@@ -139,7 +138,12 @@ nav.footernav li a:hover{color:#f7c996;background:transparent;}
 @media only screen and (max-width :767px){
     
     #market-illustrations { position: relative; height:220px;  display:none;  }
-    .topnav {display:none;}
+    
+    /* Navigations */
+    
+    .topnav-social,.topnav-desktop,nav.footernav {display:none;}
+    
+
     
 }
 
