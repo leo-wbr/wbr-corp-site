@@ -55,7 +55,7 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .topnav-social a:hover{color:#f7c996;background:transparent;}
 
 /* Nav Bar */
-#mainnav .nav-item, #mainnav .navhome {position:relative; top:-1.7em; }.mainnav li{padding:0 .8em;}
+.mainnav li{padding:0 .8em;}
 .mainnav li a {color:#fff;}
 
 /* Hero Image Section */
@@ -78,7 +78,7 @@ nav.footernav li a:hover{color:#f7c996;background:transparent;}
 .header--fixed { position: fixed; z-index: 10; right: 0; left: 0; top: 0px;}
 .headroom { transition: transform .25s ease-in-out; }
 .headroom--pinned {transform: translateY(0%);background-color: #3563c5;}
-.headroom--pinned ul  { transform: translateY(28%);}
+.headroom--pinned ul  { transform: translateY(%);}
 .headroom--top { transform: translateY(30%); background-color:transparent;}
 .headroom--unpinned { transform: translateY(-100%); background-color: #3563c5;}
 
