@@ -14,12 +14,17 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
+
+
 </head>
 
 <body>
+
+
     <nav class="topnav-social">
-        <div class="container">
-            <a href="#/" class="navbar-brand text-bold">Worldwide Business Research</a>
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-bold">Worldwide Business Research</a>
             <div class="social">
                 <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -28,9 +33,9 @@
         </div>
     </nav>
     <!-- Hero Section with Nav &Background Image -->
-    <header class="hero-section ">
+    <header class="hero-section  ">
         <div class="container">
-            <nav id="mainnav" class="mainnav topnav-desktop">
+            <nav id="mainnav" class="mainnav topnav-desktop header--fixed">
                 <ul class="nav justify-content-center align-items-center">
                     <li class="nav-item font-weight-bold"><a href="#">Events</a></li>
                     <li class="nav-item font-weight-bold"><a href="#">Insights</a></li>
@@ -40,8 +45,9 @@
                 </ul>
             </nav>
         </div>
+
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-12">
                     <h1 class="display-4 text-white mt-4">Connecting Leaders. Inspiring Ideas.</h1>
                 </div>
@@ -274,6 +280,28 @@
         t.parentNode.insertBefore(e, t)
     })();
     </script>
+      <script src="js/headroom.js"></script>
+
+
+<script>
+(function() {
+    var header = document.querySelector("#mainnav");
+
+    if(window.location.hash) {
+      header.classList.add("headroom--bottom");
+    }
+
+    var headroom = new Headroom(header, {
+        tolerance: {
+          down : 10,
+          up : 20
+        },
+        offset : 205
+    });
+    headroom.init();
+
+}());
+</script>
 </body>
 
 </html>
