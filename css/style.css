@@ -58,6 +58,9 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .mainnav li{padding:0 .8em;}
 .mainnav li a {color:#fff;}
 
+/* Mobile View Nav Positioning */
+#mobilenav {background-color:#3563c5;}
+
 /* Hero Image Section */
 .hero-section {height: 65vh;min-height: 300px;background: url('http://logipharmaeu.wbresearch.com/UploadedFiles/EventPage/1004315/images/bg-img-hero-c.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
 .hero-section h1{color:#fff;margin:0;padding:.8em 0;text-shadow:0 0 0.5em rgba(0,0,0,1);font-weight:500;}
@@ -65,14 +68,12 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 
 /* Footer  */
 footer {margin-top:100px;}
-footer p{padding:1em;font-size:.9em; }
-footer img{height:42px;margin-top:10px;transition:200ms linear;opacity:.7;} 
-footer img:hover{opacity:1;}
-nav.footernav{height:65px;background:#3564c5;} 
-nav.footernav li a:hover{color:#f7c996;background:transparent;}
 
-/* Mobile View Nav Positioning */
-#mobilenav {background-color:#3563c5;}
+/* Footer Navigation */
+.footernav img{height:55px;margin-top:0px;transition:200ms linear;opacity:.7;} 
+.footernav img:hover{opacity:1;}
+.footernav{height:65px;background:#3564c5;} 
+.footernav li a:hover{color:#f7c996;background:transparent;}
 
 /* Headroom CSS */
 .header--fixed { position: fixed; z-index: 10; right: 0; left: 0; top: 0px;}
