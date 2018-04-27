@@ -54,6 +54,13 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .topnav-social a {color:#fff; }
 .topnav-social a:hover{color:#f7c996;background:transparent;}
 
+/* Nav Bar */
+.mainnav li{padding:0 .8em;}
+.mainnav li a {color:#fff;}
+
+/* Mobile View Nav Positioning */
+#mobilenav {background-color:#3563c5;}
+
 /* Hero Image Section */
 .hero-section {height: 65vh;min-height: 300px;background: url('http://logipharmaeu.wbresearch.com/UploadedFiles/EventPage/1004315/images/bg-img-hero-c.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
 .hero-section h1{color:#fff;margin:0;padding:.8em 0;text-shadow:0 0 0.5em rgba(0,0,0,1);font-weight:500;}
@@ -177,5 +184,4 @@ footer {margin-top:100px;}
 
     
 }
-
 
