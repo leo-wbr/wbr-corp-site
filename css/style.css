@@ -38,8 +38,6 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .text-orange {color:#f1b570 ;}
 .text-maroon {color:#87212E;}
 .text-white {color:#fff !important;}
-
-/* Hyperlinks */
 .text-white a {color:#f1b570; font-weight:500;}
 
 /* Buttons*/
@@ -61,15 +59,15 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 #mobilenav {background-color:#3563c5;}
 
 /* Insights Page Nav */
-.nav-insights {box-shadow: inset 2px -1px 10px 0px #5a5a5a; background-color: white;}
+.nav-insights {	box-shadow: 0 5px 25px 0 #bfbfbf inset; background: none repeat scroll 0 0 #fffffd; }
 
 /* Hero Image Section */
-.hero-section {height: 65vh;min-height: 300px;background: url('http://logipharmaeu.wbresearch.com/UploadedFiles/EventPage/1004315/images/bg-img-hero-c.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
+.hero-section {height: 65vh;min-height: 300px;background: url('../img/bg-img-hero.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
 .hero-section h1{color:#fff;margin:0;padding:.8em 0;text-shadow:0 0 0.5em rgba(0,0,0,1);font-weight:500;}
 .hero-section h1{float: left;background:transparent;margin-top: 2.5em;}
 
 /* Inner Hero Image Section */
-.inner-hero-section { background: url('http://logipharmaeu.wbresearch.com/UploadedFiles/EventPage/1004315/images/bg-img-hero-c.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
+.inner-hero-section {background: url('../img/bg-img-hero-inner.jpg') center center no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover; box-shadow: inset 10000px 0 0 rgba(53, 37, 8, 0.4);}
 
 /* Inner Hero Image col-xs-* */                            
 @media only screen and (max-width:768px) {
@@ -152,7 +150,7 @@ footer {margin-top:100px;}
     #market-illustrations {
         width: 865px;
         margin-left: -10px;
-        top: 20px;
+        top: 50px;
     }
     #market-illustrations .whitepaper-1 {
         -ms-flex-item-align: end;
