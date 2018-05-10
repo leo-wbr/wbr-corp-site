@@ -25,8 +25,8 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 /* Img Filters */
 .img-grey{filter:url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale")!important;filter:grayscale(100%)!important;-webkit-filter:grayscale(100%)!important;-moz-filter:grayscale(100%)!important;-ms-filter:grayscale(100%)!important;-o-filter:grayscale(100%)!important;filter:gray!important;}
 .img-grey:hover { filter:initial !important; }
-.img-shadow { background-color:#fff; padding:20px; border-radius:5px; box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); transition: all .15s ease;}
-.img-shadow:hover {color: #e2ffe2; transform: translateY(-1px); box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
+.img-shadow { background-color:#fff; padding:20px; border-radius:5px;  transition: all .15s ease; box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
+.img-shadow:hover {color: #e2ffe2; transform: translateY(-1px); box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.15); }
 
 /* Misc Support Classes */
 .overflow-hidden { overflow: hidden; }
@@ -59,7 +59,7 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 #mobilenav {background-color:#3563c5;}
 
 /* Insights Page Nav */
-.nav-insights {	box-shadow: 0 5px 25px 0 #bfbfbf inset; background: none repeat scroll 0 0 #fffffd; }
+.nav-insights { box-shadow: 0 5px 25px 0 #bfbfbf inset; background: none repeat scroll 0 0 #fffffd; }
 
 /* Hero Image Section */
 .hero-section {height: 65vh;min-height: 300px;background: url('../img/bg-img-hero.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
@@ -67,11 +67,11 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .hero-section h1{float: left;background:transparent;margin-top: 2.5em;}
 
 /* Inner Hero Image Section */
-.inner-hero-section {background: url('../img/bg-img-hero-inner.jpg') center center no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover; box-shadow: inset 10000px 0 0 rgba(53, 37, 8, 0.4);}
+.inner-hero-section {background: url('../img/bg-img-hero-inner.jpg') center center no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover; box-shadow: inset 10000px 0 0 rgba(53, 37, 8, 0.7);}
 
 /* Inner Hero Image col-xs-* */                            
 @media only screen and (max-width:768px) {
-	.inner-hero-section h1 {font-size: 3.2vh; }
+    .inner-hero-section h1 {font-size: 3.2vh; }
 }
 
 /* Footer  */
