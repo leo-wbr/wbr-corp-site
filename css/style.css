@@ -75,8 +75,7 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
     .inner-hero-section h1 {font-size: 3.2vh; }
 }
 
-
-
+/* Insight Event Sections */
 .showcase .showcase-text { padding: 3rem}
 .showcase .showcase-img { min-height: 30rem; background-size: cover}
 @media (min-width:768px) {
@@ -199,4 +198,75 @@ footer {margin-top:100px;}
 }
 
 
+
+
+
+
+
+html {
+    height: 100%
+}
+
+
+
+body {height: 100%;}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    min-height: 35rem;
+    width: 100%;
+    background: url(https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_2da5e9b4cb22de4816b83bc7e39b2ba7.jpg) center center scroll;
+    background-size:cover; 
+    opacity: .75;
+    z-index: -1;
+  
+
+}
+
+@media (min-width:768px) {
+    .overlay {
+        min-height: 0
+    }
+}
+
+.masthead {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 3rem
+}
+
+.masthead .masthead-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    min-height: 35rem;
+    height: 100%;
+    background-color: rgba(8, 172, 241, 0.75);
+    transform: skewY(4deg);
+    transform-origin: bottom right
+}
+
+
+@media (min-width:768px) {
+    .masthead {
+        height: 100%;
+        min-height: 0;
+        width: 40.5rem;
+        padding-bottom: 0
+    }
+    .masthead .masthead-bg {
+        min-height: 0;
+        transform: skewX(-8deg);
+        transform-origin: top right
+    }
+    .masthead .masthead-content {
+        padding-left: 3rem;
+        padding-right: 10rem
+    }
+    
+}
 
