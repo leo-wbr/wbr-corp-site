@@ -1,4 +1,6 @@
 /* General Styling */
+
+html, body {height: 100%; }
 body{background:#fff; font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";font-size:16px;}
 body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 h1,h2,h3,h4,h5{font-weight:600;letter-spacing: .025em;color: #545454;}
@@ -42,7 +44,7 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .text-white a {color:#f1b570; font-weight:500;}
 
 /* Buttons*/
-.btn-wbr {line-height: 40px;padding: 0 14px;box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);background: #f5be58;color: #fff;font-size: 15px;font-weight: 600;text-transform: uppercase;letter-spacing: .025em;transition: all .15s ease;}
+.btn-wbr {/* line-height: 40px; *//* padding: 0 14px; */box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);background: #f5be58;color: #fff;/* font-size: 15px; */font-weight: 600;text-transform: uppercase;letter-spacing: .025em;transition: all .15s ease;}
 .btn-wbr:hover {color: #ffecc5;transform: translateY(-1px);box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
 
 /* Social Nav Bar */
@@ -63,7 +65,7 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .nav-insights { box-shadow: 0 5px 25px 0 #bfbfbf inset; background: none repeat scroll 0 0 #fffffd; }
 
 /* Hero Image Section */
-.hero-section {height: 65vh;min-height: 300px;background: url('../img/bg-img-hero.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
+.hero-section {/*height: 65vh;min-height: 300px;*/background: url('../img/bg-img-hero.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
 .hero-section h1{color:#fff;margin:0;padding:.8em 0;text-shadow:0 0 0.5em rgba(0,0,0,1);font-weight:500;}
 .hero-section h1{float: left;background:transparent;margin-top: 2.5em;}
 
@@ -75,14 +77,45 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
     .inner-hero-section h1 {font-size: 3.2vh; }
 }
 
+
+/* Insights Market Section Illustrations */
+#market-illustrations { position: absolute; display: -ms-flexbox; display: flex; width: 1287px; left: 45%; margin-top:-100px; margin-left: -644px; transform: scale(.5) rotate(-12deg) translateX(50px); transform-origin: 50% 20%; overflow:hidden;}
+#market-illustrations div { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; border-radius: 38px; background: #f3f3f3; box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05);}
+#market-illustrations div img { width:94%; height:94%; border-radius:15px;}
+
 /* Insight Event Sections */
-.showcase .showcase-text { padding: 3rem}
-.showcase .showcase-img { min-height: 30rem; background-size: cover}
+.grid-section .grid-section-text { padding: 3rem}
+.grid-section .grid-section-img { min-height: 30rem; background-size: cover}
 @media (min-width:768px) {
-    .showcase .showcase-text {
+    .grid-section .grid-section-text {
         padding: 7rem
     }
 }
+
+/* Content Section Styling */
+.overlay {position: absolute;height: 100%;min-height: 35rem;width: 100%;background: url(https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_2da5e9b4cb22de4816b83bc7e39b2ba7.jpg) center center scroll;background-size:cover;/* opacity: .75; */z-index: -1;}
+.masthead {position: relative;overflow: hidden;padding-bottom: 3rem}
+.masthead .masthead-bg {position: absolute;top: 0;bottom: 0;right: 0;left: 0;width: 100%;min-height: 35rem;height: 100%;background-color: rgba(8, 172, 241, 0.75);transform: skewY(4deg);transform-origin: bottom right}
+@media (min-width:768px) {
+    .masthead {
+        height: 100%;
+        min-height: 0;
+        width: 40.5rem;
+        padding-bottom: 0
+    }
+    .masthead .masthead-bg {
+        min-height: 0;
+        transform: skewX(-8deg);
+        transform-origin: top right
+    }
+    .masthead .masthead-content {
+        padding-left: 3rem;
+        padding-right: 10rem
+    }
+    
+}
+
+
 
 
 /* Footer  */
@@ -113,10 +146,7 @@ footer {margin-top:100px;}
 .headroom--top { transform: translateY(30%); background-color:transparent;}
 .headroom--unpinned { transform: translateY(-100%); background-color: #3563c5;}
 
-/* Home Page Illustrations */
-#market-illustrations { position: absolute; display: -ms-flexbox; display: flex; width: 1287px; left: 45%; margin-top:-100px; margin-left: -644px; transform: scale(.5) rotate(-12deg) translateX(50px); transform-origin: 50% 20%; overflow:hidden;}
-#market-illustrations div { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; border-radius: 38px; background: #f3f3f3; box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05);}
-#market-illustrations div img { width:94%; height:94%; border-radius:15px;}
+
 
 /* col-xs-* */
 @media only screen and (min-width :320px){
@@ -203,70 +233,6 @@ footer {margin-top:100px;}
 
 
 
-html {
-    height: 100%
-}
 
 
-
-body {height: 100%;}
-
-.overlay {
-    position: absolute;
-    height: 100%;
-    min-height: 35rem;
-    width: 100%;
-    background: url(https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_2da5e9b4cb22de4816b83bc7e39b2ba7.jpg) center center scroll;
-    background-size:cover; 
-    opacity: .75;
-    z-index: -1;
-  
-
-}
-
-@media (min-width:768px) {
-    .overlay {
-        min-height: 0
-    }
-}
-
-.masthead {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 3rem
-}
-
-.masthead .masthead-bg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    min-height: 35rem;
-    height: 100%;
-    background-color: rgba(8, 172, 241, 0.75);
-    transform: skewY(4deg);
-    transform-origin: bottom right
-}
-
-
-@media (min-width:768px) {
-    .masthead {
-        height: 100%;
-        min-height: 0;
-        width: 40.5rem;
-        padding-bottom: 0
-    }
-    .masthead .masthead-bg {
-        min-height: 0;
-        transform: skewX(-8deg);
-        transform-origin: top right
-    }
-    .masthead .masthead-content {
-        padding-left: 3rem;
-        padding-right: 10rem
-    }
-    
-}
 

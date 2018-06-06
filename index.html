@@ -9,12 +9,12 @@
     <title>WBR Corporate Redesign - Bootstrap 4 version</title>
     <!-- Bootstrap core CSS -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"></head>    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
 
 <body>
     <nav class="topnav-social">
@@ -28,19 +28,30 @@
         </div>
     </nav>
     <!-- Hero Section with Nav &Background Image -->
-    <header class="hero-section  ">
+    <header class="hero-section py-5 ">
         <div class="container">
             <nav id="mainnav" class="mainnav topnav-desktop header--fixed">
                 <ul class="nav justify-content-center align-items-center">
-                    <li class="nav-item font-weight-bold"><a href="#">Events</a></li>
-                    <li class="nav-item font-weight-bold"><a href="#">Insights</a></li>
-                    <li class="navhome"><a href="#" class="navbar-brand"><img alt="WBR" src="https://www.wbresearch.com/img/navlogo.png"></a></li>
-                    <li class="nav-item font-weight-bold"><a href="#">About</a></li>
-                    <li class="nav-item font-weight-bold"><a href="#">Contact</a></li>
+                    <li class="nav-item font-weight-bold"><a href="events.html">Events</a></li>
+                    <li class="nav-item font-weight-bold"><a href="insights.html">Insights</a></li>
+                    <li class="navhome"><a href="index.html" class="navbar-brand"><img alt="WBR" src="https://www.wbresearch.com/img/navlogo.png"></a></li>
+                    <li class="nav-item font-weight-bold"><a href="about.html">About</a></li>
+                    <li class="nav-item font-weight-bold"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="container">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="display-4 text-white mt-4">Connecting Leaders. Inspiring Ideas.</h1>
+                </div>
+            </div>
+            <div class="row col-md-7 mt-5">
+                <div class="col-md-6"><a class="btn btn-lg btn-wbr btn-block mt-2" href="events.html">Events</a></div>
+                <div class="col-md-6"><a class="btn btn-lg btn-wbr btn-block mt-2" href="insights.html">Insights</a></div>
+            </div>
+        </div>
+        <!--  <div class="container">
             <div class="row ">
                 <div class="col-md-12">
                     <h1 class="display-4 text-white mt-4">Connecting Leaders. Inspiring Ideas.</h1>
@@ -54,7 +65,7 @@
                     <a class="btn btn-xl btn-block btn-wbr animated bounce" href="#">Insights</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </header>
     <!-- Page Content -->
     <div class="container-fluid bg-white">
@@ -150,43 +161,6 @@
             </div>
         </div>
     </div>
-    <!--     <div class="container-fluid bg-grey bg-slanted py-5 overflow-hidden" id="Section1">
-        <div class="col-md-10 offset-md-1 py-5 ">
-            <div class="row">
-                <section id="market-illustrations" class="">
-                    <div class="whitepaper-1">
-                        <img alt="shopify" src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_d8122f83e5d160cd0e7ea2246f6eeeec.png">
-                    </div>
-                    <div class="whitepaper-2">
-                        <img alt="instacart" src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_8a385126ab33e22c629d3bca3f2a8bbd.png">
-                    </div>
-                </section>
-                <div class="col-lg-6 col-md-6 col-md-12 col-xs-12">
-                    <h2 class="text-left"><i class="fab fa-searchengin"> </i> Market Research</h2>
-                    <p class="fa-lg font-weight-light text-left">Access to industry thought leaders through WBR’s world-class conferences put us in a unique position to develop an outstanding range of research and content creation opportunities. Whether for thought leadership or lead generation, hundreds of clients have chosen WBR for the creation of hundreds of reports spanning a verity of topics. Talk to us about how we can partner on your next custom project.</p>
-                    <p class="fa-lg text-normal">Report Options Include:</p>
-                    <ul>
-                        <li class="fa-lg font-weight-light">Custom Whitepapers &amp; eBooks</li>
-                        <li class="fa-lg font-weight-light">Industry Benchmark Reports</li>
-                        <li class="fa-lg font-weight-light">Infographics, Case Studies and Blog Articles</li>
-                        <li class="fa-lg font-weight-light">Preshow Market Research</li>
-                    </ul>
-                    <hr>
-                    <a href="#" class="text-bold text-spacing">Click Here to speak with one of our Content Marketing Consultants <i class="fas fa-angle-double-right"></i></a>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-md-12 mt-5">
-                    <div class="row ">
-                        <blockquote class="img-shadow ">
-                            <p class="fa-2x font-weight-light">“Our whitepaper has really allowed us to create thought leadership content that we can bring into conversations with industry leaders and prospects. “</p>
-                            <cite class="text-bold text-spacing text-orange">Jennifer Rapkine, Field Marketing Manager, Public Sector, Cornerstone OnDemand</cite>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="container-fluid bg-slanted bg-white">
         <div class="col-md-10 offset-md-1 py-3">
             <div class="row">
@@ -213,7 +187,7 @@
     </div>
     <!-- /.container -->
     <!-- Footer -->
-        <footer class="mt-5">
+    <footer class="mt-5">
         <nav class="navbar navbar-dark navbar-expand-md justify-content-between footernav">
             <div class="navbar-collapse collapse dual-nav w-100 justify-content-start">
                 <p class="navbar-nav "><a href="#" class="text-white  font-weight-bold"><small>Copyright 2017 Worldwide Business Research</small></a></p>
@@ -221,11 +195,11 @@
             <a href="#" class="navbar-brand mx-auto d-block w-100 text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a>
             <div class="navbar-collapse collapse dual-nav w-100 justify-content-end">
                 <ul class="navbar-nav">
-                    <li class=""><a href="#" class="nav-link font-weight-bold">Events</a></li>
-                    <li class=""><a href="#" class="nav-link font-weight-bold">Insights</a></li>
-                    <li class=""><a href="#" class="nav-link font-weight-bold">About</a></li>
-                    <li class=""><a href="#" class="nav-link font-weight-bold">Contact</a></li>
-                    <li class=""><a href="#" class="nav-link font-weight-bold">Careers</a></li>
+                    <li class=""><a href="events.html" class="nav-link font-weight-bold">Events</a></li>
+                    <li class=""><a href="insights.html" class="nav-link font-weight-bold">Insights</a></li>
+                    <li class=""><a href="about.html" class="nav-link font-weight-bold">About</a></li>
+                    <li class=""><a href="contact.html" class="nav-link font-weight-bold">Contact</a></li>
+                    <li class=""><a href="careers.html" class="nav-link font-weight-bold">Careers</a></li>
                 </ul>
             </div>
         </nav>
@@ -233,20 +207,19 @@
         <nav id="mobilenav" class="navbar navbar-expand mainnav d-md-none d-lg-none d-xl-none fixed-bottom">
             <div class="navbar-collapse collapse dual-nav w-100 justify-content-center">
                 <ul class="navbar-nav">
-                    <li class=""><a href="#" class="nav-link font-weight-bold text-white">Events</a></li>
-                    <li class=""><a href="#" class="nav-link font-weight-bold text-white">Insights</a></li>
+                    <li class=""><a href="events.html" class="nav-link font-weight-bold text-white">Events</a></li>
+                    <li class=""><a href="insights.html" class="nav-link font-weight-bold text-white">Insights</a></li>
                 </ul>
             </div>
-            <a href="#" class="navbar-brand mx-auto d-block w-100 text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a>
+            <a href="index.html" class="navbar-brand mx-auto d-block w-100 text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a>
             <div class="navbar-collapse collapse dual-nav w-100 justify-content-center">
                 <ul class="navbar-nav">
-                    <li class=""><a href="#" class="nav-link font-weight-bold text-white">About</a></li>
-                    <li class=""><a href="#" class="nav-link font-weight-bold text-white">Contact</a></li>
+                    <li class=""><a href="about.html" class="nav-link font-weight-bold text-white">About</a></li>
+                    <li class=""><a href="contact.html" class="nav-link font-weight-bold text-white">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <!--  -->
-        
     </footer>
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
