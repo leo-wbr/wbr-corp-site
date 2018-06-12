@@ -47,12 +47,25 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .btn-wbr {/* line-height: 40px; *//* padding: 0 14px; */box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);background: #f5be58;color: #fff;/* font-size: 15px; */font-weight: 600;text-transform: uppercase;letter-spacing: .025em;transition: all .15s ease;}
 .btn-wbr:hover {color: #ffecc5;transform: translateY(-1px);box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
 
+/* Headroom CSS */
+.header--fixed { position: fixed; z-index: 10; right: 0; left: 0; top: 0px;}
+.headroom { transition: transform .25s ease-in-out; }
+.headroom--pinned {transform: translateY(0%);background-color: #3563c5;}
+.headroom--pinned ul  { transform: translateY(%);}
+.headroom--top { transform: translateY(30%); background-color:transparent;}
+.headroom--unpinned { transform: translateY(-100%); background-color: #3563c5;}
+
 /* Social Nav Bar */
-.topnav-social{overflow:hidden;padding:0 .5em; background-color:#3564c5;}
+.topnav-social{overflow:hidden;padding:0 .5em;background-color: #23489a;}
 .topnav-social .social{float:right;margin-top:.5em;}
 .topnav-social .social a{display:block;float:left;padding: 5px 5px;margin: 0px 5px 5px 0;}
 .topnav-social a {color:#fff; }
 .topnav-social a:hover{color:#f7c996;background:transparent;}
+
+/* Inner Main Nav */
+.inner-main-nav{overflow:hidden;padding:0 .5em;background-color: #3563c5;}
+.inner-main-nav a {color:#fff; }
+.inner-main-nav a:hover{color:#f7c996;background:transparent;}
 
 /* Nav Bar */
 .mainnav li{padding:0 .8em;}
@@ -138,14 +151,6 @@ footer {margin-top:100px;}
     #mobilenav li{padding:0 0em;}
 }
 
-/* Headroom CSS */
-.header--fixed { position: fixed; z-index: 10; right: 0; left: 0; top: 0px;}
-.headroom { transition: transform .25s ease-in-out; }
-.headroom--pinned {transform: translateY(0%);background-color: #3563c5;}
-.headroom--pinned ul  { transform: translateY(%);}
-.headroom--top { transform: translateY(30%); background-color:transparent;}
-.headroom--unpinned { transform: translateY(-100%); background-color: #3563c5;}
-
 
 
 /* col-xs-* */
@@ -221,7 +226,7 @@ footer {margin-top:100px;}
     
     /* Navigations */
     
-    .topnav-social,.topnav-desktop,nav.footernav {display:none;}
+    .inner-main-nav, .topnav-social,.topnav-desktop,nav.footernav {display:none;}
     
 
     

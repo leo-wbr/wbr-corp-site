@@ -17,7 +17,22 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand topnav-social">
+
+
+
+<nav class="topnav-social">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-bold">Worldwide Business Research</a>
+            <div class="social">
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-user-plus fa-lg" aria-hidden="true"></i> Jobs</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar navbar-expand inner-main-nav header--fixed">
         <div class="navbar-collapse collapse dual-nav w-50 justify-content-end">
             <ul class="navbar-nav">
                 <li class=""><a href="events.html" class="nav-link font-weight-bold px-4">Events</a></li>
@@ -229,7 +244,7 @@
     <script src="js/headroom.js"></script>
     <script>
     (function() {
-        var header = document.querySelector("#mainnav");
+        var header = document.querySelector("#mainnav, .inner-main-nav");
 
         if (window.location.hash) {
             header.classList.add("headroom--bottom");
