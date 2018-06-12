@@ -30,7 +30,7 @@
     </nav>
 
 
-    <nav class="navbar navbar-expand inner-main-nav ">
+    <nav class="navbar navbar-expand inner-main-nav">
         <div class="navbar-collapse collapse dual-nav w-50 justify-content-end">
             <ul class="navbar-nav">
                 <li class=""><a href="events.html" class="nav-link font-weight-bold px-4">Events</a></li>
@@ -45,18 +45,18 @@
             </ul>
         </div>
     </nav>
-    <nav class="nav-insights navbar navbar-expand-sm navbar-light py-3" data-toggle="affix">
+    <nav class="nav-insights navbar navbar-expand-sm navbar-light bg-light ">
         <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-            <a class="navbar-brand" href="insights.html"><img class="img-responsive" src="img/insights-logo.jpg" alt="" width="200px"></a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="insights.html"><img class="img-fluid" src="img/insights-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse text-center collapse" id="" style="">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
                         <a class="nav-link" href="reach.html">Reach</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="clients.html">Clients</a>
                     </li>
                     <li class="nav-item">
@@ -170,7 +170,7 @@
             <div class="row mt-5">
                 <div class="col-md-12 mt-5">
                     <div class="row ">
-                        <blockquote class="img-shadow ">
+                        <blockquote class="img-shadow p-3">
                             <p class="fa-2x font-weight-light">“Our whitepaper has really allowed us to create thought leadership content that we can bring into conversations with industry leaders and prospects. “</p>
                             <cite class="text-bold text-spacing text-orange">Jennifer Rapkine, Field Marketing Manager, Public Sector, Cornerstone OnDemand</cite>
                         </blockquote>
@@ -217,7 +217,7 @@
             <div class="row mt-5">
                 <div class="col-md-10 offset-md-1 mt-5">
                     <div class="row ">
-                        <blockquote class="img-shadow ">
+                        <blockquote class="img-shadow p-3">
                             <p class="fa-2x font-weight-light">“WBR Insights is by far the most organized and professional group that I have ever worked with.”</p>
                             <cite class="text-bold text-spacing text-orange">Deborah Katz, VP of Marketing, Personetics</cite>
                         </blockquote>
@@ -306,24 +306,31 @@
     })();
     </script>
     <script src="js/headroom.js"></script>
-    <script>
-    (function() {
-        var header = document.querySelector("#mainnav");
+     <script>
+    var myElement = document.querySelector(".inner-main-nav");
 
-        if (window.location.hash) {
-            header.classList.add("headroom--bottom");
+    var headroom = new Headroom(myElement, {
+        "offset": 220,
+        "tolerance": {
+            up: 0,
+            down: 0
+        },
+        "classes": {
+            "initial": "header--static",
+            "pinned": "slideDown",
+            "unpinned": "slideUp",
+            "top": "top",
+            "notTop": "not-top",
         }
+    });
 
-        var headroom = new Headroom(header, {
-            tolerance: {
-                down: 10,
-                up: 20
-            },
-            offset: 205
-        });
-        headroom.init();
+    headroom.init();
 
-    }());
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset === 0) {
+            myElement.classList.remove('slideDown')
+        }
+    })
     </script>
 </body>
 

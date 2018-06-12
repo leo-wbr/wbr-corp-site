@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
     <nav class="topnav-social">
         <div class="container-fluid">
             <a href="#" class="navbar-brand text-bold">Worldwide Business Research</a>
@@ -28,30 +27,31 @@
             </div>
         </div>
     </nav>
-
+    <!--  -->
     <nav class="navbar navbar-expand inner-main-nav">
-        <div class="navbar-collapse collapse dual-nav w-50 justify-content-end">
+        <div class="collapse navbar-collapse dual-nav w-50 justify-content-end">
             <ul class="navbar-nav">
                 <li class=""><a href="events.html" class="nav-link font-weight-bold px-4">Events</a></li>
                 <li class=""><a href="insights.html" class="nav-link font-weight-bold px-4">Insights</a></li>
             </ul>
         </div>
         <a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a>
-        <div class="navbar-collapse collapse dual-nav w-50 justify-content-start">
+        <div class="collapse navbar-collapse  dual-nav w-50 justify-content-start">
             <ul class="navbar-nav">
                 <li class=""><a href="about.html" class="nav-link font-weight-bold px-4">About</a></li>
                 <li class=""><a href="contact.html" class="nav-link font-weight-bold px-4">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <nav class="nav-insights navbar navbar-expand-sm navbar-light py-3" data-toggle="affix">
+
+    <nav class="nav-insights navbar navbar-expand-sm navbar-light bg-light ">
         <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-            <a class="navbar-brand" href="insights.html"><img class="img-fluid" src="img/insights-logo.jpg" alt="" width="200px"></a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="insights.html"><img class="img-fluid" src="img/insights-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse text-center collapse" id="" style="">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
                         <a class="nav-link" href="reach.html">Reach</a>
                     </li>
@@ -68,7 +68,9 @@
             </div>
         </div>
     </nav>
-    <header class="inner-hero-section  ">
+    <!--  -->
+    
+    <header class="inner-hero-section">
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-12">
@@ -207,23 +209,30 @@
     </script>
     <script src="js/headroom.js"></script>
     <script>
-    (function() {
-        var header = document.querySelector("#mainnav");
+    var myElement = document.querySelector(".inner-main-nav");
 
-        if (window.location.hash) {
-            header.classList.add("headroom--bottom");
+    var headroom = new Headroom(myElement, {
+        "offset": 220,
+        "tolerance": {
+            up: 0,
+            down: 0
+        },
+        "classes": {
+            "initial": "header--static",
+            "pinned": "slideDown",
+            "unpinned": "slideUp",
+            "top": "top",
+            "notTop": "not-top",
         }
+    });
 
-        var headroom = new Headroom(header, {
-            tolerance: {
-                down: 10,
-                up: 20
-            },
-            offset: 205
-        });
-        headroom.init();
+    headroom.init();
 
-    }());
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset === 0) {
+            myElement.classList.remove('slideDown')
+        }
+    })
     </script>
 </body>
 

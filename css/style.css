@@ -47,13 +47,22 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .btn-wbr {/* line-height: 40px; *//* padding: 0 14px; */box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);background: #f5be58;color: #fff;/* font-size: 15px; */font-weight: 600;text-transform: uppercase;letter-spacing: .025em;transition: all .15s ease;}
 .btn-wbr:hover {color: #ffecc5;transform: translateY(-1px);box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
 
-/* Headroom CSS */
+/* Headroom Static to Fixed. Used on Insights Pages - CSS */
+.header--static { position: inherit; top: 0; width: 100%; z-index:99999;}
+.header--static.top { transition: none; transform: translateY(0);}
+.header--static.not-top { position: fixed; transform: translateY(-100%);}
+
+/* Headroom Fixed Used on Homepage and every other page besides insights Pages - CSS */
 .header--fixed { position: fixed; z-index: 10; right: 0; left: 0; top: 0px;}
-.headroom { transition: transform .25s ease-in-out; }
-.headroom--pinned {transform: translateY(0%);background-color: #3563c5;}
-.headroom--pinned ul  { transform: translateY(%);}
-.headroom--top { transform: translateY(30%); background-color:transparent;}
-.headroom--unpinned { transform: translateY(-100%); background-color: #3563c5;}
+.header--fixed.top { transition: none; transform: translateY(20px);}
+.header--fixed.not-top { position: fixed; transform: translateY(-100%);background-color:#24479a;}
+
+/* Genereal Headroom Classes */
+.header--fixed.slideDown.not-top, .header--static.slideDown.not-top {transition: transform 0.3s linear;transform: translateY(0);}
+.header--fixed.slideDown.top, .header--static.slideDown.top {position: fixed;}
+.header--fixed.slideUp.not-top, .header--static.slideUp.not-top {transition: transform 0.3s linear;transform: translateY(-100%);}
+.header--fixed.slideUp.top, .header--static.slideUp.top {transform: translateY(-100%);position: absolute;}
+
 
 /* Social Nav Bar */
 .topnav-social{overflow:hidden;padding:0 .5em;background-color: #23489a;}
