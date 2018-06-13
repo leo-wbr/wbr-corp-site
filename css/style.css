@@ -40,7 +40,6 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .text-orange {color:#f1b570 ;}
 .text-maroon {color:#87212E;}
 .text-blue {color:#06acf1;}
-.text-white {color:#fff !important;}
 .text-white a {color:#f1b570; font-weight:500;}
 
 /* Buttons*/
@@ -79,9 +78,6 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 /* Nav Bar */
 .mainnav li{padding:0 .8em;}
 .mainnav li a {color:#fff;}
-
-/* Mobile View Nav Positioning */
-#mobilenav {background-color:#3563c5;}
 
 /* Insights Page Nav */
 .nav-insights { box-shadow: 0 5px 25px 0 #bfbfbf inset; background: none repeat scroll 0 0 #fffffd; }
@@ -161,38 +157,29 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .chart-legend ul li { display:block; margin-bottom:4px;}
 
 
-/* Footer  */
-footer {margin-top:100px;}
+/** Footer  **/
 
-/* Footer Navigation */
-.footernav img{height:55px;margin-top:0px;transition:200ms linear;opacity:.7;} 
-.footernav img:hover{opacity:1;}
-.footernav{height:65px;background:#3564c5;} 
-.footernav li a:hover{color:#f7c996;background:transparent;}
+/*Footer Desktop Nav */
+.footer-desk-nav img{height:55px;margin-top:0px;transition:200ms linear;opacity:.7;} 
+.footer-desk-nav img:hover{opacity:1;}
+.footer-desk-nav{height:65px;background:#3564c5;} 
+.footer-desk-nav li a:hover{color:#f7c996;background:transparent;}
 
-/* Mobile View Nav Styling */
-#mobilenav {background-color:#3563c5;}
-#mobilenav li{padding:0 .8em;}
-#mobilenav li a {color:#fff;}
-                      
-/* Mobile View Nav col-xs-* */                            
-@media only screen and (min-width:320px){
-    #mobilenav img {width:50px;}
-    #mobilenav li{padding:0 0em;}
-}
+/*Footer Mobile Nav */
+.footer-mobi-nav {background-color:#3563c5;}
+.footer-mobi-nav li{padding:0 .8em;}
+.footer-mobi-nav li a {color:#fff;}
+      
+/* Footer Legal Nav */
+.footer-legal-nav {background-color:#1a3a7d;}
+.footer-legal-nav a {color:white;}
+.footer-legal-nav a:hover {color:orange;}
 
-
-
-/* col-xs-* */
-@media only screen and (min-width :320px){
-
-
-}
-
-/* col-xs-* */                            
-@media only screen and (min-width :480px){
-
-}
+    /* Mobile View Nav col-xs-* */                            
+    @media only screen and (min-width:320px){
+        .footer-mobi-nav img {width:50px;}
+        .footer-mobi-nav li{padding:0 0em;}
+    }
 
 @media (min-width:670px) {
     #market-illustrations {
@@ -215,13 +202,6 @@ footer {margin-top:100px;}
 
 }
 
-
-/* col-sm-* */                            
-@media only screen and (min-width :768px){
-
-}
-
-/*  */
 @media (min-width:880px) {
     #market-illustrations {
         width: 865px;
@@ -242,23 +222,17 @@ footer {margin-top:100px;}
 
 }
 
-
-/* col-md-* */                            
-@media only screen and (min-width :992px){}
-
-/* col-lg-* */
-@media only screen and (min-width :1200px){}
-
-
 @media only screen and (max-width :767px){
-    
+   
     #market-illustrations { position: relative; height:220px;  display:none;  }
-    
-    /* Navigations */
-    
-    .inner-main-nav, .topnav-social,.topnav-desktop,nav.footernav {display:none;}
-    
 
+    /* Navigations */
+    .topnav-social .navbar-brand {font-size:.9em; margin: 8px 0 0 0 ;}
+    .inner-main-nav, .footer-desk-nav, .topnav-desktop{display:none;}
+    footer {padding-top:170px !important;}
+    .footer-mobi-nav {bottom:38px;}
+    .footer-legal-nav {position:fixed; bottom: 0; width:100%;}
+    .footer-legal-nav a {font-size: 15px; padding:10px 10px;  }
     
 }
 
