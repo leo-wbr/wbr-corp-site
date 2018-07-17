@@ -171,17 +171,23 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .footer-mobi-nav {background-color:#3563c5;}
 .footer-mobi-nav li{padding:0 .8em;}
 .footer-mobi-nav li a {color:#fff;}
-      
-/* Footer Legal Nav */
-.footer-legal-nav {background-color:#1a3a7d;}
-.footer-legal-nav a {color:white;}
-.footer-legal-nav a:hover {color:orange;}
 
     /* Mobile View Nav col-xs-* */                            
     @media only screen and (min-width:320px){
         .footer-mobi-nav img {width:50px;}
         .footer-mobi-nav li{padding:0 0em;}
     }
+      
+/* Footer Legal Nav */
+.footer-legal-nav {background-color:#1a3a7d;}
+.footer-legal-nav a {color:white; margin:0 5px;}
+.footer-legal-nav a:hover {color:orange;}
+
+    /* Mobile View Nav col-xs-* */                            
+    @media only screen and (max-width:768px){
+        .footer-legal-nav small span {display:none;}
+    }
+
 
 @media (min-width:670px) {
     #market-illustrations {
