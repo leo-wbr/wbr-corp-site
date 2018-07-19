@@ -74,10 +74,10 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .inner-main-nav{overflow:hidden;padding:0 .5em;background-color: #3563c5;}
 .inner-main-nav ul li a {color:#fff; border-bottom:3px solid transparent; }
 .inner-main-nav ul li  a:hover{color:#fff;background:transparent; border-bottom:3px solid #07afef; }
-.inner-main-nav li { padding:25px 0;}
+.inner-main-nav li { padding:25px 5px;}
 .inner-main-nav .list-group-item.active {background-color:transparent; border:none; }
-.inner-main-nav .list-group-item.active a {border-bottom:3px solid transparent; }
-.inner-main-nav .list-group-item.active a:hover {border-bottom:3px solid #07afef;  }
+.inner-main-nav .list-group-item.active a {border-bottom:3px solid #07afef;  }
+
 
 
 /* Nav Bar */
