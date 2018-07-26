@@ -43,12 +43,14 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .text-white a {color:#f1b570; font-weight:500;}
 
 /* Buttons*/
-.btn {box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); transition: all .15s ease;}
+.btn {box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); transition: all .15s ease; letter-spacing: .025em;}
 .btn:hover {transform: translateY(-1px);box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
-.btn-wbr {background: #f5be58;color: #fff;font-weight: 600;text-transform: uppercase;letter-spacing: .025em;}
+.btn-wbr {background: #f5be58;color: #fff;}
 .btn-wbr:hover {color: #ffecc5;}
 .btn-insights {background-color:#03aeef; color:#fff; } 
-.btn-insights:hover {background-color:#03aeef; color:#bae6f7; } 
+.btn-insights:hover {background-color:#03aeef;color: #d9f4ff;}
+.btn-connect {background-color:#3b7; color:#fff; } 
+.btn-connect:hover {background-color: #25b36c;color: #ccf7e1;} 
 
 /* Headroom Static to Fixed. Used on Insights Pages - CSS */
 .header--static { position: inherit; top: 0; width: 100%; z-index:99999;}
