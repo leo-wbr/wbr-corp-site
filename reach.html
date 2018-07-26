@@ -17,18 +17,23 @@
 </head>
 
 <body>
-    <nav class="topnav-social">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand text-bold">Worldwide Business Research</a>
-            <div class="social">
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fa fa-user-plus fa-lg" aria-hidden="true"></i> Jobs</a>
-            </div>
-        </div>
+    <!-- Social Top Nav -->
+    <nav class="navbar justify-content-between flex-nowrap flex-row topnav-social">
+        <a class="nav-link text-bold " href="#">Worldwide Business Research</a>
+        <ul class="nav navbar-nav flex-row ">
+            <li class="nav-item ">
+                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Jobs</a>
+            </li>
+        </ul>
     </nav>
     <!--  -->
-    <nav class="navbar navbar-expand inner-main-nav">
+    <!--     <nav class="navbar navbar-expand inner-main-nav">
         <div class="collapse navbar-collapse dual-nav w-50 justify-content-end">
             <ul class="navbar-nav">
                 <li class=""><a href="events.html" class="nav-link font-weight-bold px-4">Events</a></li>
@@ -40,8 +45,28 @@
             <ul class="navbar-nav">
                 <li class=""><a href="connect.html" class="nav-link font-weight-bold px-4">Connect</a></li>
                 <li class=""><a href="about.html" class="nav-link font-weight-bold px-4">About</a></li>
-
             </ul>
+        </div>
+    </nav>-->
+    <nav class="navbar navbar-expand inner-main-nav">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap ">
+            <div class="collapse navbar-collapse" >
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item  font-weight-bold px-4">
+                        <a href="events.html" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item active font-weight-bold px-4">
+                        <a href="insights.html" class="nav-link">Insights</a>
+                    </li>
+                    <li class="nav-item"><a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a></li>
+                    <li class="nav-item font-weight-bold px-4">
+                        <a href="connect.html" class="nav-link">Connect</a>
+                    </li>
+                    <li class="nav-item font-weight-bold px-4">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <nav class="nav-insights navbar navbar-expand-sm navbar-light bg-light ">
@@ -52,8 +77,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link active" href="reach.html">Reach</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="reach.html">Reach</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="clients.html">Clients</a>
@@ -1136,22 +1161,25 @@
     <!-- /.container -->
     <!-- Footer -->
     <footer class="">
-        
-        <!-- Footer Mobile Nav  -->
-        <nav class="navbar navbar-expand  d-md-none d-lg-none d-xl-none fixed-bottom footer-mobi-nav">
-            <div class="navbar-collapse collapse dual-nav w-100 justify-content-center">
-                <ul class="navbar-nav">
-                    <li class=""><a href="events.html" class="nav-link font-weight-bold text-white">Events</a></li>
-                    <li class=""><a href="insights.html" class="nav-link font-weight-bold text-white">Insights</a></li>
-                </ul>
-            </div>
-            <a href="index.html" class="navbar-brand mx-auto d-block w-100 text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a>
-            <div class="navbar-collapse collapse dual-nav w-100 justify-content-center">
-                <ul class="navbar-nav">
-                    <li class=""><a href="connect.html" class="nav-link font-weight-bold text-white">Connect</a></li>
-                    <li class=""><a href="about.html" class="nav-link font-weight-bold text-white">About</a></li>
-
-                </ul>
+        <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom footer-mobi-nav">
+            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap ">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item  font-weight-bold px-1">
+                            <a href="events.html" class="nav-link">Events</a>
+                        </li>
+                        <li class="nav-item active font-weight-bold px-1">
+                            <a href="insights.html" class="nav-link">Insights</a>
+                        </li>
+                        <li class="nav-item"><a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a></li>
+                        <li class="nav-item font-weight-bold px-1">
+                            <a href="connect.html" class="nav-link">Connect</a>
+                        </li>
+                        <li class="nav-item font-weight-bold px-1">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!-- Footer Legal Nav-->
