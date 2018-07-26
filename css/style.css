@@ -77,6 +77,12 @@ a.nav-link:hover {color:#f7c996;}
 .topnav-social{padding:0 .5em;background-color: #23489a;}
 .topnav-social .nav-item {padding:0 5px;}
 
+    /* Mobile View Nav col-xs-* */                            
+    @media only screen and (max-width:320px){
+        .topnav-social .nav-link {font-size:.75em; }
+        .topnav-social .nav-item {font-size:1.2em; }
+    }
+
 /* Inner Main Nav */
 .inner-main-nav{padding:0 .5em;background-color: #3563c5;}
 .footer-mobi-nav .list-group-item.active , .inner-main-nav .list-group-item.active {background-color:transparent; border:none; }
@@ -229,9 +235,8 @@ a.nav-link:hover {color:#f7c996;}
 @media only screen and (max-width :767px){
    
     #market-illustrations { position: relative; height:220px;  display:none;  }
-
+    
     /* Navigations */
-    .topnav-social .navbar-brand {font-size:.9em; margin: 8px 0 0 0 ;}
     .inner-main-nav, .footer-desk-nav, .topnav-desktop{display:none;}
     footer {padding-top:170px !important;}
     .footer-mobi-nav {bottom:38px;}
