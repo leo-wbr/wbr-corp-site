@@ -112,7 +112,7 @@ a.nav-link:hover {color:#f7c996;}
     .footer-legal-nav {position:fixed; bottom: 0; width:100%;}
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 575.98px) and (max-width: 767.98px) {
     .footer-legal-nav {position:fixed; bottom: 0; width:100%;}
 }
 
@@ -133,8 +133,9 @@ a.nav-link:hover {color:#f7c996;}
 .inner-hero-section {background: url('../img/bg-img-hero-inner.jpg') center center no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover; box-shadow: inset 10000px 0 0 rgba(53, 37, 8, 0.7);}
 
 /* Inner Hero Image col-xs-* */                            
-@media only screen and (max-width:768px) {
-    .inner-hero-section h1 {font-size: 3.2vh; }
+
+@media (max-width: 767.98px) { 
+        .inner-hero-section h1 {font-size: 3.2vh; }
 }
 
 
@@ -146,7 +147,8 @@ a.nav-link:hover {color:#f7c996;}
 /* Insight Event Sections */
 .grid-section .grid-section-text { padding: 3rem}
 .grid-section .grid-section-img { min-height: 30rem; background-size: cover}
-@media (min-width:768px) {
+
+@media (min-width:767.98px) {
     .grid-section .grid-section-text {
         padding: 7rem
     }
@@ -156,7 +158,8 @@ a.nav-link:hover {color:#f7c996;}
 .overlay {position: absolute;height: 100%;min-height: 35rem;width: 100%;background: url(https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_2da5e9b4cb22de4816b83bc7e39b2ba7.jpg) center center scroll;background-size:cover;/* opacity: .75; */z-index: -1;}
 .masthead {position: relative;overflow: hidden;padding-bottom: 3rem}
 .masthead .masthead-bg {position: absolute;top: 0;bottom: 0;right: 0;left: 0;width: 100%;min-height: 35rem;height: 100%;background-color: rgba(8, 172, 241, 0.75);transform: skewY(4deg);transform-origin: bottom right}
-@media (min-width:768px) {
+
+@media (min-width:767.98px) {
     .masthead {
         height: 100%;
         min-height: 0;
@@ -241,7 +244,7 @@ a.nav-link:hover {color:#f7c996;}
 
 }
 
-@media only screen and (max-width :767px){
+@media only screen and (max-width:767px){
    
     #market-illustrations { position: relative; height:220px;  display:none;  }
     
