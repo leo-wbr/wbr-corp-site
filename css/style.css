@@ -116,9 +116,6 @@ a.nav-link:hover {color:#f7c996;}
     .footer-legal-nav {position:fixed; bottom: 0; width:100%;}
 }
 
-
-
-
 /* Insights Page Nav */
 .nav-insights { box-shadow: 0 5px 25px 0 #bfbfbf inset; background: none repeat scroll 0 0 #fffffd; }
 .navbar-light .navbar-nav .active>.nav-link,  .navbar-light .navbar-nav .nav-link.active  { color: rgb(3, 174, 239); font-weight: bold; }
@@ -182,18 +179,17 @@ a.nav-link:hover {color:#f7c996;}
 /* Reach Page Navigation Styling */
 .reach-tab .tab .nav-tabs {border-bottom:none;}
 .reach-tab .tab .nav-tabs li{  width: 25%;  }
-.reach-tab .tab .nav-tabs li a{text-transform: uppercase;border: none;transition: all 0.3s ease 0s;/* height:120px; */}
-.reach-tab .tab .nav-tabs li a span{width: 50px;height: 50px;line-height: 50px;background: #f2f2f2;margin: auto;font-size: 22px;border-radius: 5px;/* position: absolute; */top: 10px;left: 0;right: 0;transform: rotate(45deg);display: block;}
-.reach-tab .tab .nav-tabs li.active a span{ background: #1e3c64;  color: #fff; }
+.reach-tab .tab .nav-tabs li a{text-transform: uppercase;border: none;transition: all 0.3s ease 0s; color:#3563c5;}
+.reach-tab .tab .nav-tabs li a span{width: 50px;height: 50px;line-height: 50px;background: #f2f2f2;margin: auto;font-size: 22px;border-radius: 5px;top: 10px;left: 0;right: 0;transform: rotate(45deg);display: block;}
+.reach-tab .tab .nav-tabs li a.active span{ background: #2cbaf1;  color: #fff; }
 .reach-tab .tab .nav-tabs li a span i{ transform: rotate(-45deg); }
-.reach-tab .tab .nav-tabs li.active a,.reach-tab .tab .nav-tabs li a:hover{color: #999;}
-.reach-tab .tab .nav-tabs li.active a{ border-bottom: 2px solid #29335c; }
-.reach-tab .tab .tab-content{ padding: 10px; margin-top: -5px; color: #757575; text-align: left; border-top: 1px solid #e5e5e5;}
+.reach-tab .tab .nav-tabs li a small {font-weight:600; display:inline-block; margin-top:20px;}
+.reach-tab .tab .nav-tabs li.active a,.reach-tab .tab .nav-tabs li a:hover{color: #2cbaf1;}
 
 @media (max-width: 768px) and (min-width: 300px) {
-    .reach-tab .tab .nav-tabs li{width: 100%; text-align: center; margin-bottom: 5px;}
-    .reach-tab .tab .nav-tabs li a{padding:10px !Important; height:100%;}
-    .reach-tab .tab .nav-tabs li:last-child{ margin-bottom: 0;}
+    .reach-tab .tab .nav-tabs li{width: 100%; }
+    .reach-tab .tab .nav-tabs li a{padding:0 0;}
+    .reach-tab .tab .nav-tabs li a.active small{ color: #2cbaf1; text-decoration:underline; }
 }
 
 /* Chart Styling */
