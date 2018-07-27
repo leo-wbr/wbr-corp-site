@@ -22,7 +22,12 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .bg-grey{background:#F9FBFB;}
 .bg-dgrey{background: #f3f3f3;}
 .bg-orange {background: #f5be58;}
-.btn-xl{padding: .35em .85em!important;font-size:1.45em!important;}
+.btn-xl{padding: .35em .85em!important;font-size:1.45em;}
+
+
+@media (max-width: 575.98px) { 
+    .btn-responsive {font-size: 1.7vh;}
+}
 
 /* Img Filters */
 .img-grey{filter:url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale")!important;filter:grayscale(100%)!important;-webkit-filter:grayscale(100%)!important;-moz-filter:grayscale(100%)!important;-ms-filter:grayscale(100%)!important;-o-filter:grayscale(100%)!important;filter:gray!important;}
@@ -86,6 +91,9 @@ a.nav-link:hover {color:#f7c996;}
 .inner-main-nav{padding:0 .5em;background-color: #3563c5;}
 .footer-mobi-nav .list-group-item.active , .inner-main-nav .list-group-item.active {background-color:transparent; border:none; }
 .footer-mobi-nav .list-group-item.active a , .inner-main-nav .list-group-item.active a {border-bottom:3px solid #07afef;  }
+
+
+
 
 /*Footer Desktop Nav */
 .footer-desk-nav img{height:55px;margin-top:0px;transition:200ms linear;opacity:.7;} 
