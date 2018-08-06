@@ -206,10 +206,6 @@ a.nav-link:hover {color:#f7c996;}
 
 #event-filter button {background:transparent; border:none; color:#3b62b0; display:block; cursor:pointer;}
 #event-filter button:hover { color:orange; }
-table#listings img.eventlogo {
-        max-width: 140px;
-        max-height: 140px;
-    }
 
 
 
