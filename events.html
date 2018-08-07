@@ -92,23 +92,22 @@
                 <h2>Filter by Industry</h2>
                 <div class="row">
                     <div class="col-12 col-md-6 mt-1">
-                        <button class="" id="filter-cx" value="Customer Experience" type="submit"><i class="fa fa-heart fa-lg"></i> Customer Experience</button>
-                        <button class="" id="filter-ecommerce" value="eCommerce / Retail" type="submit"><i class="fa fa-shopping-cart fa-lg"></i> eCommerce / Retail</button>
-                        <!--<button class="" id="filter-energy" value="Energy" type="submit"><i class="fa fa-bolt fa-lg"></i> Energy</button>-->
-                        <button class="" id="filter-fininv" value="finance &amp; investment" type="submit"><i class="fa fa-line-chart fa-lg"></i> Finance / Investments</button>
-                        <button class="" id="filter-govdef" value="Government / Defense" type="submit"><i class="fa fa-university fa-lg"></i> Government / Defense</button>
-                        <button class="" id="filter-healthcare" value="Healthcare" type="submit"><i class="fa fa-plus-square fa-lg"></i> Healthcare</button>
-                        <button class="" id="filter-connect" value="true" type="submit"><i class="fa fa-compress fa-lg"></i> 1-to-1 Private Meetings</button>
-                    </div>
+                <button class="btn-industry" id="filter-cx" value="Customer Experience" type="submit"><i class="fa fa-heart fa-lg"></i> Customer Experience</button>
+                <button class="btn-industry" id="filter-ecommerce" value="eCommerce / Retail" type="submit"><i class="fa fa-shopping-cart fa-lg"></i> eCommerce / Retail</button>
+                <button class="btn-industry" id="filter-energy" value="Energy" type="submit"><i class="fa fa-bolt fa-lg"></i> Energy</button>
+                <button class="btn-industry" id="filter-finance" value="Finance" type="submit"><i class="fa fa-line-chart fa-lg"></i> Finance / Investment</button>                
+                <button class="btn-industry" id="filter-govdef" value="Government / Defense" type="submit"><i class="fa fa-university fa-lg"></i> Government / Defense</button>
+                <button class="btn-industry" id="filter-healthcare" value="Healthcare" type="submit"><i class="fa fa-plus-square fa-lg"></i> Healthcare</button>
+                <button class="btn-connect" id="filter-connect" value="true" type="submit"><i class="fa fa-compress fa-lg"></i> <span>1-to-1</span> Networking</button>
+              </div>
                     <div class="col-12 col-md-6 mt-1">
-                        <button class="" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
-                        <button class="" id="filter-manufacturing" value="Manufacturing" type="submit"><i class="fa fa-industry fa-lg"></i> Manufacturing</button>
-                        <button class="" id="filter-schain" value="Supply Chain" type="submit"><i class="fa fa-cog fa-lg"></i> Supply Chain</button>
-                        <button class="" id="filter-pharma" value="Pharma / Biotech" type="submit"><i class="fa fa-medkit fa-lg"></i> Pharma / Biotech</button>
-                        <button class="" id="filter-procurement" value="Procurement" type="submit"><i class="fa fa-search fa-lg"></i> Procurement</button>
-                        <button class="" id="filter-servicesupport" value="Service / Support" type="submit"><i class="fa fa-wrench fa-lg"></i> Service / Support</button>
-                        <button class="" id="filter-hr" value="Human Resources" type="submit"><i class="fa fa-users fa-lg"></i> Human Resources</button>
-                    </div>
+                <button class="btn-industry" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
+                <button class="btn-industry" id="filter-schain" value="Supply Chain" type="submit"><i class="fa fa-cog fa-lg"></i> Supply Chain</button>
+                <button class="btn-industry" id="filter-pharma" value="Pharma / Biotech" type="submit"><i class="fa fa-medkit fa-lg"></i> Pharma / Biotech</button>
+                <button class="btn-industry" id="filter-procurement" value="Procurement" type="submit"><i class="fa fa-search fa-lg"></i> Procurement</button>
+                <button class="btn-industry" id="filter-servicesupport" value="Service / Support" type="submit"><i class="fa fa-wrench fa-lg"></i> Service / Support</button>
+                <button class="btn-industry" id="filter-hr" value="Human Resources" type="submit"><i class="fa fa-users fa-lg"></i> Human Resources</button>
+              </div>
                 </div>
             </div>
         </div>
@@ -117,16 +116,17 @@
     <div id="listings_wrapper" class=" container dataTables_wrapper dt-bootstrap4 no-footer mt-5">
         <div class="row">
             <div class="col-sm-12">
-                <button class="btn-reset" id="filter-reset" value="" type="submit"><i class="fa fa-refresh fa-lg"></i> Reset | View All Events</button>
-                <table id="listings" class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline collapsed" style="width: 100%;" role="grid" aria-describedby="example_info">
+                                <button class="btn-reset" id="filter-reset" value="" type="submit"><i class="fa fa-refresh fa-lg"></i> Reset | View All Events</button>
+
+                <table id="listings" class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline collapsed" style="width: 100%;" role="grid" aria-describedby="example_info">
                     <thead>
                         <tr role="row">
-                            <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 200px;" aria-sort="ascending" aria-label="First name: activate to sort column descending"></th>
-                            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 300px;" aria-label="Last name: activate to sort column ascending">Event Name</th>
-                            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 10px;" aria-label="Position: activate to sort column ascending">Date </th>
-                            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 200px;" aria-label="Office: activate to sort column ascending">Region</th>
-                            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 0px; display:none;" aria-label="Age: activate to sort column ascending">Industry</th>
-                            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 0px; display:none;" aria-label="Start date: activate to sort column ascending">Connect</th>
+                            <th></th>
+                            <th>Event Name <span class="glyphicon glyphicon-sort"></span></th>
+                            <th>Date <span class="glyphicon glyphicon-sort"></span></th>
+                            <th>Region</th>
+                            <th>Industry</th>
+                            <th>Connect</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -134,11 +134,11 @@
                             <td class="d-flex justify-content-center"><a href="http://etaileast.wbresearch.com" target="_blank"><img alt="eTail East" src="img/logos/etail.png" class="img-fluid eventlogo p-3"/></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-md-12 col-lg-8">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://etaileast.wbresearch.com" target="_blank" class="eventname">eTail East</a>
                                         <p class="venue">Boston, MA</p>
                                     </div>
-                                    <div class="col-md-12 col-lg-4 ">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://etaileast.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://etaileast.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -153,11 +153,11 @@
                             <td class="d-flex justify-content-center"><a href="http://etailfrance.wbresearch.com" target="_blank"><img alt="eTail France" src="img/logos/etail.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://etailfrance.wbresearch.com" target="_blank" class="eventname">eTail France</a>
                                         <p class="venue"></p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://etailfrance.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://etailfrance.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -172,15 +172,14 @@
                             <td class="d-flex justify-content-center"><a href="http://logipharmaeu.wbresearch.com" target="_blank"><img alt="LogiPharma" src="img/logos/logipharma.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://logipharmaeu.wbresearch.com" target="_blank" class="eventname">LogiPharma</a>
                                         <p class="venue">Montreux Music &amp; Convention Centre, Montreux, Switzerland</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://logipharmaeu.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://logipharmaeu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
-                                </div>
                             </td>
                             <td>28 - 30 November, 2015</td>
                             <td>Europe</td>
@@ -191,11 +190,11 @@
                             <td class="d-flex justify-content-center"><a href="http://procureconindirecteu.wbresearch.com" target="_blank"><img alt="ProcureCon Indirect" src="img/logos/PConIndirectEurope.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://procureconindirecteu.wbresearch.com" target="_blank" class="eventname">ProcureCon Indirect</a>
                                         <p class="venue">NH Grand Hotel Krasnapolsky, Amsterdam</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://procureconindirecteu.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://procureconindirecteu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -210,15 +209,14 @@
                             <td class="d-flex justify-content-center"><a href="http://digitaltravel.wbresearch.com" target="_blank"><img alt="Digital Travel Summit" src="img/logos/digital-travel.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://digitaltravel.wbresearch.com" target="_blank" class="eventname">Digital Travel Summit</a>
                                         <p class="venue">Green Valley Ranch Resort, Spa &amp; Casino, Las Vegas, NV</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://digitaltravel.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://digitaltravel.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
-                                </div>
                             </td>
                             <td>2015/04/27 - 2015/04/29</td>
                             <td>Americas</td>
@@ -229,11 +227,11 @@
                             <td class="d-flex justify-content-center"><a href="http://procureconasia.wbresearch.com" target="_blank"><img alt="ProcureCon Asia" src="img/logos/PConAsia.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://procureconasia.wbresearch.com" target="_blank" class="eventname">ProcureCon Asia</a>
                                         <p class="venue">Amara, Singapore</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://procureconasia.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://procureconasia.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -248,11 +246,11 @@
                             <td class="d-flex justify-content-center"><a href="http://procureconwest.wbresearch.com" target="_blank"><img alt="ProcureCon Indirect West" src="img/logos/PConIndirectWest.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://procureconwest.wbresearch.com" target="_blank" class="eventname">ProcureCon Indirect West</a>
                                         <p class="venue">Wigwam, Phoenix, Arizona</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://procureconwest.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://procureconwest.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -267,11 +265,11 @@
                             <td class="d-flex justify-content-center"><a href="http://bionetwork.wbresearch.com" target="_blank"><img alt="BioNetwork Partnering Summit" src="img/logos/bionetwork.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://bionetwork.wbresearch.com" target="_blank" class="eventname">BioNetwork Partnering Summit</a>
                                         <p class="venue">The Ritz-Carlton, Laguna Niguel, CA</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://bionetwork.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://bionetwork.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -286,11 +284,11 @@
                             <td class="d-flex justify-content-center"><a href="http://logipharmaus.wbresearch.com" target="_blank"><img alt="LogiPharma" src="img/logos/LogiPharmaUS.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://logipharmaus.wbresearch.com" target="_blank" class="eventname">LogiPharma</a>
                                         <p class="venue"></p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://logipharmaus.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://logipharmaus.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -305,11 +303,11 @@
                             <td class="d-flex justify-content-center"><a href="http://fieldserviceusa.wbresearch.com" target="_blank"><img alt="Field Service USA" src="img/logos/FieldServiceUSA.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://fieldserviceusa.wbresearch.com" target="_blank" class="eventname">Field Service USA</a>
                                         <p class="venue">Palm Springs, CA</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://fieldserviceusa.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://fieldserviceusa.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -324,11 +322,11 @@
                             <td class="d-flex justify-content-center"><a href="http://fieldserviceeast.wbresearch.com" target="_blank"><img alt="Field Service East" src="img/logos/FieldServiceEast.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://fieldserviceeast.wbresearch.com" target="_blank" class="eventname">Field Service East</a>
                                         <p class="venue">Westin Buckhead, Atlanta, GA</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://fieldserviceeast.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://fieldserviceeast.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -343,11 +341,11 @@
                             <td class="d-flex justify-content-center"><a href="http://fieldservicemd.wbresearch.com" target="_blank"><img alt="Field Service Medical" src="img/logos/FieldServiceMd.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://fieldservicemd.wbresearch.com" target="_blank" class="eventname">Field Service Medical</a>
                                         <p class="venue">San Diego, CA</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://fieldservicemd.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://fieldservicemd.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -362,11 +360,11 @@
                             <td class="d-flex justify-content-center"><a href="http://fieldservicemdeu.wbresearch.com" target="_blank"><img alt="Field Service Medical Europe" src="img/logos/FieldServiceMdEu.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://fieldservicemdeu.wbresearch.com" target="_blank" class="eventname">Field Service Medical Europe</a>
                                         <p class="venue">Conrad Dublin, Ireland</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://fieldservicemdeu.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://fieldservicemdeu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -381,15 +379,14 @@
                             <td class="d-flex justify-content-center"><a href="http://fieldserviceeu.wbresearch.com" target="_blank"><img alt="Field Service Europe" src="img/logos/FieldServiceEu.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://fieldserviceeu.wbresearch.com" target="_blank" class="eventname">Field Service Europe</a>
                                         <p class="venue">Movenpick Hotel Amsterdam City Center, Amsterdam , The Netherlands</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://fieldserviceeu.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://fieldserviceeu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
-                                </div>
                             </td>
                             <td>25 - 27 February, 2015</td>
                             <td>Europe</td>
@@ -400,11 +397,11 @@
                             <td class="d-flex justify-content-center"><a href="http://mobileshoppingconnect.wbresearch.com" target="_blank"><img alt="Mobile Shopping Connect" src="img/logos/connect-mobileshopping.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://mobileshoppingconnect.wbresearch.com" target="_blank" class="eventname">Mobile Shopping Connect</a>
                                         <p class="venue">The Langham Pasadena Hotel, Pasadena CA</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://mobileshoppingconnect.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://mobileshoppingconnect.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -419,11 +416,11 @@
                             <td class="d-flex justify-content-center"><a href="http://etailconnecteu.wbresearch.com" target="_blank"><img alt="eTail Connect" src="img/logos/connect-etail.png" class="img-fluid eventlogo p-3" /></a></td>
                             <td>
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-6 col-sm-8 col-md-6 col-lg-8">
                                         <a href="http://etailconnecteu.wbresearch.com" target="_blank" class="eventname">eTail Connect</a>
                                         <p class="venue">London, UK</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                                         <a class="btn btn-wbr btn-sm btn-block" href="http://etailconnecteu.wbresearch.com/agenda-mc" target="_blank">Download Agenda</a>
                                         <a class="btn btn-insights btn-sm btn-block" href="http://etailconnecteu.wbresearch.com/opportunities" target="_blank">Sponsor/Exhibit</a>
                                     </div>
@@ -436,139 +433,141 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
-        </div>
-    </div>
-    <!-- /.container -->
-    <!-- Footer -->
-    <footer class="">
-        <!-- Footer Mobile Nav  -->
-        <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom footer-mobi-nav">
-            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap ">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item font-weight-bold px-1">
-                            <a href="events.html" class="nav-link">Events</a>
-                        </li>
-                        <li class="nav-item font-weight-bold px-1">
-                            <a href="insights.html" class="nav-link">Insights</a>
-                        </li>
-                        <li class="nav-item"><a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a></li>
-                        <li class="nav-item font-weight-bold px-1">
-                            <a href="connect.html" class="nav-link">Connect</a>
-                        </li>
-                        <li class="nav-item active font-weight-bold px-1">
-                            <a href="about.html" class="nav-link">About</a>
-                        </li>
-                    </ul>
                 </div>
-            </div>
-        </nav>
-        <!-- Footer Legal Nav-->
-        <nav class="navbar  justify-content-between flex-nowrap flex-row footer-legal-nav">
-            <a class="nav-link" href="#"><small><span>Copyright</span> 2018 Worldwide Business Research</small></a>
-            <ul class="nav navbar-nav flex-row">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><small>Careers</small></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><small>Privacy</small></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><small>Terms</small></a>
-                </li>
-            </ul>
-        </nav>
-        <!--  -->
-    </footer>
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/datatables.min.css" />
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/datatables.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('#listings').dataTable({
-            "paging": false,
-            "info": false,
-            "autoWidth": false,
-            "order": [
-                [2, 'asc']
-            ],
-            "columnDefs": [{ //logo 
-                    "targets": [0],
-                    "className": "logocol",
-                    "orderable": false,
-                    "searchable": false
-                },
-                { //event name + info
-                    "targets": [1],
-                    "className": "infocol"
-                },
-                { //dates
-                    "targets": [2],
-                    "className": "datecol"
-                },
-                { //region
-                    "targets": [3],
-                    "visible": false
-                },
-                { //industries
-                    "targets": [4],
-                    "visible": false
-                },
-                { //connect
-                    "targets": [5],
-                    "visible": false
-                }
-            ]
-        });
-        var table = $('#listings').DataTable();
-        $('.btn-region').click(function() {
-            table.column().search('')
-            table.column(3).search(this.value).draw();
-        });
-        $('.btn-industry').click(function() {
-            table.column().search('')
-            table.column(4).search(this.value).draw();
-        });
-        $('.btn-connect').click(function() {
-            table.column().search('')
-            table.column(5).search(this.value).draw();
-        });
-        $('.btn-reset').click(function() {
-            table.column().search(this.value).draw();
-        });
-    });
-    </script>
-    <script src="js/headroom.js"></script>
-    <script>
-    var myElement = document.querySelector("#mainnav");
+                </div>
+                </div>
+                <!-- /.container -->
+                <!-- Footer -->
+                <footer class="">
+                    <!-- Footer Mobile Nav  -->
+                    <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom footer-mobi-nav">
+                        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap ">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav align-items-center">
+                                    <li class="nav-item font-weight-bold px-1">
+                                        <a href="events.html" class="nav-link">Events</a>
+                                    </li>
+                                    <li class="nav-item font-weight-bold px-1">
+                                        <a href="insights.html" class="nav-link">Insights</a>
+                                    </li>
+                                    <li class="nav-item"><a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a></li>
+                                    <li class="nav-item font-weight-bold px-1">
+                                        <a href="connect.html" class="nav-link">Connect</a>
+                                    </li>
+                                    <li class="nav-item active font-weight-bold px-1">
+                                        <a href="about.html" class="nav-link">About</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- Footer Legal Nav-->
+                    <nav class="navbar  justify-content-between flex-nowrap flex-row footer-legal-nav">
+                        <a class="nav-link" href="#"><small><span>Copyright</span> 2018 Worldwide Business Research</small></a>
+                        <ul class="nav navbar-nav flex-row">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><small>Careers</small></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><small>Privacy</small></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><small>Terms</small></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--  -->
+                </footer>
+                <!-- Bootstrap core JavaScript -->
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/datatables.min.css" />
+                <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/datatables.min.js"></script>
+                <script>
+                $(document).ready(function() {
+                    $('#listings').dataTable({
+                        "paging": false,
+                        "info": false,
+                        "autoWidth": false,
+                        "order": [
+                            [2, 'asc']
+                        ],
+                        "columnDefs": [{ //logo 
+                                "targets": [0],
+                                "className": "logocol",
+                                "orderable": false,
+                                "searchable": false
+                            },
+                            { //event name + info
+                                "targets": [1],
+                                "className": "infocol"
+                            },
+                            { //dates
+                                "targets": [2],
+                                "className": "datecol"
+                            },
+                            { //region
+                                "targets": [3],
+                                "visible": false
+                            },
+                            { //industries
+                                "targets": [4],
+                                "visible": false
+                            },
+                            { //connect
+                                "targets": [5],
+                                "visible": false
+                            }
+                        ]
+                    });
+                    var table = $('#listings').DataTable();
+                    $('.btn-region').click(function() {
+                        table.column().search('')
+                        table.column(3).search(this.value).draw();
+                    });
+                    $('.btn-industry').click(function() {
+                        table.column().search('')
+                        table.column(4).search(this.value).draw();
+                    });
+                    $('.btn-connect').click(function() {
+                        table.column().search('')
+                        table.column(5).search(this.value).draw();
+                    });
+                    $('.btn-reset').click(function() {
+                        table.column().search('')
+                        table.columns([3,4,5]).search(this.value).draw();
+                    });
+                    
+                });
+                </script>
+                <script src="js/headroom.js"></script>
+                <script>
+                var myElement = document.querySelector("#mainnav");
 
-    var headroom = new Headroom(myElement, {
-        "offset": 220,
-        "tolerance": {
-            up: 0,
-            down: 0
-        },
-        "classes": {
-            "initial": "header--fixed",
-            "pinned": "slideDown",
-            "unpinned": "slideUp",
-            "top": "top",
-            "notTop": "not-top",
-        }
-    });
+                var headroom = new Headroom(myElement, {
+                    "offset": 220,
+                    "tolerance": {
+                        up: 0,
+                        down: 0
+                    },
+                    "classes": {
+                        "initial": "header--fixed",
+                        "pinned": "slideDown",
+                        "unpinned": "slideUp",
+                        "top": "top",
+                        "notTop": "not-top",
+                    }
+                });
 
-    headroom.init();
+                headroom.init();
 
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset === 0) {
-            myElement.classList.remove('slideDown')
-        }
-    })
-    </script>
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset === 0) {
+                        myElement.classList.remove('slideDown')
+                    }
+                })
+                </script>
 </body>
 
 </html>
