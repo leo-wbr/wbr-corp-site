@@ -88,26 +88,53 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mt-4">
+            <div class="col-12 col-lg-6 mt-4 d-none d-sm-none d-md-block">
                 <h2>Filter by Industry</h2>
                 <div class="row">
                     <div class="col-12 col-md-6 mt-1">
-                <button class="btn-industry" id="filter-cx" value="Customer Experience" type="submit"><i class="fa fa-heart fa-lg"></i> Customer Experience</button>
-                <button class="btn-industry" id="filter-ecommerce" value="eCommerce / Retail" type="submit"><i class="fa fa-shopping-cart fa-lg"></i> eCommerce / Retail</button>
-                <button class="btn-industry" id="filter-energy" value="Energy" type="submit"><i class="fa fa-bolt fa-lg"></i> Energy</button>
-                <button class="btn-industry" id="filter-finance" value="Finance" type="submit"><i class="fa fa-line-chart fa-lg"></i> Finance / Investment</button>                
-                <button class="btn-industry" id="filter-govdef" value="Government / Defense" type="submit"><i class="fa fa-university fa-lg"></i> Government / Defense</button>
-                <button class="btn-industry" id="filter-healthcare" value="Healthcare" type="submit"><i class="fa fa-plus-square fa-lg"></i> Healthcare</button>
-                <button class="btn-connect" id="filter-connect" value="true" type="submit"><i class="fa fa-compress fa-lg"></i> <span>1-to-1</span> Networking</button>
-              </div>
+                        <button class="btn-industry" id="filter-cx" value="Customer Experience" type="submit"><i class="fa fa-heart fa-lg"></i> Customer Experience</button>
+                        <button class="btn-industry" id="filter-ecommerce" value="eCommerce / Retail" type="submit"><i class="fa fa-shopping-cart fa-lg"></i> eCommerce / Retail</button>
+                        <button class="btn-industry" id="filter-energy" value="Energy" type="submit"><i class="fa fa-bolt fa-lg"></i> Energy</button>
+                        <button class="btn-industry" id="filter-finance" value="Finance" type="submit"><i class="fa fa-line-chart fa-lg"></i> Finance / Investment</button>
+                        <button class="btn-industry" id="filter-govdef" value="Government / Defense" type="submit"><i class="fa fa-university fa-lg"></i> Government / Defense</button>
+                        <button class="btn-industry" id="filter-healthcare" value="Healthcare" type="submit"><i class="fa fa-plus-square fa-lg"></i> Healthcare</button>
+                        <button class="btn-connect" id="filter-connect" value="true" type="submit"><i class="fa fa-compress fa-lg"></i> <span>1-to-1</span> Networking</button>
+                    </div>
                     <div class="col-12 col-md-6 mt-1">
-                <button class="btn-industry" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
-                <button class="btn-industry" id="filter-schain" value="Supply Chain" type="submit"><i class="fa fa-cog fa-lg"></i> Supply Chain</button>
-                <button class="btn-industry" id="filter-pharma" value="Pharma / Biotech" type="submit"><i class="fa fa-medkit fa-lg"></i> Pharma / Biotech</button>
-                <button class="btn-industry" id="filter-procurement" value="Procurement" type="submit"><i class="fa fa-search fa-lg"></i> Procurement</button>
-                <button class="btn-industry" id="filter-servicesupport" value="Service / Support" type="submit"><i class="fa fa-wrench fa-lg"></i> Service / Support</button>
-                <button class="btn-industry" id="filter-hr" value="Human Resources" type="submit"><i class="fa fa-users fa-lg"></i> Human Resources</button>
-              </div>
+                        <button class="btn-industry" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
+                        <button class="btn-industry" id="filter-schain" value="Supply Chain" type="submit"><i class="fa fa-cog fa-lg"></i> Supply Chain</button>
+                        <button class="btn-industry" id="filter-pharma" value="Pharma / Biotech" type="submit"><i class="fa fa-medkit fa-lg"></i> Pharma / Biotech</button>
+                        <button class="btn-industry" id="filter-procurement" value="Procurement" type="submit"><i class="fa fa-search fa-lg"></i> Procurement</button>
+                        <button class="btn-industry" id="filter-servicesupport" value="Service / Support" type="submit"><i class="fa fa-wrench fa-lg"></i> Service / Support</button>
+                        <button class="btn-industry" id="filter-hr" value="Human Resources" type="submit"><i class="fa fa-users fa-lg"></i> Human Resources</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-12 mt-4 d-md-none d-lg-none d-xl-none ">
+                <h2 class="text-center">Filter by Industry</h2>
+                <div class="row">
+                    <div class="col-12 col-md-12 mt-1 d-flex justify-content-center ">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-industry dropdown-item" id="filter-cx" value="Customer Experience" type="submit"><i class="fa fa-heart fa-lg"></i> Customer Experience</button>
+                                <button class="btn-industry dropdown-item" id="filter-ecommerce" value="eCommerce / Retail" type="submit"><i class="fa fa-shopping-cart fa-lg"></i> eCommerce / Retail</button>
+                                <button class="btn-industry dropdown-item" id="filter-energy" value="Energy" type="submit"><i class="fa fa-bolt fa-lg"></i> Energy</button>
+                                <button class="btn-industry dropdown-item" id="filter-finance" value="Finance" type="submit"><i class="fa fa-line-chart fa-lg"></i> Finance / Investment</button>
+                                <button class="btn-industry dropdown-item" id="filter-govdef" value="Government / Defense" type="submit"><i class="fa fa-university fa-lg"></i> Government / Defense</button>
+                                <button class="btn-industry dropdown-item" id="filter-healthcare" value="Healthcare" type="submit"><i class="fa fa-plus-square fa-lg"></i> Healthcare</button>
+                                <button class="btn-connect dropdown-item" id="filter-connect" value="true" type="submit"><i class="fa fa-compress fa-lg"></i> <span>1-to-1</span> Networking</button>
+                                <button class="btn-industry dropdown-item" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
+                                <button class="btn-industry dropdown-item" id="filter-schain" value="Supply Chain" type="submit"><i class="fa fa-cog fa-lg"></i> Supply Chain</button>
+                                <button class="btn-industry dropdown-item" id="filter-pharma" value="Pharma / Biotech" type="submit"><i class="fa fa-medkit fa-lg"></i> Pharma / Biotech</button>
+                                <button class="btn-industry dropdown-item" id="filter-procurement" value="Procurement" type="submit"><i class="fa fa-search fa-lg"></i> Procurement</button>
+                                <button class="btn-industry dropdown-item" id="filter-servicesupport" value="Service / Support" type="submit"><i class="fa fa-wrench fa-lg"></i> Service / Support</button>
+                                <button class="btn-industry dropdown-item" id="filter-hr" value="Human Resources" type="submit"><i class="fa fa-users fa-lg"></i> Human Resources</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,8 +143,7 @@
     <div id="listings_wrapper" class=" container dataTables_wrapper dt-bootstrap4 no-footer mt-5">
         <div class="row">
             <div class="col-sm-12">
-                                <button class="btn-reset" id="filter-reset" value="" type="submit"><i class="fa fa-refresh fa-lg"></i> Reset | View All Events</button>
-
+                <button class="btn-reset" id="filter-reset" value="" type="submit"><i class="fa fa-refresh fa-lg"></i> Reset | View All Events</button>
                 <table id="listings" class="table table-striped dt-responsive nowrap dataTable no-footer dtr-inline collapsed" style="width: 100%;" role="grid" aria-describedby="example_info">
                     <thead>
                         <tr role="row">
@@ -536,9 +562,9 @@
                     });
                     $('.btn-reset').click(function() {
                         table.column().search('')
-                        table.columns([3,4,5]).search(this.value).draw();
+                        table.columns([3, 4, 5]).search(this.value).draw();
                     });
-                    
+
                 });
                 </script>
                 <script src="js/headroom.js"></script>

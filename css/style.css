@@ -24,7 +24,6 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .bg-orange {background: #f5be58;}
 .btn-xl{padding: .35em .85em!important;font-size:1.45em;}
 
-
 @media (max-width: 575.98px) { 
     .btn-responsive {font-size: 1.7vh;}
 }
@@ -203,14 +202,13 @@ a.nav-link:hover {color:#f7c996;}
 
 
 /* Event Section */
-
 #event-filter button {background:transparent; border:none; color:#3b62b0; display:block; cursor:pointer;}
 #event-filter button:hover { color:orange; }
 #listings p.venue {white-space: normal;}
 table#listings img.eventlogo { max-width: 30vh; max-height:30vh; }
 table#listings .dtr-details {width:100%;}
 
-/* Table Styling  */
+/* Event Section Table Styling  */
 table#listings .odd {background-color:#f9fbfb;}
 #listings_filter{background-color:#3b62b0;padding:.7em .5em 0;color:#fff;border-top-left-radius:.5em;border-top-right-radius:.5em;/* width:75%; */display:block;float:right;position:relative;top:.4em;}
 #listings_filter label input{color:#333;font-weight:normal;border-radius:0.4em;border: solid 1px #35589e;text-indent:5px;}
@@ -218,7 +216,6 @@ table#listings thead{color:#fff;background:#3b62b0; }
 table#listings th{border: none;outline: none;}
 table#listings .eventname{font-size:1.2em;font-weight:bold;}
 .btn-reset{display:block;clear:both;background-color:#3b62b0;color:#fff;padding:.8em 1em;margin:1em auto 0;border:0;position:absolute;border-top-left-radius:.5em;border-top-right-radius:.5em;z-index:9;transition:100ms linear; cursor:pointer;}
-
 
 @media (min-width: 0px) and (max-width: 767.98px) {
     #listings_filter {width:100%; display:block; position:relative; top:2em; padding:1em 0 1em 0;}
