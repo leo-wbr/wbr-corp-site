@@ -217,6 +217,7 @@ table#listings .eventname{font-weight:bold;}
 #listings p.venue {white-space: normal;}
 table#listings img.eventlogo { max-width: 30vh; max-height:30vh; }
 table#listings .dtr-details {width:100%; padding:1em;}
+.logocol {width:40%} .infocol {width:10%} .datecol {width:10%} .ctacol {width:40%;}
 
 
 
@@ -233,6 +234,7 @@ table#listings .dtr-details {width:100%; padding:1em;}
     table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child {padding-left:0px;}
     .table td  {border-top:none;padding: 0 0 12.5px 0;}
     .table tbody tr {outline: 1px solid #d1d2d6 !important;}
+    
     .logocol, .infocol, .datecol{display:block; text-align:center; width:100%;}
     .ctacol {display:none;}
 }
