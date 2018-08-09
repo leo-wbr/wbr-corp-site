@@ -215,17 +215,24 @@ table#listings .odd {background-color:#f9fbfb;}
 table#listings thead{color:#fff;background:#3b62b0; }
 table#listings th{border: none;outline: none;}
 table#listings .eventname{font-size:1.2em;font-weight:bold;}
+#listings > tbody > tr > td, #listings > tbody > tr > th {vertical-align:middle;}
+
 .btn-reset{display:block;clear:both;background-color:#3b62b0;color:#fff;padding:.8em 1em;margin:1em auto 0;border:0;position:absolute;border-top-left-radius:.5em;border-top-right-radius:.5em;z-index:9;transition:100ms linear; cursor:pointer;}
 
 
 @media (max-width: 767.98px) and (min-width: 100px) {
-    #listings_filter {width:100%; display:block; position:relative; top:2em; padding:1em 0 1em 0;}
+         #listings_filter {width:100%; display:block; position:relative; top:5em; padding:1em 0 1em 0;} 
     .btn-reset{position:static;margin:0;width:100%;background:#253a63;border-radius:0;}
-    table#listings thead {visibility: hidden;}
-    table#listings img.eventlogo  { max-width: 10vh; max-height:10vh; padding: 0 0;}
-    table#listings .datecol p {color:red; font-size:.9em; font-weight:bold; line-height:6px;}
-
+         table#listings thead {visibility: hidden;} 
+    table#listings .datecol  {font-size:.9em; font-weight:bold; line-height:6px; padding-top:0px;}
+    table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child {padding-left:0px;}
+    
+    .table td  {border-top:none;padding: 0 0 12.5px 0;}
+    .table tbody tr {outline: 1px solid #d1d2d6 !important;}
+    .logocol, .infocol, .datecol{display:block; text-align:center; width:100%;}
+    .ctacol {display:none;}
 }
+
 
 
 
