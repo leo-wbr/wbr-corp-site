@@ -217,7 +217,7 @@ table#listings .eventname{font-weight:bold;}
 #listings p.venue {white-space: normal;}
 table#listings img.eventlogo { max-width: 30vh; max-height:30vh; }
 table#listings .dtr-details {width:100%; padding:1em;}
-.logocol {width:40%} .infocol {width:10%} .datecol {width:10%} .ctacol {width:40%;}
+.logocol {width:20%} .infocol {width:20%} .datecol {width:30%} .ctacol {width:40%;}
 
 
 
