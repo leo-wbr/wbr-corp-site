@@ -141,6 +141,8 @@
         </div>
     </div>
     <div class="container">
+                        <button class="btn-reset" id="filter-reset" value="" type="submit"><i class="fa fa-refresh fa-lg"></i> Reset | View All Events</button>
+
         <table id="listings" class="table table-striped dt-responsive display nowrap no-footer" style="width:100%">
             <thead>
                 <tr role="row">
@@ -154,25 +156,6 @@
                     <th class="never">Connect</th>
                 </tr>
             </thead>
-            <!--           <tr>
-                <td class="d-flex justify-content-center"><a href="http://etaileast.wbresearch.com" target="_blank"><img alt="eTail East" src="img/logos/etail.png" class="img-fluid eventlogo p-3"/></a></td>
-                <td>
-                    <div class="row">
-                        <div class="col-6 col-sm-8 col-md-6 col-lg-8">
-                            <a href="http://etaileast.wbresearch.com" target="_blank" class="eventname">eTail East</a>
-                            <p class="venue">Boston, MA</p>
-                        </div>
-                        <div class="col-12">
-                            <a class="btn btn-wbr btn-sm btn-block" href="http://etaileast.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
-                            <a class="btn btn-insights btn-sm btn-block" href="http://etaileast.wbresearch.com/opportunities" target="_blank">Sponsor</a>
-                        </div>
-                    </div>
-                </td>
-                <td>September 11 - 13, 2015</td>
-                <td>Americas</td>
-                <td>eCommerce / Retail</td>
-                <td>False</td>
-            </tr> -->
             <tbody>
                 <tr>
                     <td></td>
@@ -686,7 +669,7 @@
         });
         $('.btn-reset').click(function() {
             table.column().search('')
-            table.columns([6, 7, 8]).search(this.value).draw();
+            table.columns([5, 6, 7]).search(this.value).draw();
         });
 
     });
