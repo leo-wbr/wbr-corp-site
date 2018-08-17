@@ -140,6 +140,7 @@ a.nav-link:hover {color:#f7c996;}
         .inner-hero-section h1 {font-size: 3.2vh; }
 }
 
+
 /* Insights Market Section Illustrations */
 #market-illustrations { position: absolute; display: -ms-flexbox; display: flex; width: 1287px; left: 45%; margin-top:-100px; margin-left: -644px; transform: scale(.5) rotate(-12deg) translateX(50px); transform-origin: 50% 20%; overflow:hidden;}
 #market-illustrations div { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; border-radius: 38px; background: #f3f3f3; box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05);}
@@ -178,6 +179,7 @@ a.nav-link:hover {color:#f7c996;}
     }
     
 }
+
 
 /* Reach Page Navigation Styling */
 .reach-tab .tab .nav-tabs {border-bottom:none;}
@@ -283,3 +285,8 @@ table#listings img.eventlogo { max-width: 20vh; max-height:20vh; }
 
     
 }
+
+
+
+
+
