@@ -32,13 +32,32 @@
             </li>
         </ul>
     </nav>
+    
+<!-- Hero Image Chooser Start -->
+    <style>
+    ul.hero-image-tabs {position:fixed;  z-index:999999; border:none; background-color:black;  padding:10px; border-radius:5px;}
+    ul.hero-image-tabs li {background-color:#0e0e0e; margin-right:5px;}
+    ul.hero-image-tabs li a {padding:5px; color:#fff;}
+    </style>
+
+
+    <ul class="nav nav-tabs hero-image-tabs">
+        <li><a href="#" data-toggle="tab" data-bg="img/bg-img-hero.jpg">Hero 1</a></li>
+        <li><a href="#" data-toggle="tab" data-bg="img/bg-img-hero-2.jpg">Hero 2</a></li>
+        <li><a href="#" data-toggle="tab" data-bg="img/bg-img-hero-3.jpg">Hero 3</a></li>
+        <li><a href="#" data-toggle="tab" data-bg="img/bg-img-hero-4.jpg">Hero 4</a></li>
+        <li><a href="#" data-toggle="tab" data-bg="img/bg-img-hero-5.jpg">Hero 5</a></li>
+        <li><a href="#" data-toggle="tab" data-bg="img/bg-img-hero-6.jpg">Hero 6</a></li>
+    </ul>
+
+<!-- Hero Image Chooser End-->
+
     <!-- Hero Section with Nav & Background Image -->
     <header class="hero-section py-5 ">
         <div class="container">
-          
             <nav id="mainnav" class="navbar navbar-expand mainnav topnav-desktop">
                 <div class="mx-auto d-sm-flex d-block flex-sm-nowrap ">
-                    <div class="collapse navbar-collapse" >
+                    <div class="collapse navbar-collapse">
                         <ul class="navbar-nav justify-content-center align-items-center">
                             <li class="nav-item font-weight-bold px-4">
                                 <a href="events.html" class="nav-link">Events</a>
@@ -69,25 +88,9 @@
                 </a></div>
                 <div class="col-sm-12 col-md-12 col-lg-4"><a class="btn btn-md btn-connect btn-block text-uppercase font-weight-bold mt-2" href="connect.html">Connect <br><span>Intimate Networking Events</span> </a></div>
                 <div class="col-sm-12 col-md-12 col-lg-4"><a class="btn btn-md btn-insights btn-block text-uppercase font-weight-bold mt-2" href="insights.html">Insights <br><span>Market Research and Webinars</span></a></div>
-
-
             </div>
         </div>
-        <!--  <div class="container">
-            <div class="row ">
-                <div class="col-md-12">
-                    <h1 class="display-4 text-white mt-4">Connecting Leaders. Inspiring Ideas.</h1>
-                </div>
-            </div>
-            <div class="row col-md-6">
-                <div class="col-sm-6 col-md-6 mt-1">
-                    <a class="btn btn-xl btn-block btn-wbr animated bounce" href="#">Events</a>
-                </div>
-                <div class="col-sm-6 col-md-6 mt-1">
-                    <a class="btn btn-xl btn-block btn-wbr animated bounce" href="#">Insights</a>
-                </div>
-            </div>
-        </div> -->
+
     </header>
     <!-- Page Content -->
     <div class="container-fluid bg-white">
@@ -149,11 +152,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
     <div class="container-fluid bg-white py-5 mt-5">
         <div class="row">
             <div class="col-md-12">
@@ -216,7 +214,7 @@
     <!-- Footer -->
     <footer class="">
         <!-- Footer Mobile Nav  -->
-         <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom footer-mobi-nav">
+        <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom footer-mobi-nav">
             <div class="mx-auto d-sm-flex d-block flex-sm-nowrap ">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav align-items-center">
@@ -237,12 +235,6 @@
                 </div>
             </div>
         </nav>
-
-
-
-
-
-
         <!-- Footer Legal Nav-->
         <nav class="navbar  justify-content-between flex-nowrap flex-row footer-legal-nav">
             <a class="nav-link" href="#"><small><span>Copyright 2018</span> Worldwide Business Research</small></a>
@@ -299,6 +291,14 @@
         }
     })
     </script>
+
+    <script>
+$('.nav-tabs a').on('click', function(e) {
+    var bg = $(this).attr('data-bg');
+    $('.hero-section').css('background-image', 'url(' + bg + ')');
+})
+</script>
+    
 </body>
 
 </html>
