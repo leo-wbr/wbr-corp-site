@@ -39,6 +39,7 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 
 /* Typography */
 .fa-lg,.fa-2x,.fa-3x,.fa-4x,.fa-5x,.fa-6x,.fa-7x,.fa-8x,.fa-9x,.fa-10x{line-height:1.25em!important;} .fa-lg{font-size:1.33333333em!important;} .fa-1x{font-size:1.5em!important;} .fa-2x{font-size:2em!important;} .fa-3x{font-size:3em!important;}.fa-4x{font-size:4em!important;}.fa-5x{font-size:5em!important;}.fa-6x{font-size:6em!important;}.fa-7x{font-size:7em!important;}.fa-8x{font-size:8em!important;}.fa-9x{font-size:9em!important;}.fa-10x{font-size:10em!important;}
+.display-5 {font-size: 2rem;font-weight: 300;line-height: 1.2;}
 .text-spacing{letter-spacing: .025em;}
 .font-weight-light {font-weight:300 !important;}
 .text-orange {color:#f1b570 ;}
