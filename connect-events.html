@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>WBR Corporate Redesign - Bootstrap 4 version</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/datatables.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Social Top Nav -->
+    <nav class="navbar justify-content-between flex-nowrap flex-row topnav-social">
+        <a class="nav-link text-bold " href="#">Worldwide Business Research</a>
+        <ul class="nav navbar-nav flex-row ">
+            <li class="nav-item ">
+                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Jobs</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar navbar-expand inner-main-nav">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap ">
+            <div class="collapse navbar-collapse" id="">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item  font-weight-bold px-4">
+                        <a href="events.html" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item font-weight-bold px-4">
+                        <a href="insights.html" class="nav-link">Insights</a>
+                    </li>
+                    <li class="nav-item"><a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a></li>
+                    <li class="nav-item active font-weight-bold px-4">
+                        <a href="connect.html" class="nav-link">Connect</a>
+                    </li>
+                    <li class="nav-item font-weight-bold px-4">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav-insights navbar navbar-expand-sm navbar-light bg-light ">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+            <a class="navbar-brand" href="connect.html"><img class="img-fluid" src="img/connect-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="connect-events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="connect-attendees.html">Attendees</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="connect-spex.html">Sponsorship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="connect-contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="inner-hero-section py-5 ">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="display-4 text-white align-middle text-center">Sponsorship Opportunities</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Page Content -->
+    <div class="container bg-grey mt-3 py-5" id="event-filter">
+        <div class="row">
+            <div class="col-12 col-lg-6 mt-4">
+                <h2>Filter by Region</h2>
+                <div class="row mt-3">
+                    <div class="col">
+                        <button class="btn-region" id="filter-americas" value="North America" type="submit">
+                            <img class="img-fluid " src="img/reg-northam.png"> North America
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="btn-region" id="filter-europe" value="Europe" type="submit">
+                            <img class="img-fluid " src="img/reg-eur.png"> Europe
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="btn-region" id="filter-asia" value="Asia" type="submit">
+                            <img class="img-fluid " src="img/reg-apac.png"> Asia
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-4 d-none d-sm-none d-md-block">
+                <h2>Filter by Industry</h2>
+                <div class="row">
+                    <div class="col-12 col-md-6 mt-1">
+                        <button class="btn-industry" id="filter-cx" value="Customer Experience" type="submit"><i class="fa fa-heart fa-lg"></i> Customer Experience</button>
+                        <button class="btn-industry" id="filter-ecommerce" value="eCommerce / Retail" type="submit"><i class="fa fa-shopping-cart fa-lg"></i> eCommerce / Retail</button>
+                        <button class="btn-industry" id="filter-energy" value="Energy" type="submit"><i class="fa fa-bolt fa-lg"></i> Energy</button>
+                        <button class="btn-industry" id="filter-finance" value="Finance" type="submit"><i class="fa fa-line-chart fa-lg"></i> Finance / Investment</button>
+                        <button class="btn-industry" id="filter-govdef" value="Government / Defense" type="submit"><i class="fa fa-university fa-lg"></i> Government / Defense</button>
+                        <button class="btn-industry" id="filter-healthcare" value="Healthcare" type="submit"><i class="fa fa-plus-square fa-lg"></i> Healthcare</button>
+                        <button class="btn-connect" id="filter-connect" value="true" type="submit"><i class="fa fa-compress fa-lg"></i> <span>1-to-1</span> Networking</button>
+                    </div>
+                    <div class="col-12 col-md-6 mt-1">
+                        <button class="btn-industry" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
+                        <button class="btn-industry" id="filter-schain" value="Supply Chain" type="submit"><i class="fa fa-cog fa-lg"></i> Supply Chain</button>
+                        <button class="btn-industry" id="filter-pharma" value="Pharma / Biotech" type="submit"><i class="fa fa-medkit fa-lg"></i> Pharma / Biotech</button>
+                        <button class="btn-industry" id="filter-procurement" value="Procurement" type="submit"><i class="fa fa-search fa-lg"></i> Procurement</button>
+                        <button class="btn-industry" id="filter-servicesupport" value="Service / Support" type="submit"><i class="fa fa-wrench fa-lg"></i> Service / Support</button>
+                        <button class="btn-industry" id="filter-hr" value="Human Resources" type="submit"><i class="fa fa-users fa-lg"></i> Human Resources</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-12 mt-4 d-md-none d-lg-none d-xl-none ">
+                <h2 class="text-center">Filter by Industry</h2>
+                <div class="row">
+                    <div class="col-12 col-md-12 mt-1 d-flex justify-content-center ">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Select
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-industry dropdown-item" id="filter-cx" value="Customer Experience" type="submit"><i class="fa fa-heart fa-lg"></i> Customer Experience</button>
+                                <button class="btn-industry dropdown-item" id="filter-ecommerce" value="eCommerce / Retail" type="submit"><i class="fa fa-shopping-cart fa-lg"></i> eCommerce / Retail</button>
+                                <button class="btn-industry dropdown-item" id="filter-energy" value="Energy" type="submit"><i class="fa fa-bolt fa-lg"></i> Energy</button>
+                                <button class="btn-industry dropdown-item" id="filter-finance" value="Finance" type="submit"><i class="fa fa-line-chart fa-lg"></i> Finance / Investment</button>
+                                <button class="btn-industry dropdown-item" id="filter-govdef" value="Government / Defense" type="submit"><i class="fa fa-university fa-lg"></i> Government / Defense</button>
+                                <button class="btn-industry dropdown-item" id="filter-healthcare" value="Healthcare" type="submit"><i class="fa fa-plus-square fa-lg"></i> Healthcare</button>
+                                <button class="btn-connect dropdown-item" id="filter-connect" value="true" type="submit"><i class="fa fa-compress fa-lg"></i> <span>1-to-1</span> Networking</button>
+                                <button class="btn-industry dropdown-item" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
+                                <button class="btn-industry dropdown-item" id="filter-schain" value="Supply Chain" type="submit"><i class="fa fa-cog fa-lg"></i> Supply Chain</button>
+                                <button class="btn-industry dropdown-item" id="filter-pharma" value="Pharma / Biotech" type="submit"><i class="fa fa-medkit fa-lg"></i> Pharma / Biotech</button>
+                                <button class="btn-industry dropdown-item" id="filter-procurement" value="Procurement" type="submit"><i class="fa fa-search fa-lg"></i> Procurement</button>
+                                <button class="btn-industry dropdown-item" id="filter-servicesupport" value="Service / Support" type="submit"><i class="fa fa-wrench fa-lg"></i> Service / Support</button>
+                                <button class="btn-industry dropdown-item" id="filter-hr" value="Human Resources" type="submit"><i class="fa fa-users fa-lg"></i> Human Resources</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <button class="btn-reset" id="filter-reset" value="" type="submit"><i class="fa fa-refresh fa-lg"></i> Reset | View All Events</button>
+        <table id="listings" class="table table-striped dt-responsive display nowrap no-footer" style="width:100%">
+            <thead>
+                <tr role="row">
+                    <th class="never"></th>
+                    <th class="all"></th>
+                    <th class="all">Event Name</th>
+                    <th class="min-mobile-l min-mobile-p">Date</th>
+                    <th class=""></th>
+                    <th class="never">Region</th>
+                    <th class="never">Industry</th>
+                    <th class="never">Connect</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td><a href="http://mobileshoppingconnect.wbresearch.com" target="_blank"><img alt="Mobile Shopping Connect" src="img/logos/connect-mobileshopping.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://mobileshoppingconnect.wbresearch.com" target="_blank" class="eventname">Mobile Shopping Connect</a>
+                                <p class="venue">The Langham Pasadena Hotel, Pasadena CA</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>June 22 - 24, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://mobileshoppingconnect.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://mobileshoppingconnect.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Americas</td>
+                    <td>eCommerce / Retail</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="http://etailconnecteu.wbresearch.com" target="_blank"><img alt="eTail Connect" src="img/logos/connect-etail.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://etailconnecteu.wbresearch.com" target="_blank" class="eventname">eTail Connect</a>
+                                <p class="venue">London, UK</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>September 08 - 09, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://etailconnecteu.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://etailconnecteu.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Europe</td>
+                    <td>eCommerce / Retail</td>
+                    <td>True</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="">
+        <!-- Footer Mobile Nav  -->
+        <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom footer-mobi-nav">
+            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap ">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item font-weight-bold px-1">
+                            <a href="events.html" class="nav-link">Events</a>
+                        </li>
+                        <li class="nav-item  font-weight-bold px-1">
+                            <a href="insights.html" class="nav-link">Insights</a>
+                        </li>
+                        <li class="nav-item"><a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a></li>
+                        <li class="nav-item active font-weight-bold px-1">
+                            <a href="connect.html" class="nav-link">Connect</a>
+                        </li>
+                        <li class="nav-item font-weight-bold px-1">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Footer Legal Nav-->
+        <nav class="navbar  justify-content-between flex-nowrap flex-row footer-legal-nav">
+            <a class="nav-link" href="#"><small><span>Copyright</span> 2018 Worldwide Business Research</small></a>
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><small>Careers</small></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><small>Privacy</small></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><small>Terms</small></a>
+                </li>
+            </ul>
+        </nav>
+        <!--  -->
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/datatables.min.js"></script>
+
+    
+
+
+<script>
+    $(document).ready(function() {
+        $('#listings').dataTable({
+            paging: false,
+            info: false,
+            autoWidth: false,
+            order: [
+                [3, 'desc']
+            ],
+            "columnDefs": [
+
+                { //Child Selector 
+                    "targets": [0],
+                    "orderable": false,
+                    "searchable": false
+                },
+
+
+                { //logo 
+                    "targets": [1],
+                    "className": "logocol",
+                    "orderable": false,
+                    "searchable": false
+                },
+                { //event name + info
+                    "targets": [2],
+                    "orderable": false,
+                    "className": "infocol"
+
+                },
+                { //Dates
+                    "targets": [3],
+                    "className": "datecol"
+
+                },
+                { //CTA
+                    "targets": [4],
+                    "orderable": false,
+                    "className": "ctacol"
+
+                }
+            ]
+        });
+        var table = $('#listings').DataTable();
+        $('.btn-region').click(function() {
+            table.column().search('')
+            table.column(5).search(this.value).draw();
+        });
+        $('.btn-industry').click(function() {
+            table.column().search('')
+            table.column(6).search(this.value).draw();
+        });
+        $('.btn-connect').click(function() {
+            table.column().search('')
+            table.column(7).search(this.value).draw();
+        });
+        $('.btn-reset').click(function() {
+            table.column().search('')
+            table.columns([5, 6, 7]).search(this.value).draw();
+        });
+
+    });
+    </script>
+
+
+    <script type="text/javascript">
+    (function e() {
+        var e = document.createElement("script");
+        e.type = "text/javascript", e.async = true, e.src = "https://staticw2.yotpo.com/1drQjKsN8XYHSNGDDHHkv7OcCtadNm94GxBVa9ET/widget.js";
+        var t = document.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(e, t)
+    })();
+    </script>
+    <script src="js/headroom.js"></script>
+    <script>
+    var myElement = document.querySelector(".inner-main-nav");
+
+    var headroom = new Headroom(myElement, {
+        "offset": 220,
+        "tolerance": {
+            up: 0,
+            down: 0
+        },
+        "classes": {
+            "initial": "header--static",
+            "pinned": "slideDown",
+            "unpinned": "slideUp",
+            "top": "top",
+            "notTop": "not-top",
+        }
+    });
+
+    headroom.init();
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset === 0) {
+            myElement.classList.remove('slideDown')
+        }
+    })
+    </script>
+</body>
+
+</html>
