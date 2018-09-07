@@ -15,7 +15,7 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .bg-slanted-img-reverse { -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);}
 
 .bg-img-1 {background: url('../img/bg-img-1.jpg') center center no-repeat fixed;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;box-shadow: inset 10000px 0 0 rgba(53, 37, 8, 0.6);}
-.bg-img-2 {background: url('../img/bg-img-2.jpg') center left no-repeat;background-color:#028dc8;box-shadow: inset 10000px 0 0 #053a50a6;}
+.bg-img-2 {background: url('../img/bg-img-2.jpg') center left no-repeat;background-color: #6eb7be;box-shadow: inset 10000px 0 0 #053a50a6;}
 .bg-img-3 {background: url('../img/bg-img-3.jpg') center center no-repeat fixed;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;box-shadow: inset 10000px 0 0 rgba(53, 37, 8, 0.6);}
 .bg-blue {background:#112042; }
 .bg-white{background:#fff;}
@@ -55,7 +55,7 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .btn-insights {background-color:#03aeef; color:#fff; font-size: 1.1em;padding: 10px; } 
 .btn-insights:hover {background-color:#03aeef;color: #d9f4ff;}
 .btn-connect {background-color: #3a9;color:#fff;font-size: 1.1em;padding: 10px;} 
-.btn-connect:hover {background-color: #25b36c;color: #ccf7e1;} 
+.btn-connect:hover {background-color: #37b19f;color: #ccf7e1;} 
 
 
 /* Headroom Static to Fixed. Used on Insights Pages - CSS */
