@@ -127,6 +127,11 @@ a.nav-link:hover {color:#f7c996;}
 .navbar-light .navbar-nav .active>.nav-link,  .navbar-light .navbar-nav .nav-link.active  { color: rgb(3, 174, 239); font-weight: bold; }
 .navbar-nav .active>.nav-link,  .navbar-nav .nav-link.active { color: #f7c996; font-weight: bold;}
 
+/* Connect Page Nav */
+.nav-connect { box-shadow: 0 5px 25px 0 #bfbfbf inset; background: none repeat scroll 0 0 #fffffd; }
+.nav-connect .navbar-light .navbar-nav .active>.nav-link,  .navbar-light .navbar-nav .nav-link.active  { color: rgb(3, 174, 239); font-weight: bold; }
+.nav-connect .navbar-nav .active>.nav-link,  .navbar-nav .nav-link.active { color: #2eab99; font-weight: bold;}
+
 
 
 /* Hero Image Section */
