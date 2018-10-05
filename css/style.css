@@ -51,13 +51,13 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 /* Buttons*/
 .btn {box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); transition: all .15s ease; letter-spacing: .025em;}
 .btn:hover {transform: translateY(-1px);box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
-.btn-wbr {background: #f5be58;color: #fff;font-size: 1.1em;padding: 10px;}
+.btn-wbr {background: #f5be58;color: #fff;}
 .btn-wbr:hover {color: #ffecc5;}
-.btn-insights {background-color:#03aeef; color:#fff; font-size: 1.1em;padding: 10px; } 
+.btn-insights {background-color:#03aeef; color:#fff; } 
 .btn-insights:hover {background-color:#03aeef;color: #d9f4ff;}
-.btn-connect {background-color: #3a9;color:#fff;font-size: 1.1em;padding: 10px;} 
+.btn-connect {background-color: #3a9;color:#fff;} 
 .btn-connect:hover {background-color: #37b19f;color: #ccf7e1;} 
-
+.hero-section .btn-wbr, .hero-section .btn-insights, .hero-section .btn-connect {font-size: 1.1em;padding: 10px; }
 
 /* Headroom Static to Fixed. Used on Insights Pages - CSS */
 .header--static { position: inherit; top: 0; width: 100%; z-index:99999;}
