@@ -94,18 +94,30 @@
     </header>
     <!-- Page Content -->
     <style>
-    .nav-tabs > li > a,
-    .nav-tabs > li > a:hover,
-    .nav-tabs > li > a:focus {
-        color: #3c763d;
+    .nav-tabs#reach-nav {background-color:#ececec; }
+    .nav-tabs#reach-nav > li > a,
+    .nav-tabs#reach-nav > li > a:hover,
+    .nav-tabs#reach-nav > li > a:focus {
+        color:#00acf2;
     }
     
-    .nav-tabs > li.dropdown .dropdown-menu {
-        background-color: #dff0d8;
-        border-color: #d6e9c6;
+    .nav-tabs#reach-nav > li.dropdown .dropdown-menu {
+        background-color: #00adf2;
+        border-color: #008dca;
+    }
+
+    .nav-tabs#reach-nav .dropdown-item {color:#fff; padding:10px 15px; font-weight: 700;}
+    .nav-tabs#reach-nav .dropdown-item i {color:#fff; margin-right:10px; }
+    .nav-tabs#reach-nav .dropdown-item.active, .nav-tabs#reach-nav .dropdown-item:active ,.nav-tabs#reach-nav .dropdown-item:hover {color:#fff; background-color: #101f43;}
+
+    .nav-tabs#reach-nav .nav-item.show .nav-link,
+    .nav-tabs#reach-nav .nav-link.active {
+        color: #f8f9fa;
+        background-color: #101f43;
+        border: 2px solid #101f43;
     }
     </style>
-    <div class="container">
+    <div class="container mt-3">
         <div class="row mt-3">
             <div class="col-md-12">
                 <p class=" font-weight-light fa-2x">We’re here to help you improve your business. Whether it’s a whitepaper, a webinar, Video On-Demand or a branding campaign, you can rely on us to:</p>
@@ -120,7 +132,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container mt-4">
         <ul id="reach-nav" class="nav nav-tabs nav-justified" role="tablist">
             <!-- Dropdown -->
             <li class="nav-item dropdown">
@@ -180,452 +192,19 @@
             </div>
             <!-- US Content Starts -->
             <div role="tabpanel" class="tab-pane fade" id="dropdown-us-1" aria-labelledby="dropdown-us-1-tab">
-                <div class="row bg-light">
-                    <div class="col-md-12 bg-blue">
-                        <h5 class="text-light fa-2x py-3">C-Suite Data Profile</h5>
-                    </div>
-                    <div class="col-md-12 mt-2">
-                        <h3 class="text-bold text-blue">Database Reach</h3>
-                        <p class="fa-3x font-weight-light">9,300+ C-Suite Leaders</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold"> Job Titles Breakdown</h3>
-                                    <canvas height="350" id="myChart"></canvas>
-                                    <div id="js-legend" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Industry Breakdown</h3>
-                                    <canvas height="350" id="myChart2"></canvas>
-                                    <div id="js-legend-2" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Country Breakdown</h3>
-                                    <canvas height="350" id="myChart3"></canvas>
-                                    <div id="js-legend-3" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                </div>
-                <div class="row bg-light pt-5">
-                    <div class="col-md-12">
-                        <p class="text-center">
-                            <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
-                        </p>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-2" aria-labelledby="dropdown-us-2-tab">
-                <div class="row bg-light">
-                    <div class="col-md-12 bg-blue">
-                        <h5 class="text-light fa-2x py-3">B2B Marketing Data Profile</h5>
-                    </div>
-                    <div class="col-md-12 mt-2">
-                        <h3 class="text-bold text-blue">Database Reach</h3>
-                        <p class="fa-3x font-weight-light">19,000+ B2B Marketing Professionals</p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Job Function Breakdown</h3>
-                                    <canvas height="350" id="myChart4"></canvas>
-                                    <div id="js-legend-4" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Industry Breakdown</h3>
-                                    <canvas height="350" id="myChart5"></canvas>
-                                    <div id="js-legend-5" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                </div>
-                <div class="row bg-light pt-5">
-                    <div class="col-md-12">
-                        <p class="text-center">
-                            <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
-                        </p>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-3" aria-labelledby="dropdown-us-3-tab">
-                <div class="row bg-light">
-                    <div class="col-md-12 bg-blue">
-                        <h5 class="text-light fa-2x py-3">Service and Support Portfolio Profile</h5>
-                    </div>
-                    <div class="col-md-12 mt-2">
-                        <h3 class="text-bold text-blue">Database Reach</h3>
-                        <p class="fa-3x font-weight-light">26,000+ Service and Support Practitioners</p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Geographic Breakdown</h3>
-                                    <canvas height="350" id="myChart6"></canvas>
-                                    <div id="js-legend-6" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Job Function Breakdown</h3>
-                                    <canvas height="350" id="myChart7"></canvas>
-                                    <div id="js-legend-7" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                </div>
-                <div class="row bg-light pt-5">
-                    <div class="col-md-12">
-                        <p class="text-center">
-                            <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
-                        </p>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-4" aria-labelledby="dropdown-us-4-tab">
-                <div class="row bg-light">
-                    <div class="col-md-12 bg-blue">
-                        <h5 class="text-light fa-2x py-3">Retail/eCommerce Data Profile</h5>
-                    </div>
-                    <div class="col-md-12 mt-2">
-                        <h3 class="text-bold text-blue">Database Reach</h3>
-                        <p class="fa-3x font-weight-light">40,000+ eCommerce and Retail Professionals</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Job Function Breakdown</h3>
-                                    <canvas height="350" id="myChart8"></canvas>
-                                    <div id="js-legend-8" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Seniority Breakdown</h3>
-                                    <canvas height="350" id="myChart9"></canvas>
-                                    <div id="js-legend-9" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Industry Breakdown</h3>
-                                    <canvas height="350" id="myChart10"></canvas>
-                                    <div id="js-legend-10" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                </div>
-                <div class="row bg-light pt-5">
-                    <div class="col-md-12">
-                        <p class="text-center">
-                            <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
-                        </p>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <!-- US Content Ends -->
-            <!-- EU Content Starts -->
-            <div role="tabpanel" class="tab-pane fade" id="dropdown-eu-1" aria-labelledby="dropdown-eu-1-tab">
-                <div class="row bg-light">
-                    <div class="col-md-12 bg-blue">
-                        <h5 class="text-light fa-2x py-3">Retail Technology Data Profile</h5>
-                    </div>
-                    <div class="col-md-12 mt-2">
-                        <h3 class="text-bold text-blue">Database Reach</h3>
-                        <p class="fa-3x font-weight-light">14,500+ Retail Technology Professionals</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Seniority Breakdown</h3>
-                                    <canvas height="350" id="myChart11"></canvas>
-                                    <div id="js-legend-11" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Job Function Breakdown</h3>
-                                    <canvas height="350" id="myChart12"></canvas>
-                                    <div id="js-legend-12" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Industry Breakdown</h3>
-                                    <canvas height="350" id="myChart13"></canvas>
-                                    <div id="js-legend-13" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                </div>
-                <div class="row bg-light pt-5">
-                    <div class="col-md-12">
-                        <p class="text-center">
-                            <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
-                        </p>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="dropdown-eu-2" aria-labelledby="dropdown-eu-2-tab">
-                <div class="row bg-light">
-                    <div class="col-md-12 bg-blue">
-                        <h5 class="text-light fa-2x py-3">Financial Information Management Data Profile</h5>
-                    </div>
-                    <div class="col-md-12 mt-2">
-                        <h3 class="text-bold text-blue">Database Reach</h3>
-                        <p class="fa-3x font-weight-light">13,000+ Financial Information Management Practitioners</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Job Function Breakdown</h3>
-                                    <canvas height="350" id="myChart14"></canvas>
-                                    <div id="js-legend-14" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Seniority Breakdown</h3>
-                                    <canvas height="350" id="myChart15"></canvas>
-                                    <div id="js-legend-15" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Industry Breakdown</h3>
-                                    <canvas height="350" id="myChart16"></canvas>
-                                    <div id="js-legend-16" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                </div>
-                <div class="row bg-light pt-5">
-                    <div class="col-md-12">
-                        <p class="text-center">
-                            <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
-                        </p>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="dropdown-eu-3" aria-labelledby="dropdown-eu-3-tab">
-                <div class="row bg-light">
-                    <div class="col-md-12 bg-blue">
-                        <h5 class="text-light fa-2x py-3">Life Sciences Sales and Marketing</h5>
-                    </div>
-                    <div class="col-md-12 mt-2">
-                        <h3 class="text-bold text-blue">Database Reach</h3>
-                        <p class="fa-3x font-weight-light">21,000+ Pharmaceutical and Medical Device Sales and Marketing Practitioners</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Job Function Breakdown</h3>
-                                    <canvas height="350" id="myChart17"></canvas>
-                                    <div id="js-legend-17" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Seniority Breakdown</h3>
-                                    <canvas height="350" id="myChart18"></canvas>
-                                    <div id="js-legend-18" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Industry Breakdown</h3>
-                                    <canvas height="350" id="myChart181"></canvas>
-                                    <div id="js-legend-181" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                </div>
-                <div class="row bg-light pt-5">
-                    <div class="col-md-12">
-                        <p class="text-center">
-                            <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
-                        </p>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="dropdown-eu-4" aria-labelledby="dropdown-eu-4-tab">
-                <div class="row bg-light">
-                    <div class="col-md-12 bg-blue">
-                        <h5 class="text-light fa-2x py-3">Procurement Data Profile</h5>
-                    </div>
-                    <div class="col-md-12 mt-2">
-                        <h3 class="text-bold text-blue">Database Reach</h3>
-                        <p class="fa-3x font-weight-light">19,000+ Procurement Practitioners</p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Industry Breakdown</h3>
-                                    <canvas height="350" id="myChart19"></canvas>
-                                    <div id="js-legend-19" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card p-2">
-                                    <h3 class="text-blue text-bold">Job Function Breakdown</h3>
-                                    <canvas height="350" id="myChart20"></canvas>
-                                    <div id="js-legend-20" class="chart-legend"></div>
-                                </div>
-                            </div>
-                            <!--/row-->
-                        </div>
-                    </div>
-                </div>
-                <div class="row bg-light pt-5">
-                    <div class="col-md-12">
-                        <p class="text-center">
-                            <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
-                        </p>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <!-- EU Content Ends -->
-        </div>
-    </div>
-    <!--  -->
-    <div class="reach-tab container d-none">
-        <div class="tab text-center" role="tabpanel">
-            <!-- Nav tabs -->
-            <div class="row">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link active" href="#Section1" aria-controls="home" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-users"></i></span> <small>C-Suite</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section2" aria-controls="profile" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-rocket"></i></span> <small>B2B eCommerce</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section3" aria-controls="messages" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-wrench"></i></span> <small>Service and Support</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section4" aria-controls="messages" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-shopping-cart"></i></span> <small>B2C eCommerce</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section5" aria-controls="home" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-laptop"></i></span> <small>Retail Technology</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section6" aria-controls="profile" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="far fa-money-bill-alt"></i></span> <small>Financial Info Management</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section7" aria-controls="messages" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-medkit"></i></span> <small>Life Sciences Sales/Marketing</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section8" aria-controls="messages" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-handshake"></i></span> <small>Procurement</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section9" aria-controls="home" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-smile"></i></span> <small>Customer Experience</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section10" aria-controls="profile" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-thumbs-up"></i></span> <small>Customer Experience – Finance</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section19" aria-controls="messages" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-medkit"></i></span> <small>Patient Experience</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section11" aria-controls="messages" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="far fa-money-bill-alt"></i></span> <small>Financial Marketing</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section12" aria-controls="messages" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-shopping-bag"></i></span> <small>In-Store Experience </small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section13" aria-controls="home" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-university"></i></span> <small>In-Branch Experience</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section14" aria-controls="profile" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-plane"></i></span> <small>Travel Marketing</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section15" aria-controls="messages" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-gem"></i></span> <small>Digital Luxury</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section16" aria-controls="messages" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-arrows-alt"></i></span> <small>Reverse Logistics</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section17" aria-controls="messages" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-users"></i></span> <small>Human Resources</small></a></li>
-                    <li role="presentation" class="mt-4 nav-item"><a class="nav-link" href="#Section18" aria-controls="messages" role="tab" data-toggle="tab"><span class="d-none d-sm-block"><i class="fas fa-medkit"></i></span> <small>Life Science Supply Chain</small></a></li>
-                </ul>
-            </div>
-            <!-- Tab panes -->
-            <div class="tab-content tabs mt-5">
-                <div role="tabpanel" class="tab tab-pane fade show active" id="Section1">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">C-Suite Data Profile</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">9,300+ C-Suite Leaders</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -635,7 +214,6 @@
                                         <div id="js-legend" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -647,7 +225,6 @@
                                         <div id="js-legend-2" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -659,7 +236,6 @@
                                         <div id="js-legend-3" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
@@ -672,15 +248,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section2">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-2" aria-labelledby="dropdown-us-2-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">B2B Marketing Data Profile</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">19,000+ B2B Marketing Professionals</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-12">
@@ -690,7 +272,6 @@
                                         <div id="js-legend-4" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -702,11 +283,10 @@
                                         <div id="js-legend-5" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -715,15 +295,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section3">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-3" aria-labelledby="dropdown-us-3-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12">
                             <h5 class="text-light fa-2x py-3">Service and Support Portfolio Profile</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">26,000+ Service and Support Practitioners</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-12">
@@ -733,7 +319,6 @@
                                         <div id="js-legend-6" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -745,11 +330,10 @@
                                         <div id="js-legend-7" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -758,15 +342,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section4">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-4" aria-labelledby="dropdown-us-4-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">Retail/eCommerce Data Profile</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">40,000+ eCommerce and Retail Professionals</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -776,7 +366,6 @@
                                         <div id="js-legend-8" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -788,7 +377,6 @@
                                         <div id="js-legend-9" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -800,11 +388,10 @@
                                         <div id="js-legend-10" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -813,15 +400,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section5">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-5" aria-labelledby="dropdown-us-5-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12">
                             <h5 class="text-light fa-2x py-3">Retail Technology Data Profile</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">14,500+ Retail Technology Professionals</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -831,7 +424,6 @@
                                         <div id="js-legend-11" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -843,7 +435,6 @@
                                         <div id="js-legend-12" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -855,11 +446,10 @@
                                         <div id="js-legend-13" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -868,15 +458,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section6">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-6" aria-labelledby="dropdown-us-6-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">Financial Information Management Data Profile</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">13,000+ Financial Information Management Practitioners</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -886,7 +482,6 @@
                                         <div id="js-legend-14" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -898,7 +493,6 @@
                                         <div id="js-legend-15" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -910,11 +504,10 @@
                                         <div id="js-legend-16" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -923,15 +516,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section7">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-7" aria-labelledby="dropdown-us-7-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12">
                             <h5 class="text-light fa-2x py-3">Life Sciences Sales and Marketing</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">21,000+ Pharmaceutical and Medical Device Sales and Marketing Practitioners</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -941,7 +540,6 @@
                                         <div id="js-legend-17" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -953,7 +551,6 @@
                                         <div id="js-legend-18" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -965,11 +562,10 @@
                                         <div id="js-legend-181" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -978,15 +574,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section8">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-8" aria-labelledby="dropdown-us-8-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">Procurement Data Profile</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">19,000+ Procurement Practitioners</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-12">
@@ -996,7 +598,6 @@
                                         <div id="js-legend-19" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -1008,11 +609,10 @@
                                         <div id="js-legend-20" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -1021,15 +621,22 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section9">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <!--  -->
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-9" aria-labelledby="dropdown-us-9-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">Customer Experience</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">16,000+ Customer Experience Professionals</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1039,7 +646,6 @@
                                         <div id="js-legend-21" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1051,7 +657,6 @@
                                         <div id="js-legend-22" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1063,7 +668,6 @@
                                         <div id="js-legend-23" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
@@ -1076,15 +680,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section10">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-10" aria-labelledby="dropdown-us-10-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">Customer Experience - Finance</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">7,200+ Finance Customer Experience Professionals</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1094,7 +704,6 @@
                                         <div id="js-legend-24" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1106,7 +715,6 @@
                                         <div id="js-legend-25" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1118,11 +726,10 @@
                                         <div id="js-legend-26" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -1131,15 +738,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section19">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-11" aria-labelledby="dropdown-us-11-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12">
                             <h5 class="text-light fa-2x py-3">Patient Experience</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">6,500+ Patient Experience Professionals</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1149,7 +762,6 @@
                                         <div id="js-legend-51" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1161,7 +773,6 @@
                                         <div id="js-legend-52" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1173,7 +784,6 @@
                                         <div id="js-legend-53" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
@@ -1186,15 +796,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section11">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-12" aria-labelledby="dropdown-us-12-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12">
                             <h5 class="text-light fa-2x py-3">Financial Marketing</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">10,000+ Digital Strategy and Marketing Professionals</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1204,7 +820,6 @@
                                         <div id="js-legend-27" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1216,7 +831,6 @@
                                         <div id="js-legend-28" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1228,7 +842,6 @@
                                         <div id="js-legend-29" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
@@ -1241,15 +854,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section12">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-13" aria-labelledby="dropdown-us-13-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">In-Store Experience</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">16,000+ In-store experience professionals</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1259,7 +878,6 @@
                                         <div id="js-legend-33" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1271,7 +889,6 @@
                                         <div id="js-legend-34" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1283,11 +900,10 @@
                                         <div id="js-legend-35" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -1296,15 +912,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section13">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-14" aria-labelledby="dropdown-us-14-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">In-Branch Experience</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">8,500+ Branch &amp; Retail Banking professionals</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1314,7 +936,6 @@
                                         <div id="js-legend-30" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1326,7 +947,6 @@
                                         <div id="js-legend-31" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1338,11 +958,10 @@
                                         <div id="js-legend-32" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -1351,15 +970,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section14">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-15" aria-labelledby="dropdown-us-15-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">Travel Marketing</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">6,000+ eCommerce And Digital professionals in the Travel Industry</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1369,7 +994,6 @@
                                         <div id="js-legend-36" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1381,7 +1005,6 @@
                                         <div id="js-legend-37" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1393,11 +1016,10 @@
                                         <div id="js-legend-38" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -1406,15 +1028,22 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section15">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <!--  -->
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-16" aria-labelledby="dropdown-us-16-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">Digital Luxury</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">11,000+ Digital Luxury Professionals </p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1424,7 +1053,6 @@
                                         <div id="js-legend-39" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1436,7 +1064,6 @@
                                         <div id="js-legend-40" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1448,11 +1075,10 @@
                                         <div id="js-legend-41" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -1461,15 +1087,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section16">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-17" aria-labelledby="dropdown-us-17-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">Reverse Logistics</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">11,000+ Logistics Management and Returns Logistics Management Professionals</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1479,7 +1111,6 @@
                                         <div id="js-legend-42" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1491,7 +1122,6 @@
                                         <div id="js-legend-43" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1503,11 +1133,10 @@
                                         <div id="js-legend-44" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -1516,16 +1145,22 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section17">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-18" aria-labelledby="dropdown-us-18-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">Human Resources</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">12,000+ Human Resource Professionals
                             </p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1535,7 +1170,6 @@
                                         <div id="js-legend-45" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1547,7 +1181,6 @@
                                         <div id="js-legend-46" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1559,11 +1192,10 @@
                                         <div id="js-legend-47" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                     </div>
-                    <div class="row bg-light pt-5">
+                    <div class="row pt-5">
                         <div class="col-md-12">
                             <p class="text-center">
                                 <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
@@ -1572,15 +1204,21 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab tab-pane fade" id="Section18">
-                    <div class="row bg-light">
-                        <div class="col-md-12 bg-blue">
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-us-19" aria-labelledby="dropdown-us-19-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
                             <h5 class="text-light fa-2x py-3">Life Science Supply Chain</h5>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 mt-2">
                             <h3 class="text-bold text-blue">Database Reach</h3>
                             <p class="fa-3x font-weight-light">24,000+ Life Science Supply Chain Professionals</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1590,7 +1228,6 @@
                                         <div id="js-legend-48" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1602,7 +1239,6 @@
                                         <div id="js-legend-49" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1614,18 +1250,255 @@
                                         <div id="js-legend-50" class="chart-legend"></div>
                                     </div>
                                 </div>
-                                <!--/row-->
                             </div>
                         </div>
-                        <div class="col-md-6 offset-md-3 voffset1">
-                            <div class="row text-center">
-                                <a class="btn btn-xl btn-wbr " href="/contact-us-mc">Contact Us</a>
-                            </div>
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col-md-12">
+                            <p class="text-center">
+                                <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
+                            </p>
                             <br>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- US Content Ends -->
+            <!-- EU Content Starts -->
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-eu-1" aria-labelledby="dropdown-eu-1-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
+                            <h5 class="text-light fa-2x py-3">Digital Luxury</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-2">
+                            <h3 class="text-bold text-blue">Database Reach</h3>
+                            <p class="fa-3x font-weight-light">11,000+ Digital Luxury Professionals </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-2">
+                                        <h3 class="text-blue text-bold">Industry Breakdown</h3>
+                                        <canvas height="350" id="myChart39"></canvas>
+                                        <div id="js-legend-39" class="chart-legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-2">
+                                        <h3 class="text-blue text-bold">Job Function Breakdown</h3>
+                                        <canvas height="350" id="myChart40"></canvas>
+                                        <div id="js-legend-40" class="chart-legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-2">
+                                        <h3 class="text-blue text-bold">Seniority Breakdown</h3>
+                                        <canvas height="350" id="myChart41"></canvas>
+                                        <div id="js-legend-41" class="chart-legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col-md-12">
+                            <p class="text-center">
+                                <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-eu-2" aria-labelledby="dropdown-eu-2-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
+                            <h5 class="text-light fa-2x py-3">Reverse Logistics</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-2">
+                            <h3 class="text-bold text-blue">Database Reach</h3>
+                            <p class="fa-3x font-weight-light">11,000+ Logistics Management and Returns Logistics Management Professionals</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-2">
+                                        <h3 class="text-blue text-bold">Industry Breakdown</h3>
+                                        <canvas height="350" id="myChart42"></canvas>
+                                        <div id="js-legend-42" class="chart-legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-2">
+                                        <h3 class="text-blue text-bold">Job Function Breakdown</h3>
+                                        <canvas height="350" id="myChart43"></canvas>
+                                        <div id="js-legend-43" class="chart-legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-2">
+                                        <h3 class="text-blue text-bold">Seniority Breakdown</h3>
+                                        <canvas height="350" id="myChart44"></canvas>
+                                        <div id="js-legend-44" class="chart-legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col-md-12">
+                            <p class="text-center">
+                                <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-eu-3" aria-labelledby="dropdown-eu-3-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
+                            <h5 class="text-light fa-2x py-3">Human Resources</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-2">
+                            <h3 class="text-bold text-blue">Database Reach</h3>
+                            <p class="fa-3x font-weight-light">12,000+ Human Resource Professionals
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-2">
+                                        <h3 class="text-blue text-bold">Job title breakdown</h3>
+                                        <canvas height="350" id="myChart45"></canvas>
+                                        <div id="js-legend-45" class="chart-legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-2">
+                                        <h3 class="text-blue text-bold">Seniority breakdown</h3>
+                                        <canvas height="350" id="myChart46"></canvas>
+                                        <div id="js-legend-46" class="chart-legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-2">
+                                        <h3 class="text-blue text-bold">Industry Breakdown</h3>
+                                        <canvas height="350" id="myChart47"></canvas>
+                                        <div id="js-legend-47" class="chart-legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col-md-12">
+                            <p class="text-center">
+                                <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-eu-4" aria-labelledby="dropdown-eu-4-tab">
+                <div class="col-md-12 bg-light">
+                    <div class="row bg-blue">
+                        <div class="col-md-12 ">
+                            <h5 class="text-light fa-2x py-3">Life Science Supply Chain</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-2">
+                            <h3 class="text-bold text-blue">Database Reach</h3>
+                            <p class="fa-3x font-weight-light">24,000+ Life Science Supply Chain Professionals</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-2">
+                                        <h3 class="text-blue text-bold">Job title breakdown</h3>
+                                        <canvas height="350" id="myChart48"></canvas>
+                                        <div id="js-legend-48" class="chart-legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-2">
+                                        <h3 class="text-blue text-bold">Seniority breakdown</h3>
+                                        <canvas height="350" id="myChart49"></canvas>
+                                        <div id="js-legend-49" class="chart-legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card p-2">
+                                        <h3 class="text-blue text-bold">Industry Breakdown</h3>
+                                        <canvas height="350" id="myChart50"></canvas>
+                                        <div id="js-legend-50" class="chart-legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col-md-12">
+                            <p class="text-center">
+                                <a class="btn btn-xl btn-wbr" href="/contact-us-mc">Contact Us</a>
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EU Content Ends -->
         </div>
     </div>
     <!-- /.container -->
