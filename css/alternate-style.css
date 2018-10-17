@@ -67,8 +67,8 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 /* Headroom Fixed Used on Homepage and every other page besides insights Pages - CSS */
 .header--fixed { position: fixed; z-index: 10; right: 0; left: 0; top: 0px;}
 .header--fixed.top { transition: none; transform: translateY(20px);}
-.header--fixed.not-top { position: fixed; transform: translateY(-100%);background-color:#24479a;}
-.header--fixed.not-top img { width:65px;}
+.header--fixed.not-top { position: fixed; transform: translateY(-100%); background: -webkit-linear-gradient(-180deg, rgb(35, 72, 154), rgb(31, 56, 109)); background: linear-gradient(-180deg, rgb(35, 72, 154), rgb(31, 56, 109)); background-color:#23489a; box-shadow: 0 9px 38px rgba(0,0,0,0.30), 0 5px 12px rgba(0,0,0,0.22);}
+.header--fixed.not-top img {width:55px;}
 
 /* Genereal Headroom Classes */
 .header--fixed.slideDown.not-top, .header--static.slideDown.not-top {transition: transform 0.3s linear;transform: translateY(0);}
@@ -82,7 +82,7 @@ a.nav-link:hover {color:#f7c996;}
 .nav-link:hover, .nav-link:active { text-decoration:underline ;} 
 
 /* Social Nav Bar */
-.topnav-social{padding:0 .5em;background-color: #23489a;}
+.topnav-social{padding:0 .5em;  background: -webkit-linear-gradient(-180deg, rgb(35, 72, 154), rgb(31, 56, 109)); background: linear-gradient(-180deg, rgb(35, 72, 154), rgb(31, 56, 109)); background-color:#23489a; box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
 .topnav-social .nav-item {padding:0 5px;}
 
 @media (max-width: 575.98px) { 
@@ -91,8 +91,9 @@ a.nav-link:hover {color:#f7c996;}
 }
 
 /* Inner Main Nav */
-.inner-main-nav{padding:0 .5em;background-color: #3563c5;}
-.inner-main-nav img {width:65px;}
+.inner-main-nav{padding:0 .5em;  background: -webkit-linear-gradient(0deg, rgb(48, 90, 179), rgb(80, 125, 219)); background: linear-gradient(0deg, rgb(48, 90, 179), rgb(80, 125, 219)); box-shadow: 0 7px 8px rgba(0,0,0,0.05), 0 5px 5px rgba(0,0,0,0.12); background-color: #3563c5;}
+.inner-main-nav img {width:60px;}
+
 .footer-mobi-nav .list-group-item.active , .inner-main-nav .list-group-item.active {background-color:transparent; border:none; }
 .footer-mobi-nav .list-group-item.active a , .inner-main-nav .list-group-item.active a {border-bottom:3px solid #07afef;  }
 
@@ -104,6 +105,7 @@ a.nav-link:hover {color:#f7c996;}
 /*Footer Mobile Nav */
 .footer-mobi-nav {background-color:#3563c5; bottom:53px; z-index:999999;}
 .footer-mobi-nav img {width:50px;}  
+
 
 @media (max-width: 575.98px) { 
     .footer-mobi-nav img {width:20px;}  
