@@ -81,12 +81,7 @@ a.nav-link:hover {color:#f7c996;}
 .nav-link:hover, .nav-link:active { text-decoration:underline ;} 
 
 /* Social Nav Bar */
-.topnav-social{padding:0 .5em;  
-
-background: -webkit-linear-gradient(90deg, rgb(53, 99, 197), rgb(28, 76, 180));
-background: linear-gradient(90deg, rgb(53, 99, 197), rgb(28, 76, 180));
-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
-
+.topnav-social{padding:0 .5em;  background: -webkit-linear-gradient(90deg, rgb(53, 99, 197), rgb(28, 76, 180)); background: linear-gradient(90deg, rgb(53, 99, 197), rgb(28, 76, 180)); box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
 .topnav-social .nav-item {padding:0 5px;}
 
 @media (max-width: 575.98px) { 
@@ -147,6 +142,7 @@ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
 
 /* Hero Image Section */
 .hero-section {/*height: 65vh;min-height: 300px;*/background: url('../img/bg-img-hero-2.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
+@media (max-width: 767.98px) { .hero-section {/*height: 65vh;min-height: 300px;*/background: url('../img/bg-img-hero-2.jpg') right top no-repeat scroll;} }
 .hero-section h1{color:#fff;margin:0;padding:.8em 0;text-shadow:0 0 0.5em rgba(0,0,0,1);font-weight:500;}
 .hero-section h1{float: left;background:transparent;margin-top: 2.5em;}
 .hero-section .btn span {text-transform: capitalize; letter-spacing: 1.5px; font-size:85%; }

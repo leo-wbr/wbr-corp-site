@@ -57,17 +57,23 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .btn-connect {background: rgb(51, 170, 153, .85);color:#fff;} 
 .btn-connect:hover {background: rgb(51, 170, 153, 1); color: #ccf7e1;} 
 
-.btn-outline-wbr {border:2px solid rgba(245,158,88, .85); color: #fff;}
-.btn-outline-wbr:hover { border:2px solid rgb(245,158,88, 1);}
-
-.btn-outline-insights {background:rgba(3, 174, 239, .85); color:#fff; } 
-.btn-outline-insights:hover {background-color:rgba(3, 174, 239, 1); color: #d9f4ff;}
-
-.btn-outline-connect {background: rgb(51, 170, 153, .85);color:#fff;} 
-.btn-outline-connect:hover {background: rgb(51, 170, 153, 1); color: #ccf7e1;}
-
-
 .hero-section .btn-wbr, .hero-section .btn-insights, .hero-section .btn-connect {font-size: 1.1em;padding: 10px; }
+
+
+/* Outline Test Versions */
+
+.btn-outline-wbr {background-color:rgba(0, 0, 0, .65); color:#fff; border:2px solid #fff; text-transform:uppercase; }
+.btn-outline-wbr:hover { color: #ffecea; background: rgb(245,158,88, 1); border:2px solid transparent;}
+
+.btn-outline-insights {background-color:rgba(0, 0, 0, .65); color:#fff; border:2px solid #fff; text-transform:uppercase; } 
+.btn-outline-insights:hover {background-color:rgba(3, 174, 239, 1); color: #d9f4ff; border:2px solid transparent;}
+
+.btn-outline-connect {background-color:rgba(0, 0, 0, .65); color:#fff; border:2px solid #fff; text-transform:uppercase; } 
+.btn-outline-connect:hover {background: rgb(51, 170, 153, 1); color: #ccf7e1; border:2px solid transparent;}
+
+.hero-section .btn-outline-wbr, .hero-section .btn-outline-insights, .hero-section .btn-outline-connect {font-size: 1.1em;padding: 10px; }
+
+
 
 /* Headroom Static to Fixed. Used on Insights Pages - CSS */
 .header--static { position: inherit; top: 0; width: 100%; z-index:99999;}
