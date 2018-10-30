@@ -33,20 +33,31 @@
         </ul>
     </nav>
     <!-- Hero Image Chooser Start -->
-        <style>
-    ul.hero-image-tabs {position:fixed;  z-index:999999; border:none; background-color:black;  padding:10px; border-radius:5px;}
-    ul.hero-image-tabs li {background-color:#0e0e0e; margin-right:5px;}
-    ul.hero-image-tabs li a {padding:5px; color:#fff;}
+    <style>
+        ul.hero-image-tabs {position:fixed; left:0; top:50px;  z-index:999999; border:none; background-color:black;  padding:10px; border-radius:5px;}
+        ul.hero-image-tabs li {background-color:#0e0e0e; margin-right:5px;}
+        ul.hero-image-tabs li a {padding:5px; color:#fff;}
+        ul.hero-image-tabs li .hero-img-1-clicked a { color:red !Important; padding:20px; }
+        .hero-img-1-active {width:60% !important; float:left !important;}
+        .hero-img-2-active {width:60% !important; float:right !important;}
+        .hero-img-3-active {width:100% !important; text-shadow:5px 5px 10px #07183c !important;}
+        .hero-img-4-active {width:100% !important; text-shadow:5px 5px 10px #07183c !important;}
+        .hero-img-5-active {width:100% !important; text-shadow:5px 5px 10px #07183c !important;}
+        .hero-img-6-active {width:100% !important; text-shadow:5px 5px 10px #07183c !important;}
+        .hero-img-7-active {width:100% !important; text-shadow:5px 5px 10px #07183c !important;}
+
+        
     </style>
 
 
     <ul class="nav nav-tabs hero-image-tabs">
-
-        <li><a href="#" data-toggle="tab" data-bg="img/bg-img-hero-2.jpg">Hero 1</a></li>
-        <li><a href="#" data-toggle="tab" data-bg="img/bg-img-hero-8.jpg">Hero 2</a></li>
-        <li><a href="#" data-toggle="tab" data-bg="img/bg-tmnt-1.jpg">Hero 3</a></li>
-        <li><a href="#" data-toggle="tab" data-bg="img/bg-tmnt-2.jpg">Hero 4</a></li>
-
+        <li class="hero-img-1"><a href="#" data-toggle="tab" data-bg="img/bg-img-hero-2.jpg">Hero 1</a></li>
+        <li class="hero-img-2"><a href="#" data-toggle="tab" data-bg="img/bg-img-hero-8.jpg">Hero 2</a></li>
+        <!-- <li class="hero-img-3"><a href="#" data-toggle="tab" data-bg="img/bg-tmnt-1.jpg">Hero 3</a></li>
+        <li class="hero-img-4"><a href="#" data-toggle="tab" data-bg="img/bg-tmnt-2.jpg">Hero 4</a></li> -->
+        <li class="hero-img-5"><a href="#" data-toggle="tab" data-bg="img/bg-tmnt-3.jpg">Hero 3</a></li>
+        <li class="hero-img-6"><a href="#" data-toggle="tab" data-bg="img/bg-tmnt-4.jpg">Hero 4</a></li>
+        <li class="hero-img-7"><a href="#" data-toggle="tab" data-bg="img/bg-tmnt-5.jpg">Hero 5</a></li>
 
     </ul>
     <!-- Hero Image Chooser End-->
@@ -296,6 +307,87 @@
         $('.hero-section').css('background-image', 'url(' + bg + ')');
     })
     </script>
+
+
+<script>
+$('.hero-img-1').on('click', function(e) {
+    var bg = $(this).attr('data-bg');
+    $('.hero-section h1').css({
+            "width": "540px",
+            "float": "left"
+        }
+
+    );
+})
+</script>
+<script>
+$('.hero-img-2').on('click', function(e) {
+    var bg = $(this).attr('data-bg');
+    $('.hero-section h1').css({
+            "width": "540px",
+            "float": "right"
+        }
+
+    );
+})
+</script>
+<script>
+$('.hero-img-3').on('click', function(e) {
+    var bg = $(this).attr('data-bg');
+    $('.hero-section h1').css({
+            "width": "100%",
+            "text-shadow": "5px 5px 10px #07183c"
+        }
+
+    );
+})
+</script>
+<script>
+$('.hero-img-4').on('click', function(e) {
+    var bg = $(this).attr('data-bg');
+    $('.hero-section h1').css({
+            "width": "100%",
+            "text-shadow": "5px 5px 10px #07183c"
+        }
+
+    );
+})
+</script>
+<script>
+$('.hero-img-5').on('click', function(e) {
+    var bg = $(this).attr('data-bg');
+    $('.hero-section h1').css({
+            "width": "100%",
+            "text-shadow": "5px 5px 10px #07183c"
+        }
+
+    );
+})
+</script>
+<script>
+$('.hero-img-6').on('click', function(e) {
+    var bg = $(this).attr('data-bg');
+    $('.hero-section h1').css({
+            "width": "100%",
+            "text-shadow": "5px 5px 10px #07183c"
+        }
+
+    );
+})
+</script>
+<script>
+$('.hero-img-7').on('click', function(e) {
+    var bg = $(this).attr('data-bg');
+    $('.hero-section h1').css({
+            "width": "100%",
+            "text-shadow": "5px 5px 10px #07183c"
+        }
+
+    );
+})
+</script>
+
+    
 </body>
 
 </html>
