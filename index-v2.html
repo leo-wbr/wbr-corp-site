@@ -38,13 +38,8 @@
         ul.hero-image-tabs li {background-color:#0e0e0e; margin-right:5px;}
         ul.hero-image-tabs li a {padding:5px; color:#fff;}
         ul.hero-image-tabs li .hero-img-1-clicked a { color:red !Important; padding:20px; }
-        .hero-img-1-active {width:60% !important; float:left !important;}
-        .hero-img-2-active {width:60% !important; float:right !important;}
-        .hero-img-3-active {width:100% !important; text-shadow:5px 5px 10px #07183c !important;}
-        .hero-img-4-active {width:100% !important; text-shadow:5px 5px 10px #07183c !important;}
-        .hero-img-5-active {width:100% !important; text-shadow:5px 5px 10px #07183c !important;}
-        .hero-img-6-active {width:100% !important; text-shadow:5px 5px 10px #07183c !important;}
-        .hero-img-7-active {width:100% !important; text-shadow:5px 5px 10px #07183c !important;}
+                .h1span {display:block; text-indent: 5.6em; margin-top: 0.2em;}
+
 
         
     </style>
@@ -91,7 +86,7 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="display-4 text-white mt-4">Connecting Leaders. Inspiring Innovation.</h1>
+                    <h1 class="display-4 text-white mt-4">Connecting Leaders. <span>Inspiring Innovation.</span></h1>
                 </div>
             </div>
             <div class="row col-md-12 col-lg-12 col-xl-11 mt-5">
@@ -309,6 +304,7 @@
     </script>
 
 
+
 <script>
 $('.hero-img-1').on('click', function(e) {
     var bg = $(this).attr('data-bg');
@@ -318,20 +314,40 @@ $('.hero-img-1').on('click', function(e) {
         }
 
     );
+
+    $( ".hero-section h1 span" ).removeClass( "h1span" );
+
 })
 </script>
+
+
+
 <script>
 $('.hero-img-2').on('click', function(e) {
     var bg = $(this).attr('data-bg');
     $('.hero-section h1').css({
-            "width": "540px",
-            "float": "right"
+            "width": "940px",
+            "float": "left",
+            "text-shadow": "rgb(7, 24, 60) 5px 5px 10px;"
+
         }
 
     );
+
+$( ".hero-section h1 span" ).addClass( "h1span" );
+
+
+
+
 })
 </script>
+
+
+
+
 <script>
+    
+
 $('.hero-img-3').on('click', function(e) {
     var bg = $(this).attr('data-bg');
     $('.hero-section h1').css({
@@ -340,8 +356,12 @@ $('.hero-img-3').on('click', function(e) {
         }
 
     );
+
+    $( ".hero-section h1 span" ).removeClass( "h1span" );
+
 })
 </script>
+
 <script>
 $('.hero-img-4').on('click', function(e) {
     var bg = $(this).attr('data-bg');
@@ -351,6 +371,9 @@ $('.hero-img-4').on('click', function(e) {
         }
 
     );
+
+    $( ".hero-section h1 span" ).removeClass( "h1span" );
+
 })
 </script>
 <script>
@@ -362,6 +385,8 @@ $('.hero-img-5').on('click', function(e) {
         }
 
     );
+    $( ".hero-section h1 span" ).removeClass( "h1span" );
+
 })
 </script>
 <script>
@@ -373,6 +398,8 @@ $('.hero-img-6').on('click', function(e) {
         }
 
     );
+    $( ".hero-section h1 span" ).removeClass( "h1span" );
+
 })
 </script>
 <script>
@@ -384,10 +411,12 @@ $('.hero-img-7').on('click', function(e) {
         }
 
     );
+    $( ".hero-section h1 span" ).removeClass( "h1span" );
+
 })
 </script>
 
-    
+
 </body>
 
 </html>
