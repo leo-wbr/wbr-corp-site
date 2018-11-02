@@ -90,7 +90,7 @@
         </div>
     </header>
     <style>
-    .filter-section {
+        .filter-section {
         box-shadow: 0 0 5px #ccc;
         padding: 1.5em;
     }
@@ -117,7 +117,7 @@
     </style>
     <!-- Page Content -->
     <div class="container mt-3">
-        <div class="col-md-8 offset-md-2 bg-white text-center filter-section">
+        <div class="col-lg-8 offset-lg-2 col-md-12 bg-white text-center filter-section">
             <div class="row mt-3">
                 <div class="col-md-12 ">
                     <h4>Filter by Region</h4>
@@ -137,10 +137,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-lg-4 offset-lg-4 col-md-8 offset-md-2">
+            <div class="row mt-5 ">
+                <!--  <div class="col-lg-4 offset-lg-4 col-md-8 offset-md-2">
                     <div class="form-group justify-content-center">
-                        <label for="item-filter-select">Filter by Industry</label>
+                        <label for="item-filter-select"><strong>Filter by Industry</strong></label>
                         <select class="form-control" id="item-filter-select">
                             <option value="all">Show All Industries</option>
                             <option value="Customer Experience">Customer Experience</option>
@@ -158,6 +158,36 @@
                             <option value="Human Resources">Human Resources</option>
                         </select>
                     </div>
+                </div> -->
+                <div class="col-xl-7 col-lg-6 col-md-6">
+                    <div class="form-group justify-content-center">
+                        <label for="item-filter-select"><strong>Filter by Industry</strong></label>
+                        <select class="form-control" id="item-filter-select">
+                            <option value="all">Show All Industries</option>
+                            <option value="Customer Experience">Customer Experience</option>
+                            <option value="eCommerce / Retail">eCommerce / Retail</option>
+                            <option value="Energy">Energy</option>
+                            <option value="Finance / Investment">Finance / Investment</option>
+                            <option value="Government / Defense">Government / Defense</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="1-to-1 Networking">1-to-1 Networking</option>
+                            <option value="Info Management">Info Management</option>
+                            <option value="Supply Chain">Supply Chain</option>
+                            <option value="Pharma / Biotech">Pharma / Biotech</option>
+                            <option value="Procurement">Procurement</option>
+                            <option value="Service / Support">Service / Support</option>
+                            <option value="Human Resources">Human Resources</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6 col-md-6">
+                    <!-- Search form -->
+                    <label for="item-filter-select"><strong>Search Event</strong></label>
+                    <form class="form-inline justify-content-center">
+                        <input class="form-control mx-1" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -376,7 +406,6 @@
         }
     })
     </script>
-
     <script>
     $(document).ready(function() {
         $('#item-filter-select').on('change', function() {
@@ -385,7 +414,6 @@
         });
     });
     </script>
-    
 </body>
 
 </html>
