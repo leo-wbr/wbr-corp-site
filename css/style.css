@@ -130,15 +130,19 @@ a.nav-link:hover {color:#f7c996;}
     footer {padding-top:170px !important;}
 }
 
+.nav-events, .nav-insights, .nav-connect { box-shadow: 0 5px 25px 0 #bfbfbf inset; background: none repeat scroll 0 0 #fffffd; }
+
 /* Insights Page Nav */
-.nav-insights { box-shadow: 0 5px 25px 0 #bfbfbf inset; background: none repeat scroll 0 0 #fffffd; }
 .navbar-light .navbar-nav .active>.nav-link,  .navbar-light .navbar-nav .nav-link.active  { color: rgb(3, 174, 239); font-weight: bold; }
 .navbar-nav .active>.nav-link,  .navbar-nav .nav-link.active { color: #f7c996; font-weight: bold;}
 
 /* Connect Page Nav */
-.nav-connect { box-shadow: 0 5px 25px 0 #bfbfbf inset; background: none repeat scroll 0 0 #fffffd; }
 .nav-connect .navbar-light .navbar-nav .active>.nav-link,  .navbar-light .navbar-nav .nav-link.active  { color: rgb(3, 174, 239); font-weight: bold; }
 .nav-connect .navbar-nav .active>.nav-link,  .navbar-nav .nav-link.active { color: #2eab99; font-weight: bold;}
+
+/* Events Page Nav */
+.nav-events .navbar-nav .active>.nav-link,  .navbar-nav .nav-link.active {color: #e09e55;font-weight: bold;}
+.nav-events #navbarSupportedContent > ul > li:nth-child(2) {border-left: 1px solid black; padding-left:10px;}
 
 /* Hero Image Section */
 .hero-section {/*height: 65vh;min-height: 300px;*/background: url('../img/bg-img-hero-2.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
@@ -287,6 +291,8 @@ table#listings img.eventlogo { max-width: 20vh; max-height:20vh; }
     .table tbody tr {outline: 1px solid #d1d2d6 !important; }
     .logocol, .infocol, .datecol{display:block; text-align:center; width:100%;}
 }
+
+
 
 
 

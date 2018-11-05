@@ -33,10 +33,10 @@
         </ul>
     </nav>
     <nav class="navbar navbar-expand inner-main-nav">
-        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap ">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav align-items-center">
-                    <li class="nav-item  font-weight-bold px-4">
+                    <li class="nav-item active font-weight-bold px-4">
                         <a href="events.html" class="nav-link">Events</a>
                     </li>
                     <li class="nav-item font-weight-bold px-4">
@@ -45,7 +45,7 @@
                     <li class="nav-item">
                         <a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a>
                     </li>
-                    <li class="nav-item active font-weight-bold px-4">
+                    <li class="nav-item font-weight-bold px-4">
                         <a href="insights.html" class="nav-link">Insights</a>
                     </li>
                     <li class="nav-item font-weight-bold px-4">
@@ -55,7 +55,7 @@
             </div>
         </div>
     </nav>
-    <nav class="nav-insights navbar navbar-expand-sm navbar-light bg-light ">
+    <nav class="nav-events navbar navbar-expand-sm navbar-light bg-light ">
         <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
             <!-- <a class="navbar-brand" href="insights.html"><img class="img-fluid" src="img/insights-logo.png" alt=""></a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,6 +64,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
+                        <a class="nav-link" href="#"><strong>Global Events</strong></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">North America</a>
                     </li>
                     <li class="nav-item">
@@ -71,9 +74,6 @@
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="#">Asia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Connect</a>
                     </li>
                 </ul>
             </div>
@@ -84,21 +84,21 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="display-4 text-white align-middle text-center">Expand Your Audience</h1>
+                    <h1 class="display-4 text-white align-middle text-center">WBR Events</h1>
                 </div>
             </div>
         </div>
     </header>
     <style>
-        .filter-section {
+    .filter-section {
         box-shadow: 0 0 5px #ccc;
         padding: 1.5em;
     }
-
+    
     .filter-section .nav .nav-item {
         text-align: center;
     }
-
+    
     .filter-section .nav .nav-item .nav-link {
         color: #3466c5;
         text-transform: uppercase;
@@ -106,19 +106,18 @@
         letter-spacing: .5px;
         font-size: .85em;
     }
-
+    
     .filter-section .nav .nav-item .active {
         background-color: #3366c5;
         margin: 5px;
         border-radius: 5px;
         color: #fff;
-
     }
     </style>
     <!-- Page Content -->
     <div class="container mt-3">
-        <div class="col-lg-8 offset-lg-2 col-md-12 bg-white text-center filter-section">
-            <div class="row mt-3">
+        <div class="col-lg-10 offset-lg-1 col-md-12 bg-white text-center filter-section">
+            <!-- <div class="row mt-3">
                 <div class="col-md-12 ">
                     <h4>Filter by Region</h4>
                     <ul class="nav d-flex justify-content-center align-items-center">
@@ -136,8 +135,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="row mt-5 ">
+            </div> -->
+            <div class="row mt-2 ">
                 <!--  <div class="col-lg-4 offset-lg-4 col-md-8 offset-md-2">
                     <div class="form-group justify-content-center">
                         <label for="item-filter-select"><strong>Filter by Industry</strong></label>
@@ -159,7 +158,7 @@
                         </select>
                     </div>
                 </div> -->
-                <div class="col-xl-7 col-lg-6 col-md-6">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <div class="form-group justify-content-center">
                         <label for="item-filter-select"><strong>Filter by Industry</strong></label>
                         <select class="form-control" id="item-filter-select">
@@ -180,14 +179,20 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-6 col-md-6">
-                    <!-- Search form -->
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <label for="item-filter-select"><strong>Search Event</strong></label>
-                    <form class="form-inline justify-content-center">
-                        <input class="form-control mx-1" type="text" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
-                        </button>
-                    </form>
+                    <div class="input-group">
+                        
+                        <input class="form-control" type="search" value="search" id="example-search-input">
+                        <span class="input-group-append">
+                            <button class="btn btn-outline-info" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                          </span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 d-flex align-items-center mt-3">
+                    <a class="btn btn-wbr btn-sm btn-block" href="#">Reset All</a>
                 </div>
             </div>
         </div>
@@ -199,7 +204,8 @@
                     <img class="card-img-top p-4" src="img/logos/PConIndirectWest.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="#">ProcureCon Indirect West</a></h5>
-                        <p class="card-text"><span class="event-location">Wigwam, Phoenix, Arizona</span> <br> <span class="event-date">September 28 - 30, 2015</span></p>
+                        <p class="card-text"><span class="event-location">Wigwam, Phoenix, Arizona</span>
+                            <br> <span class="event-date">September 28 - 30, 2015</span></p>
                         <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
                         <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
                     </div>
@@ -210,7 +216,8 @@
                     <img class="card-img-top p-4" src="img/logos/etail.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="#">eTail East</a></h5>
-                        <p class="card-text"><span class="event-location">Boston, MA</span> <br> <span class="event-date">September 11 - 13, 2015 </span></p>
+                        <p class="card-text"><span class="event-location">Boston, MA</span>
+                            <br> <span class="event-date">September 11 - 13, 2015 </span></p>
                         <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
                         <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
                     </div>
@@ -221,7 +228,8 @@
                     <img class="card-img-top p-4" src="img/logos/connect-etail.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="#">eTail Connect</a></h5>
-                        <p class="card-text"><span class="event-location">London, UK</span> <br> <span class="event-date">September 08 - 09, 2015</span></p>
+                        <p class="card-text"><span class="event-location">London, UK</span>
+                            <br> <span class="event-date">September 08 - 09, 2015</span></p>
                         <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
                         <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
                     </div>
@@ -232,7 +240,8 @@
                     <img class="card-img-top p-4" src="img/logos/connect-etail.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="#">eTail Connect</a></h5>
-                        <p class="card-text"><span class="event-location">London, UK</span> <br> <span class="event-date">September 08 - 09, 2015</span></p>
+                        <p class="card-text"><span class="event-location">London, UK</span>
+                            <br> <span class="event-date">September 08 - 09, 2015</span></p>
                         <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
                         <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
                     </div>
@@ -245,7 +254,8 @@
                     <img class="card-img-top p-4" src="img/logos/FieldServiceEast.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="#">Field Service East</a></h5>
-                        <p class="card-text"><span class="event-location">Westin Buckhead, Atlanta, GA</span> <br> <span class="event-date'">November 30 - 31, 2015</span></p>
+                        <p class="card-text"><span class="event-location">Westin Buckhead, Atlanta, GA</span>
+                            <br> <span class="event-date'">November 30 - 31, 2015</span></p>
                         <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
                         <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
                     </div>
@@ -256,7 +266,8 @@
                     <img class="card-img-top p-4" src="img/logos/logipharma.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="#">LogiPharma</a></h5>
-                        <p class="card-text"><span class="event-location">Montreux Music & Convention Centre, Montreux, Switzerland</span> <br> <span class="event-date">November 28 - 30, 2015  </span></p>
+                        <p class="card-text"><span class="event-location">Montreux Music & Convention Centre, Montreux, Switzerland</span>
+                            <br> <span class="event-date">November 28 - 30, 2015  </span></p>
                         <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
                         <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
                     </div>
@@ -267,7 +278,8 @@
                     <img class="card-img-top p-4" src="img/logos/bionetwork.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="#">BioNetwork Partnering Summit</a></h5>
-                        <p class="card-text"><span class="event-location">The Ritz-Carlton, Laguna Niguel, CA</span> <br> <span class="event-date">November 26 - 28, 2015</span></p>
+                        <p class="card-text"><span class="event-location">The Ritz-Carlton, Laguna Niguel, CA</span>
+                            <br> <span class="event-date">November 26 - 28, 2015</span></p>
                         <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
                         <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
                     </div>
@@ -278,7 +290,8 @@
                     <img class="card-img-top p-4" src="img/logos/bionetwork.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="#">BioNetwork Partnering Summit</a></h5>
-                        <p class="card-text"><span class="event-location">The Ritz-Carlton, Laguna Niguel, CA</span> <br> <span class="event-date">November 26 - 28, 2015</span></p>
+                        <p class="card-text"><span class="event-location">The Ritz-Carlton, Laguna Niguel, CA</span>
+                            <br> <span class="event-date">November 26 - 28, 2015</span></p>
                         <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
                         <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
                     </div>
@@ -291,7 +304,8 @@
                     <img class="card-img-top p-4" src="img/logos/FieldServiceMd.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="#">Field Service Medical</a></h5>
-                        <p class="card-text"><span class="event-location">San Diego, CA</span> <br> <span class="event-date">May 28 - 30, 2015</span></p>
+                        <p class="card-text"><span class="event-location">San Diego, CA</span>
+                            <br> <span class="event-date">May 28 - 30, 2015</span></p>
                         <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
                         <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
                     </div>
@@ -302,7 +316,8 @@
                     <img class="card-img-top p-4" src="img/logos/digital-travel.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="#">Digital Travel Summit</a></h5>
-                        <p class="card-text"><span class="event-location">Green Valley Ranch Resort, Spa & Casino, Las Vegas, NV</span> <br> <span class="event-date">May 27 - 29, 2015</span></p>
+                        <p class="card-text"><span class="event-location">Green Valley Ranch Resort, Spa & Casino, Las Vegas, NV</span>
+                            <br> <span class="event-date">May 27 - 29, 2015</span></p>
                         <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
                         <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
                     </div>
@@ -313,7 +328,8 @@
                     <img class="card-img-top p-4" src="img/logos/PConIndirectEurope.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="#">ProcureCon Indirect</a></h5>
-                        <p class="card-text"><span class="event-location">NH Grand Hotel Krasnapolsky, Amsterdam</span> <br> <span class="event-date">May 21 - 23, 2015</span></p>
+                        <p class="card-text"><span class="event-location">NH Grand Hotel Krasnapolsky, Amsterdam</span>
+                            <br> <span class="event-date">May 21 - 23, 2015</span></p>
                         <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
                         <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
                     </div>
@@ -324,7 +340,8 @@
                     <img class="card-img-top p-4" src="img/logos/PConIndirectEurope.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="#">ProcureCon Indirect</a></h5>
-                        <p class="card-text"><span class="event-location">NH Grand Hotel Krasnapolsky, Amsterdam</span> <br> <span class="event-date">May 21 - 23, 2015</span></p>
+                        <p class="card-text"><span class="event-location">NH Grand Hotel Krasnapolsky, Amsterdam</span>
+                            <br> <span class="event-date">May 21 - 23, 2015</span></p>
                         <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
                         <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
                     </div>
