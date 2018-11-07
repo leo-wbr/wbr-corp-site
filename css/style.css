@@ -58,6 +58,19 @@ p, ul, ol, li, table, address, blockquote, cite {color: #7b818a;font-size:16px;f
 .btn-connect:hover {background: rgb(51, 170, 153, 1); color: #ccf7e1;} 
 .hero-section .btn-wbr, .hero-section .btn-insights, .hero-section .btn-connect {font-size: 1.1em;padding: 10px; }
 
+
+/* Outline Test Versions */
+.btn-outline-wbr {background-color:rgba(0, 0, 0, .65); color:#fff; border:2px solid #fff; text-transform:uppercase; }
+.btn-outline-wbr:hover { color: #ffecea; background: rgb(245,158,88, 1); border:2px solid transparent;}
+
+.btn-outline-insights {background-color:rgba(0, 0, 0, .65); color:#fff; border:2px solid #fff; text-transform:uppercase; } 
+.btn-outline-insights:hover {background-color:rgba(3, 174, 239, 1); color: #d9f4ff; border:2px solid transparent;}
+
+.btn-outline-connect {background-color:rgba(0, 0, 0, .65); color:#fff; border:2px solid #fff; text-transform:uppercase; } 
+.btn-outline-connect:hover {background: rgb(51, 170, 153, 1); color: #ccf7e1; border:2px solid transparent;}
+
+.hero-section .btn-outline-wbr, .hero-section .btn-outline-insights, .hero-section .btn-outline-connect {font-size: 1.1em;padding: 10px; }
+
 /* Headroom Static to Fixed. Used on Insights Pages - CSS */
 .header--static { position: inherit; top: 0; width: 100%; z-index:99999;}
 .header--static.top { transition: none; transform: translateY(0);}
@@ -145,8 +158,8 @@ a.nav-link:hover {color:#f7c996;}
 .nav-events #navbarSupportedContent > ul > li:nth-child(2) {border-left: 1px solid black; padding-left:10px;}
 
 /* Hero Image Section */
-.hero-section {/*height: 65vh;min-height: 300px;*/background: url('../img/bg-img-hero-2.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
-@media (max-width: 767.98px) { .hero-section {/*height: 65vh;min-height: 300px;*/background: url('../img/bg-img-hero-2.jpg') right top no-repeat scroll;} }
+.hero-section {/*height: 65vh;min-height: 300px;*/background: url('../img/bg-tmnt-4.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
+@media (max-width: 767.98px) { .hero-section {/*height: 65vh;min-height: 300px;*/background: url('../img/bg-tmnt-4.jpg') right top no-repeat scroll;} }
 .hero-section h1{color:#fff;margin:0;padding:.8em 0;text-shadow:0 0 0.5em rgba(0,0,0,1);font-weight:500;}
 .hero-section h1{float: left;background:transparent;margin-top: 2.5em;}
 .hero-section .btn span {text-transform: capitalize; letter-spacing: 1.5px; font-size:85%; }
