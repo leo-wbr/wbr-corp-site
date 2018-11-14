@@ -90,6 +90,9 @@
         </div>
     </header>
     <style>
+    
+    #listings_filter {display:none; }
+    
     .filter-section {
         box-shadow: 0 0 5px #ccc;
         padding: 1.5em;
@@ -113,51 +116,19 @@
         border-radius: 5px;
         color: #fff;
     }
+
+    #listings > thead > tr > th:nth-child(2){border-radius:10px 0px 0px 0px;}
+    #listings > thead > tr > th:last-child {border-radius:0px 10px 0px 0px;}
+    #listings > tbody > tr {outline: 1px solid #e9edf5;}
+
+
+
+
     </style>
     <!-- Page Content -->
     <div class="container mt-3">
         <div class="col-lg-10 offset-lg-1 col-md-12 bg-white text-center filter-section">
-            <!-- <div class="row mt-3">
-                <div class="col-md-12 ">
-                    <h4>Filter by Region</h4>
-                    <ul class="nav d-flex justify-content-center align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">North America</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Europe</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Asia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Connect</a>
-                        </li>
-                    </ul>
-                </div>
-            </div> -->
             <div class="row mt-2 ">
-                <!--  <div class="col-lg-4 offset-lg-4 col-md-8 offset-md-2">
-                    <div class="form-group justify-content-center">
-                        <label for="item-filter-select"><strong>Filter by Industry</strong></label>
-                        <select class="form-control" id="item-filter-select">
-                            <option value="all">Show All Industries</option>
-                            <option value="Customer Experience">Customer Experience</option>
-                            <option value="eCommerce / Retail">eCommerce / Retail</option>
-                            <option value="Energy">Energy</option>
-                            <option value="Finance / Investment">Finance / Investment</option>
-                            <option value="Government / Defense">Government / Defense</option>
-                            <option value="Healthcare">Healthcare</option>
-                            <option value="1-to-1 Networking">1-to-1 Networking</option>
-                            <option value="Info Management">Info Management</option>
-                            <option value="Supply Chain">Supply Chain</option>
-                            <option value="Pharma / Biotech">Pharma / Biotech</option>
-                            <option value="Procurement">Procurement</option>
-                            <option value="Service / Support">Service / Support</option>
-                            <option value="Human Resources">Human Resources</option>
-                        </select>
-                    </div>
-                </div> -->
                 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <div class="form-group justify-content-center">
                         <label for="item-filter-select"><strong>Filter by Industry</strong></label>
@@ -182,7 +153,6 @@
                 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <label for="item-filter-select"><strong>Search Event</strong></label>
                     <div class="input-group">
-                        
                         <input class="form-control" type="search" value="" placeholder="" id="example-search-input">
                         <span class="input-group-append">
                             <button class="btn btn-outline-info" type="button">
@@ -192,162 +162,378 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 d-flex align-items-center mt-3">
-                    <a class="btn btn-wbr btn-sm btn-block" href="#">Reset All</a>
+                    <button class="btn btn-wbr btn-sm btn-block btn-reset-2" id="filter-reset" value="" type="submit"><i class="fa fa-refresh fa-lg"></i> Reset  All</button>
+                    <!--<a class="btn btn-wbr btn-sm btn-block" href="#">Reset All</a>-->                
                 </div>
+
+
+ 
+
+
             </div>
         </div>
     </div>
     <div class="container mt-4">
-        <div class="row mt-3">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card item img-shadow" data-type="Customer Experience">
-                    <img class="card-img-top p-4" src="img/logos/PConIndirectWest.png" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="#">ProcureCon Indirect West</a></h5>
-                        <p class="card-text"><span class="event-location">Wigwam, Phoenix, Arizona</span>
-                            <br> <span class="event-date">September 28 - 30, 2015</span></p>
-                        <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
-                        <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card item img-shadow" data-type="Customer Experience">
-                    <img class="card-img-top p-4" src="img/logos/etail.png" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="#">eTail East</a></h5>
-                        <p class="card-text"><span class="event-location">Boston, MA</span>
-                            <br> <span class="event-date">September 11 - 13, 2015 </span></p>
-                        <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
-                        <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card item img-shadow" data-type="Customer Experience">
-                    <img class="card-img-top p-4" src="img/logos/connect-etail.png" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="#">eTail Connect</a></h5>
-                        <p class="card-text"><span class="event-location">London, UK</span>
-                            <br> <span class="event-date">September 08 - 09, 2015</span></p>
-                        <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
-                        <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card item img-shadow" data-type="Customer Experience">
-                    <img class="card-img-top p-4" src="img/logos/connect-etail.png" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="#">eTail Connect</a></h5>
-                        <p class="card-text"><span class="event-location">London, UK</span>
-                            <br> <span class="event-date">September 08 - 09, 2015</span></p>
-                        <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
-                        <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card item img-shadow" data-type="eCommerce / Retail">
-                    <img class="card-img-top p-4" src="img/logos/FieldServiceEast.png" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="#">Field Service East</a></h5>
-                        <p class="card-text"><span class="event-location">Westin Buckhead, Atlanta, GA</span>
-                            <br> <span class="event-date'">November 30 - 31, 2015</span></p>
-                        <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
-                        <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card item img-shadow" data-type="eCommerce / Retail">
-                    <img class="card-img-top p-4" src="img/logos/logipharma.png" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="#">LogiPharma</a></h5>
-                        <p class="card-text"><span class="event-location">Montreux Music & Convention Centre, Montreux, Switzerland</span>
-                            <br> <span class="event-date">November 28 - 30, 2015  </span></p>
-                        <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
-                        <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card item img-shadow" data-type="eCommerce / Retail">
-                    <img class="card-img-top p-4" src="img/logos/bionetwork.png" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="#">BioNetwork Partnering Summit</a></h5>
-                        <p class="card-text"><span class="event-location">The Ritz-Carlton, Laguna Niguel, CA</span>
-                            <br> <span class="event-date">November 26 - 28, 2015</span></p>
-                        <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
-                        <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card item img-shadow" data-type="eCommerce / Retail">
-                    <img class="card-img-top p-4" src="img/logos/bionetwork.png" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="#">BioNetwork Partnering Summit</a></h5>
-                        <p class="card-text"><span class="event-location">The Ritz-Carlton, Laguna Niguel, CA</span>
-                            <br> <span class="event-date">November 26 - 28, 2015</span></p>
-                        <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
-                        <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card item img-shadow" data-type="Energy">
-                    <img class="card-img-top p-4" src="img/logos/FieldServiceMd.png" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="#">Field Service Medical</a></h5>
-                        <p class="card-text"><span class="event-location">San Diego, CA</span>
-                            <br> <span class="event-date">May 28 - 30, 2015</span></p>
-                        <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
-                        <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card item img-shadow" data-type="Energy">
-                    <img class="card-img-top p-4" src="img/logos/digital-travel.png" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="#">Digital Travel Summit</a></h5>
-                        <p class="card-text"><span class="event-location">Green Valley Ranch Resort, Spa & Casino, Las Vegas, NV</span>
-                            <br> <span class="event-date">May 27 - 29, 2015</span></p>
-                        <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
-                        <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card item img-shadow" data-type="Energy">
-                    <img class="card-img-top p-4" src="img/logos/PConIndirectEurope.png" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="#">ProcureCon Indirect</a></h5>
-                        <p class="card-text"><span class="event-location">NH Grand Hotel Krasnapolsky, Amsterdam</span>
-                            <br> <span class="event-date">May 21 - 23, 2015</span></p>
-                        <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
-                        <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card item img-shadow" data-type="Energy">
-                    <img class="card-img-top p-4" src="img/logos/PConIndirectEurope.png" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="#">ProcureCon Indirect</a></h5>
-                        <p class="card-text"><span class="event-location">NH Grand Hotel Krasnapolsky, Amsterdam</span>
-                            <br> <span class="event-date">May 21 - 23, 2015</span></p>
-                        <a href="#" class="btn btn-wbr mt-2 d-flex justify-content-center">Agenda</a>
-                        <a href="#" class="btn btn-insights mt-2 d-flex justify-content-center">Sponsor</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <table id="listings" class="table table-striped dt-responsive display nowrap no-footer" style="width:100%">
+            
+            <thead>
+                <tr role="row">
+                    <th class="never"></th>
+                    <th class="all"></th>
+                    <th class="all">Event Name</th>
+                    <th class="min-mobile-l min-mobile-p">Date</th>
+                    <th class="min-desktop"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="item" data-type="eCommerce / Retail">
+                    <td></td>
+                    <td class=""><a href="http://etaileast.wbresearch.com" target="_blank"><img alt="eTail East" src="img/logos/etail.png" class="img-fluid eventlogo p-3"/></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://etaileast.wbresearch.com" target="_blank" class="eventname">eTail East</a>
+                                <p class="venue">Boston, MA</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>September 11 - 13, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://etaileast.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://etaileast.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>eCommerce / Retail</td> -->
+                </tr>
+                <tr class="item" data-type="eCommerce / Retail">
+                    <td></td>
+                    <td><a href="http://etailfrance.wbresearch.com" target="_blank"><img alt="eTail France" src="img/logos/etail.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://etailfrance.wbresearch.com" target="_blank" class="eventname">eTail France</a>
+                                <p class="venue"></p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>February 5 - 7, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://etailfrance.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://etailfrance.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>eCommerce / Retail</td> -->
+                </tr>
+                <tr class="item" data-type="Pharma / Biotech">
+                    <td></td>
+                    <td><a href="http://logipharmaeu.wbresearch.com" target="_blank"><img alt="LogiPharma" src="img/logos/logipharma.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="http://logipharmaeu.wbresearch.com" target="_blank" class="eventname">LogiPharma</a>
+                                <p class="venue">Montreux Music &amp; Convention Centre, Montreux, Switzerland</p>
+                            </div>
+                    </td>
+                    <td>November 28 - 30, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://logipharmaeu.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://logipharmaeu.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                    </td>
+                    <!-- <td>Pharma / Biotech</td> -->
+                </tr>
+                <tr class="item" data-type="Procurement">
+                    <td></td>
+                    <td><a href="http://procureconindirecteu.wbresearch.com" target="_blank"><img alt="ProcureCon Indirect" src="img/logos/PConIndirectEurope.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://procureconindirecteu.wbresearch.com" target="_blank" class="eventname">ProcureCon Indirect</a>
+                                <p class="venue">NH Grand Hotel Krasnapolsky, Amsterdam</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>May 21 - 23, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://procureconindirecteu.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://procureconindirecteu.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>Procurement</td> -->
+                </tr>
+                <tr class="item" data-type="eCommerce / Retail">
+                    <td></td>
+                    <td><a href="http://digitaltravel.wbresearch.com" target="_blank"><img alt="Digital Travel Summit" src="img/logos/digital-travel.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://digitaltravel.wbresearch.com" target="_blank" class="eventname">Digital Travel Summit</a>
+                                <p class="venue">Green Valley Ranch Resort, Spa &amp; Casino, Las Vegas, NV</p>
+                            </div>
+                    </td>
+                    <td>May 27 - 29, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://digitaltravel.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://digitaltravel.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                    </td>
+                    <!-- <td>eCommerce / Retail</td> -->
+                </tr>
+                <tr class="item" data-type="Procurement">
+                    <td></td>
+                    <td><a href="http://procureconasia.wbresearch.com" target="_blank"><img alt="ProcureCon Asia" src="img/logos/PConAsia.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://procureconasia.wbresearch.com" target="_blank" class="eventname">ProcureCon Asia</a>
+                                <p class="venue">Amara, Singapore</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>July 23 - 25, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://procureconasia.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://procureconasia.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>Procurement</td> -->
+                </tr>
+                <tr class="item" data-type="Procurement">
+                    <td></td>
+                    <td><a href="http://procureconwest.wbresearch.com" target="_blank"><img alt="ProcureCon Indirect West" src="img/logos/PConIndirectWest.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://procureconwest.wbresearch.com" target="_blank" class="eventname">ProcureCon Indirect West</a>
+                                <p class="venue">Wigwam, Phoenix, Arizona</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>September 28 - 30, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://procureconwest.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://procureconwest.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>Procurement</td> -->
+                </tr>
+                <tr class="item" data-type="Pharma / Biotech">
+                    <td></td>
+                    <td><a href="http://bionetwork.wbresearch.com" target="_blank"><img alt="BioNetwork Partnering Summit" src="img/logos/bionetwork.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://bionetwork.wbresearch.com" target="_blank" class="eventname">BioNetwork Partnering Summit</a>
+                                <p class="venue">The Ritz-Carlton, Laguna Niguel, CA</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>November 26 - 28, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://bionetwork.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://bionetwork.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>Pharma / Biotech, Healthcare</td> -->
+                </tr>
+                <tr class="item" data-type="Pharma / Biotech">
+                    <td></td>
+                    <td><a href="http://logipharmaus.wbresearch.com" target="_blank"><img alt="LogiPharma" src="img/logos/LogiPharmaUS.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://logipharmaus.wbresearch.com" target="_blank" class="eventname">LogiPharma</a>
+                                <p class="venue"></p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>December 15 - 18, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://logipharmaus.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://logipharmaus.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>Pharma / Biotech, Supply Chain</td> -->
+                </tr>
+                <tr class="item" data-type="Service / Support">
+                    <td></td>
+                    <td><a href="http://fieldserviceusa.wbresearch.com" target="_blank"><img alt="Field Service USA" src="img/logos/FieldServiceUSA.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://fieldserviceusa.wbresearch.com" target="_blank" class="eventname">Field Service USA</a>
+                                <p class="venue">Palm Springs, CA</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>April 20 - 22, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://fieldserviceusa.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://fieldserviceusa.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>Service / Support</td> -->
+                </tr>
+                <tr class="item" data-type="Service / Support">
+                    <td></td>
+                    <td><a href="http://fieldserviceeast.wbresearch.com" target="_blank"><img alt="Field Service East" src="img/logos/FieldServiceEast.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://fieldserviceeast.wbresearch.com" target="_blank" class="eventname">Field Service East</a>
+                                <p class="venue">Westin Buckhead, Atlanta, GA</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>November 30 - 31, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://fieldserviceeast.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://fieldserviceeast.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>Service / Support</td> -->
+                </tr>
+                <tr class="item" data-type="Service / Support">
+                    <td></td>
+                    <td><a href="http://fieldservicemd.wbresearch.com" target="_blank"><img alt="Field Service Medical" src="img/logos/FieldServiceMd.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://fieldservicemd.wbresearch.com" target="_blank" class="eventname">Field Service Medical</a>
+                                <p class="venue">San Diego, CA</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>May 28 - 30, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://fieldservicemd.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://fieldservicemd.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>Service / Support, Healthcare</td> -->
+                </tr>
+                <tr class="item" data-type="Service / Support">
+                    <td></td>
+                    <td><a href="http://fieldservicemdeu.wbresearch.com" target="_blank"><img alt="Field Service Medical Europe" src="img/logos/FieldServiceMdEu.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://fieldservicemdeu.wbresearch.com" target="_blank" class="eventname">Field Service Medical Europe</a>
+                                <p class="venue">Conrad Dublin, Ireland</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>January 27 - 29, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://fieldservicemdeu.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://fieldservicemdeu.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>Service / Support, Healthcare</td> -->
+                </tr>
+                <tr class="item" data-type="Service / Support">
+                    <td></td>
+                    <td><a href="http://fieldserviceeu.wbresearch.com" target="_blank"><img alt="Field Service Europe" src="img/logos/FieldServiceEu.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://fieldserviceeu.wbresearch.com" target="_blank" class="eventname">Field Service Europe</a>
+                                <p class="venue">Movenpick Hotel Amsterdam City Center, Amsterdam , The Netherlands</p>
+                            </div>
+                    </td>
+                    <td>February 25 - 27, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://fieldserviceeu.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://fieldserviceeu.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                    </td>
+                    <!-- <td>Service / Support</td> -->
+                </tr>
+                <tr class="item" data-type="eCommerce / Retail">
+                    <td></td>
+                    <td><a href="http://mobileshoppingconnect.wbresearch.com" target="_blank"><img alt="Mobile Shopping Connect" src="img/logos/connect-mobileshopping.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://mobileshoppingconnect.wbresearch.com" target="_blank" class="eventname">Mobile Shopping Connect</a>
+                                <p class="venue">The Langham Pasadena Hotel, Pasadena CA</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>June 22 - 24, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://mobileshoppingconnect.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://mobileshoppingconnect.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>eCommerce / Retail</td> -->
+                </tr>
+                <tr class="item" data-type="eCommerce / Retail">
+                    <td></td>
+                    <td><a href="http://etailconnecteu.wbresearch.com" target="_blank"><img alt="eTail Connect" src="img/logos/connect-etail.png" class="img-fluid eventlogo p-3" /></a></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                <a href="http://etailconnecteu.wbresearch.com" target="_blank" class="eventname">eTail Connect</a>
+                                <p class="venue">London, UK</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>September 08 - 09, 2015</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="btn btn-wbr btn-sm btn-block" href="http://etailconnecteu.wbresearch.com/agenda-mc" target="_blank">Agenda</a>
+                                <a class="btn btn-insights btn-sm btn-block" href="http://etailconnecteu.wbresearch.com/opportunities" target="_blank">Sponsor</a>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>eCommerce / Retail</td> -->
+                </tr>
+            </tbody>
+        </table>
     </div>
     <!-- /.container -->
     <!-- Footer -->
@@ -397,6 +583,76 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/headroom.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/datatables.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('#listings').dataTable({
+            paging: false,
+            info: false,
+            autoWidth: false,
+            order: [
+                [3, 'desc']
+            ],
+            "columnDefs": [
+
+                { //Child Selector 
+                    "targets": [0],
+                    "orderable": false,
+                    "searchable": false
+                },
+
+
+                { //logo 
+                    "targets": [1],
+                    "className": "logocol",
+                    "orderable": false,
+                    "searchable": false
+                },
+                { //event name + info
+                    "targets": [2],
+                    "orderable": false,
+                    "className": "infocol"
+
+                },
+                { //Dates
+                    "targets": [3],
+                    "className": "datecol"
+
+                },
+                { //CTA
+                    "targets": [4],
+                    "orderable": false,
+                    "className": "ctacol"
+
+                }
+            ]
+        });
+
+        var table = $('#listings').DataTable();
+
+        $('.btn-reset-2').click(function() {
+            table.column().search('')
+            table.columns([5, 6, 7]).search(this.value).draw();
+        });
+
+        $('#example-search-input').on('keyup change', function () {
+            table.column(2).search(this.value).draw();
+            // table.search(this.value).draw();
+        });
+
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('#item-filter-select').on('change', function() {
+            var elems = this.value == 'all' ? $('.item') : $('.item[data-type="' + this.value + '"]');
+            $('.item').not(elems.show()).hide();
+        });
+
+   
+    });
+    </script>
     <script>
     var myElement = document.querySelector(".inner-main-nav");
 
@@ -422,14 +678,6 @@
             myElement.classList.remove('slideDown')
         }
     })
-    </script>
-    <script>
-    $(document).ready(function() {
-        $('#item-filter-select').on('change', function() {
-            var elems = this.value == 'all' ? $('.item') : $('.item[data-type="' + this.value + '"]');
-            $('.item').not(elems.show()).hide();
-        });
-    });
     </script>
 </body>
 
