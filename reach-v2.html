@@ -15,19 +15,27 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
 </head>
-
- <style>
-    body {min-height:150px !important; }
-    footer {position:relative; top:150px;}
-    
-    @media (max-width: 991px) { 
-        body {min-height:350px !important; }
-            footer {position:relative; top:350px;}
-
+<style>
+    body {
+        min-height: 150px !important;
     }
 
-    
-    </style>
+    footer {
+        position: relative;
+        top: 150px;
+    }
+
+    @media (max-width: 991px) {
+        body {
+            min-height: 350px !important;
+        }
+
+        footer {
+            position: relative;
+            top: 350px;
+        }
+    }
+</style>
 
 <body>
     <!-- Social Top Nav -->
@@ -105,10 +113,6 @@
             </div>
         </div>
     </header>
-
-
-   
-
     <!-- Page Content -->
     <div class="container mt-3">
         <div class="row mt-3">
@@ -132,10 +136,10 @@
     <div class="container mt-3">
         <ul id="reach-nav" class="nav nav-tabs nav-justified" role="tablist">
             <!-- Dropdown -->
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" aria-expanded="false">
                 <a class="nav-link dropdown-toggle display-5" data-flip="false" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-globe"></i> North America </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="width:200%;">
-                    <div class="container container-sm">
+                <div class="dropdown-menu" style="width:200%;">
+                    <div class="container">
                         <div class="row">
                             <div class="col-lg-4 p-0">
                                 <a class="dropdown-item" href="#dropdown-us-1" role="tab" id="dropdown-us-1-tab" data-toggle="tab" aria-controls="dropdown-us-1"><i class="fas fa-users"></i> C-suite</a>
@@ -168,8 +172,8 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle display-5" data-flip="false" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-globe"></i> Europe</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="width:100%;">
-                    <div class="container container-sm">
+                <div class="dropdown-menu" style="width:100%;">
+                    <div class="container">
                         <div class="row">
                             <div class="col-lg-6 col-xs-12 p-0">
                                 <a class="dropdown-item" href="#dropdown-eu-1" role="tab" id="dropdown-eu-1-tab" data-toggle="tab" aria-controls="dropdown-eu-1"><i class="fas fa-users"></i> Retail / Ecommerce</a>
@@ -1262,7 +1266,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <!-- US Content Ends -->
             <!-- EU Content Starts -->
@@ -1616,8 +1619,7 @@
             </div>
             <!-- EU Content Ends -->
         </div>
-        <br><br>        <br><br>
-
+        <br><br> <br><br>
     </div>
     <!-- /.container -->
     <!-- Footer -->
@@ -1667,13 +1669,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/headroom.js"></script>
-    
-    <script>
-        $(".nav-pills .nav-item .nav-link:not(.nav-pills .nav-item.dropdown .nav-link), .dropdown-item").click(function()
-    {
-        $(".dropdown-item.active").removeClass('active');
-    });
-    </script>
     <script>
     var myElement = document.querySelector(".inner-main-nav");
 
@@ -4244,6 +4239,11 @@
     document.getElementById("js-legend-69").innerHTML = myChart69.generateLegend();
     document.getElementById("js-legend-70").innerHTML = myChart70.generateLegend();
     document.getElementById("js-legend-71").innerHTML = myChart71.generateLegend();
+    </script>
+    <script>
+    $(".nav-pills .nav-item .nav-link:not(.nav-pills .nav-item.dropdown .nav-link ), .dropdown-item").click(function() {
+        $(".dropdown-item.active").removeClass('active');
+    });
     </script>
 </body>
 
