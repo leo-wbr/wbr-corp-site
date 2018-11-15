@@ -136,7 +136,7 @@
     <div class="container mt-3">
         <ul id="reach-nav" class="nav nav-tabs nav-justified" role="tablist">
             <!-- Dropdown -->
-            <li class="nav-item dropdown" aria-expanded="false">
+            <li class="nav-item dropdown na-dropdown" aria-expanded="false">
                 <a class="nav-link dropdown-toggle display-5" data-flip="false" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-globe"></i> North America </a>
                 <div class="dropdown-menu" style="width:200%;">
                     <div class="container">
@@ -170,7 +170,7 @@
                     </div>
                 </div>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown eu-dropdown">
                 <a class="nav-link dropdown-toggle display-5" data-flip="false" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-globe"></i> Europe</a>
                 <div class="dropdown-menu" style="width:100%;">
                     <div class="container">
@@ -4240,11 +4240,33 @@
     document.getElementById("js-legend-70").innerHTML = myChart70.generateLegend();
     document.getElementById("js-legend-71").innerHTML = myChart71.generateLegend();
     </script>
+    
     <script>
     $(".nav-pills .nav-item .nav-link:not(.nav-pills .nav-item.dropdown .nav-link ), .dropdown-item").click(function() {
         $(".dropdown-item.active").removeClass('active');
     });
+
+
     </script>
+
+    <script>
+    $(document).click(function() {
+        if( $('.na-dropdown .dropdown-item').hasClass('active') === true ) 
+        {
+         $('.na-dropdown .dropdown-toggle').addClass('active');
+        }
+    });
+    </script>
+
+    <script>
+    $(document).click(function() {
+        if( $('.eu-dropdown .dropdown-item').hasClass('active') === true ) 
+        {
+         $('.eu-dropdown .dropdown-toggle').addClass('active');
+        }
+    });
+    </script>
+
 </body>
 
 </html>
