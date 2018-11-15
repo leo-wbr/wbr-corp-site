@@ -15,6 +15,27 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
 </head>
+<style>
+    body {
+        min-height: 150px !important;
+    }
+
+    footer {
+        position: relative;
+        top: 150px;
+    }
+
+    @media (max-width: 991px) {
+        body {
+            min-height: 350px !important;
+        }
+
+        footer {
+            position: relative;
+            top: 350px;
+        }
+    }
+</style>
 
 <body>
     <!-- Social Top Nav -->
@@ -111,47 +132,64 @@
     <div class="container mt-2">
         <h1 class="align-middle text-center">View Data on Specific Industries</h1>
     </div>
-    
+    <!--  -->
     <div class="container mt-3">
         <ul id="reach-nav" class="nav nav-tabs nav-justified" role="tablist">
             <!-- Dropdown -->
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown na-dropdown" aria-expanded="false">
                 <a class="nav-link dropdown-toggle display-5" data-flip="false" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-globe"></i> North America </a>
-                <div class="dropdown-menu" style="width:100%:">
-                    <a class="dropdown-item" href="#dropdown-us-1" role="tab" id="dropdown-us-1-tab" data-toggle="tab" aria-controls="dropdown-us-1"><i class="fas fa-users"></i> C-suite</a>
-                    <a class="dropdown-item" href="#dropdown-us-2" role="tab" id="dropdown-us-2-tab" data-toggle="tab" aria-controls="dropdown-us-2"><i class="fas fa-rocket"></i> B2b Ecommerce</a>
-                    <a class="dropdown-item" href="#dropdown-us-3" role="tab" id="dropdown-us-3-tab" data-toggle="tab" aria-controls="dropdown-us-3"><i class="fas fa-wrench"></i> Service And Support</a>
-                    <a class="dropdown-item" href="#dropdown-us-4" role="tab" id="dropdown-us-4-tab" data-toggle="tab" aria-controls="dropdown-us-4"><i class="fas fa-shopping-cart"></i> B2c Ecommerce</a>
-                    <a class="dropdown-item" href="#dropdown-us-5" role="tab" id="dropdown-us-5-tab" data-toggle="tab" aria-controls="dropdown-us-5"><i class="fas fa-laptop"></i> Retail Technology</a>
-                    <a class="dropdown-item" href="#dropdown-us-6" role="tab" id="dropdown-us-6-tab" data-toggle="tab" aria-controls="dropdown-us-6"><i class="far fa-money-bill-alt"></i> Financial Info Management</a>
-                    <a class="dropdown-item" href="#dropdown-us-7" role="tab" id="dropdown-us-7-tab" data-toggle="tab" aria-controls="dropdown-us-7"><i class="fas fa-medkit"></i> Life Sciences Sales/marketing</a>
-                    <a class="dropdown-item" href="#dropdown-us-8" role="tab" id="dropdown-us-8-tab" data-toggle="tab" aria-controls="dropdown-us-8"><i class="fas fa-handshake">8</i> Procurement</a>
-                    <a class="dropdown-item" href="#dropdown-us-9" role="tab" id="dropdown-us-9-tab" data-toggle="tab" aria-controls="dropdown-us-9"><i class="fas fa-smile"></i> Customer Experience</a>
-                    <a class="dropdown-item" href="#dropdown-us-10" role="tab" id="dropdown-us-10-tab" data-toggle="tab" aria-controls="dropdown-us-10"><i class="fas fa-thumbs-up"></i> Customer Experience – Finance</a>
-                    <a class="dropdown-item" href="#dropdown-us-11" role="tab" id="dropdown-us-11-tab" data-toggle="tab" aria-controls="dropdown-us-11"><i class="fas fa-medkit"></i> Patient Experience</a>
-                    <a class="dropdown-item" href="#dropdown-us-12" role="tab" id="dropdown-us-12-tab" data-toggle="tab" aria-controls="dropdown-us-12"><i class="far fa-money-bill-alt"></i> Financial Marketing</a>
-                    <a class="dropdown-item" href="#dropdown-us-13" role="tab" id="dropdown-us-13-tab" data-toggle="tab" aria-controls="dropdown-us-13"><i class="fas fa-shopping-bag"></i> In-store Experience</a>
-                    <a class="dropdown-item" href="#dropdown-us-14" role="tab" id="dropdown-us-14-tab" data-toggle="tab" aria-controls="dropdown-us-14"><i class="fas fa-university"></i> In-branch Experience</a>
-                    <a class="dropdown-item" href="#dropdown-us-15" role="tab" id="dropdown-us-15-tab" data-toggle="tab" aria-controls="dropdown-us-15"><i class="fas fa-plane"></i> Travel Marketing</a>
-                    <a class="dropdown-item" href="#dropdown-us-16" role="tab" id="dropdown-us-16-tab" data-toggle="tab" aria-controls="dropdown-us-16"><i class="fas fa-gem"></i> Digital Luxury</a>
-                    <a class="dropdown-item" href="#dropdown-us-17" role="tab" id="dropdown-us-17-tab" data-toggle="tab" aria-controls="dropdown-us-17"><i class="fas fa-arrows-alt"></i> Reverse Logistics</a>
-                    <a class="dropdown-item" href="#dropdown-us-18" role="tab" id="dropdown-us-18-tab" data-toggle="tab" aria-controls="dropdown-us-18"><i class="fas fa-users"></i> Human Resources</a>
-                    <a class="dropdown-item" href="#dropdown-us-19" role="tab" id="dropdown-us-19-tab" data-toggle="tab" aria-controls="dropdown-us-19"><i class="fas fa-medkit"></i> Life Science Supply Chain</a>
+                <div class="dropdown-menu" style="width:200%;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 p-0">
+                                <a class="dropdown-item" href="#dropdown-us-1" role="tab" id="dropdown-us-1-tab" data-toggle="tab" aria-controls="dropdown-us-1"><i class="fas fa-users"></i> C-suite</a>
+                                <a class="dropdown-item" href="#dropdown-us-2" role="tab" id="dropdown-us-2-tab" data-toggle="tab" aria-controls="dropdown-us-2"><i class="fas fa-rocket"></i> B2b Ecommerce</a>
+                                <a class="dropdown-item" href="#dropdown-us-3" role="tab" id="dropdown-us-3-tab" data-toggle="tab" aria-controls="dropdown-us-3"><i class="fas fa-wrench"></i> Service And Support</a>
+                                <a class="dropdown-item" href="#dropdown-us-4" role="tab" id="dropdown-us-4-tab" data-toggle="tab" aria-controls="dropdown-us-4"><i class="fas fa-shopping-cart"></i> B2c Ecommerce</a>
+                                <a class="dropdown-item" href="#dropdown-us-5" role="tab" id="dropdown-us-5-tab" data-toggle="tab" aria-controls="dropdown-us-5"><i class="fas fa-laptop"></i> Retail Technology</a>
+                                <a class="dropdown-item" href="#dropdown-us-6" role="tab" id="dropdown-us-6-tab" data-toggle="tab" aria-controls="dropdown-us-6"><i class="far fa-money-bill-alt"></i> Financial Info Management</a>
+                            </div>
+                            <div class="col-lg-4 p-0">
+                                <a class="dropdown-item" href="#dropdown-us-7" role="tab" id="dropdown-us-7-tab" data-toggle="tab" aria-controls="dropdown-us-7"><i class="fas fa-medkit"></i> Life Sciences Sales/marketing</a>
+                                <a class="dropdown-item" href="#dropdown-us-8" role="tab" id="dropdown-us-8-tab" data-toggle="tab" aria-controls="dropdown-us-8"><i class="fas fa-handshake">8</i> Procurement</a>
+                                <a class="dropdown-item" href="#dropdown-us-9" role="tab" id="dropdown-us-9-tab" data-toggle="tab" aria-controls="dropdown-us-9"><i class="fas fa-smile"></i> Customer Experience</a>
+                                <a class="dropdown-item" href="#dropdown-us-10" role="tab" id="dropdown-us-10-tab" data-toggle="tab" aria-controls="dropdown-us-10"><i class="fas fa-thumbs-up"></i> Customer Experience – Finance</a>
+                                <a class="dropdown-item" href="#dropdown-us-11" role="tab" id="dropdown-us-11-tab" data-toggle="tab" aria-controls="dropdown-us-11"><i class="fas fa-medkit"></i> Patient Experience</a>
+                                <a class="dropdown-item" href="#dropdown-us-12" role="tab" id="dropdown-us-12-tab" data-toggle="tab" aria-controls="dropdown-us-12"><i class="far fa-money-bill-alt"></i> Financial Marketing</a>
+                            </div>
+                            <div class="col-lg-4 p-0">
+                                <a class="dropdown-item" href="#dropdown-us-13" role="tab" id="dropdown-us-13-tab" data-toggle="tab" aria-controls="dropdown-us-13"><i class="fas fa-shopping-bag"></i> In-store Experience</a>
+                                <a class="dropdown-item" href="#dropdown-us-14" role="tab" id="dropdown-us-14-tab" data-toggle="tab" aria-controls="dropdown-us-14"><i class="fas fa-university"></i> In-branch Experience</a>
+                                <a class="dropdown-item" href="#dropdown-us-15" role="tab" id="dropdown-us-15-tab" data-toggle="tab" aria-controls="dropdown-us-15"><i class="fas fa-plane"></i> Travel Marketing</a>
+                                <a class="dropdown-item" href="#dropdown-us-16" role="tab" id="dropdown-us-16-tab" data-toggle="tab" aria-controls="dropdown-us-16"><i class="fas fa-gem"></i> Digital Luxury</a>
+                                <a class="dropdown-item" href="#dropdown-us-17" role="tab" id="dropdown-us-17-tab" data-toggle="tab" aria-controls="dropdown-us-17"><i class="fas fa-arrows-alt"></i> Reverse Logistics</a>
+                                <a class="dropdown-item" href="#dropdown-us-18" role="tab" id="dropdown-us-18-tab" data-toggle="tab" aria-controls="dropdown-us-18"><i class="fas fa-users"></i> Human Resources</a>
+                                <a class="dropdown-item" href="#dropdown-us-19" role="tab" id="dropdown-us-19-tab" data-toggle="tab" aria-controls="dropdown-us-19"><i class="fas fa-medkit"></i> Life Science Supply Chain</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown eu-dropdown">
                 <a class="nav-link dropdown-toggle display-5" data-flip="false" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-globe"></i> Europe</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#dropdown-eu-1" role="tab" id="dropdown-eu-1-tab" data-toggle="tab" aria-controls="dropdown-eu-1"><i class="fas fa-users"></i> Retail / Ecommerce</a>
-                    <a class="dropdown-item" href="#dropdown-eu-2" role="tab" id="dropdown-eu-2-tab" data-toggle="tab" aria-controls="dropdown-eu-2"><i class="fas fa-rocket"></i> Procurement</a>
-                    <a class="dropdown-item" href="#dropdown-eu-3" role="tab" id="dropdown-eu-3-tab" data-toggle="tab" aria-controls="dropdown-eu-3"><i class="fas fa-wrench"></i> Supply Chain</a>
-                    <a class="dropdown-item" href="#dropdown-eu-4" role="tab" id="dropdown-eu-4-tab" data-toggle="tab" aria-controls="dropdown-eu-4"><i class="fas fa-shopping-cart"></i> Investment Operations</a>
-                    <a class="dropdown-item" href="#dropdown-eu-5" role="tab" id="dropdown-eu-5-tab" data-toggle="tab" aria-controls="dropdown-eu-5"><i class="fas fa-laptop"></i> Data Management</a>
-                    <a class="dropdown-item" href="#dropdown-eu-6" role="tab" id="dropdown-eu-6-tab" data-toggle="tab" aria-controls="dropdown-eu-6"><i class="far fa-money-bill-alt"></i> Front Office Finance</a>
+                <div class="dropdown-menu" style="width:100%;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-xs-12 p-0">
+                                <a class="dropdown-item" href="#dropdown-eu-1" role="tab" id="dropdown-eu-1-tab" data-toggle="tab" aria-controls="dropdown-eu-1"><i class="fas fa-users"></i> Retail / Ecommerce</a>
+                                <a class="dropdown-item" href="#dropdown-eu-2" role="tab" id="dropdown-eu-2-tab" data-toggle="tab" aria-controls="dropdown-eu-2"><i class="fas fa-rocket"></i> Procurement</a>
+                                <a class="dropdown-item" href="#dropdown-eu-3" role="tab" id="dropdown-eu-3-tab" data-toggle="tab" aria-controls="dropdown-eu-3"><i class="fas fa-wrench"></i> Supply Chain</a>
+                            </div>
+                            <div class="col-lg-6 col-xs-12 p-0">
+                                <a class="dropdown-item" href="#dropdown-eu-4" role="tab" id="dropdown-eu-4-tab" data-toggle="tab" aria-controls="dropdown-eu-4"><i class="fas fa-shopping-cart"></i> Investment Operations</a>
+                                <a class="dropdown-item" href="#dropdown-eu-5" role="tab" id="dropdown-eu-5-tab" data-toggle="tab" aria-controls="dropdown-eu-5"><i class="fas fa-laptop"></i> Data Management</a>
+                                <a class="dropdown-item" href="#dropdown-eu-6" role="tab" id="dropdown-eu-6-tab" data-toggle="tab" aria-controls="dropdown-eu-6"><i class="far fa-money-bill-alt"></i> Front Office Finance</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </li>
         </ul>
-        <!-- Content Panel -->
         <div id="reach-nav-content" class="tab-content">
             <div role="tabpanel" class="tab-pane fade show active" id="home" aria-labelledby="home-tab">
                 <h4 class="display-5 p-5 text-center">Select an Industry from the regional tabs above to see the kind of audience we can connect you with</h4>
@@ -1581,6 +1619,7 @@
             </div>
             <!-- EU Content Ends -->
         </div>
+        <br><br> <br><br>
     </div>
     <!-- /.container -->
     <!-- Footer -->
@@ -4201,6 +4240,33 @@
     document.getElementById("js-legend-70").innerHTML = myChart70.generateLegend();
     document.getElementById("js-legend-71").innerHTML = myChart71.generateLegend();
     </script>
+    
+    <script>
+    $(".nav-pills .nav-item .nav-link:not(.nav-pills .nav-item.dropdown .nav-link ), .dropdown-item").click(function() {
+        $(".dropdown-item.active").removeClass('active');
+    });
+
+
+    </script>
+
+    <script>
+    $(document).click(function() {
+        if( $('.na-dropdown .dropdown-item').hasClass('active') === true ) 
+        {
+         $('.na-dropdown .dropdown-toggle').addClass('active');
+        }
+    });
+    </script>
+
+    <script>
+    $(document).click(function() {
+        if( $('.eu-dropdown .dropdown-item').hasClass('active') === true ) 
+        {
+         $('.eu-dropdown .dropdown-toggle').addClass('active');
+        }
+    });
+    </script>
+
 </body>
 
 </html>
