@@ -57,15 +57,13 @@
     </nav>
     <nav class="nav-events navbar navbar-expand-sm navbar-light bg-light ">
         <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-            <!-- <a class="navbar-brand" href="insights.html"><img class="img-fluid" src="img/insights-logo.png" alt=""></a> -->
+            <a class="navbar-brand" href="events.html"><img class="img-fluid" src="img/events-logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><strong>Global Events</strong></a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">North America</a>
                     </li>
@@ -121,9 +119,6 @@
     #listings > thead > tr > th:last-child {border-radius:0px 10px 0px 0px;}
     #listings > tbody > tr {outline: 1px solid #e9edf5;}
 
-
-
-
     </style>
     <!-- Page Content -->
     <div class="container mt-3">
@@ -134,19 +129,19 @@
                         <label for="item-filter-select"><strong>Filter by Industry</strong></label>
                         <select class="form-control" id="item-filter-select">
                             <option value="all">Show All Industries</option>
+                            <option value="1-to-1 Networking">1-to-1 Networking</option>
                             <option value="Customer Experience">Customer Experience</option>
                             <option value="eCommerce / Retail">eCommerce / Retail</option>
                             <option value="Energy">Energy</option>
                             <option value="Finance / Investment">Finance / Investment</option>
                             <option value="Government / Defense">Government / Defense</option>
                             <option value="Healthcare">Healthcare</option>
-                            <option value="1-to-1 Networking">1-to-1 Networking</option>
+                            <option value="Human Resources">Human Resources</option>
                             <option value="Info Management">Info Management</option>
                             <option value="Supply Chain">Supply Chain</option>
                             <option value="Pharma / Biotech">Pharma / Biotech</option>
                             <option value="Procurement">Procurement</option>
                             <option value="Service / Support">Service / Support</option>
-                            <option value="Human Resources">Human Resources</option>
                         </select>
                     </div>
                 </div>
@@ -611,7 +606,7 @@
                 },
                 { //event name + info
                     "targets": [2],
-                    "orderable": false,
+                    "orderable": true,
                     "className": "infocol"
 
                 },

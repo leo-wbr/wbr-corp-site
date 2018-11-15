@@ -155,7 +155,6 @@ a.nav-link:hover {color:#f7c996;}
 
 /* Events Page Nav */
 .nav-events .navbar-nav .active>.nav-link,  .navbar-nav .nav-link.active {color: #e09e55;font-weight: bold;}
-.nav-events #navbarSupportedContent > ul > li:nth-child(2) {border-left: 1px solid black; padding-left:10px;}
 
 /* Hero Image Section */
 .hero-section {/*height: 65vh;min-height: 300px;*/background: url('../img/bg-tmnt-4.jpg') center top no-repeat scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
@@ -276,21 +275,28 @@ a.nav-link:hover {color:#f7c996;}
 .chart-legend ul {padding-left: 10px;}
 .chart-legend ul li { display:block; margin-bottom:4px;}
 
-/* Event Section */
-#event-filter button {background:transparent; border:none; color:#3b62b0; display:block; cursor:pointer;}
-#event-filter button:hover { color:orange; }
-#listings_filter{background-color:#3b62b0;padding:.7em .5em 0;color:#fff;border-top-left-radius:.5em;border-top-right-radius:.5em;/* width:75%; */display:block;float:right;position:relative;top:.4em;}
-#listings_filter label input{color:#333;font-weight:normal;border-radius:0.4em;border: solid 1px #35589e;text-indent:5px;}
-.btn-reset{display:block;clear:both;background-color:#3b62b0;color:#fff;padding:.8em 1em;margin:1em auto 0;border:0;position:absolute;border-top-left-radius:.5em;border-top-right-radius:.5em;z-index:9;transition:100ms linear; cursor:pointer;}
 
-/* Event Section Table Styling  */
+/* Event Page Filter Section*/
+#listings_filter, .dataTables_filter {display:none !Important; }
+.filter-section { box-shadow: 0 0 5px #ccc; padding: 1.5em;}
+.filter-section .nav .nav-item { text-align: center;}
+.filter-section .nav .nav-item .nav-link { color: #3466c5; text-transform: uppercase; font-weight: 700; letter-spacing: .5px; font-size: .85em; }
+.filter-section .nav .nav-item .active { background-color: #3366c5; margin: 5px; border-radius: 5px; color: #fff;}
+
+/* Event Page Table Styling  */
+table#listings > thead > tr > th:nth-child(2){border-radius:10px 0px 0px 0px;}
+table#listings > thead > tr > th:last-child {border-radius:0px 10px 0px 0px;}
+table#listings > tbody > tr {outline: 1px solid #e9edf5;}
 table#listings .odd {background-color:#f9fbfb;}
-table#listings thead{color:#fff;background:#3b62b0;}
+table#listings thead{color:#fff;background:#3b62b0; }
 table#listings .eventname{font-weight:bold;}
 table#listings > tbody > tr > td, #listings > tbody > tr > th {vertical-align:middle;}
 table#listings p.venue {white-space: normal;}
 table#listings img.eventlogo { max-width: 20vh; max-height:20vh; }
+table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1, table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {background:none; }
 .ctacol {width:20%;}
+.eventname { font-weight:700 !important; font-size:1em !important; letter-spacing:.5px !important; color:#446db8;}
+p.venue, td.datecol {color: #227479;font-size:.85em;font-weight:600;}
 
 @media (max-width: 767.98px) and (min-width: 100px) {
     #listings_filter {width:100%; display:block; position:relative; top:1.8em; padding:1em 0 1em 0; z-index:9999;} 

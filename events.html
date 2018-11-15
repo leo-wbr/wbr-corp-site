@@ -9,13 +9,14 @@
     <title>WBR Corporate Redesign - Bootstrap 4 version</title>
     <!-- Bootstrap core CSS -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/datatables.min.css" />
-<!-- Custom styles for this template -->
-<link href="css/style.css" rel="stylesheet">
-<link href="css/animate.css" rel="stylesheet">
 
 <body>
     <!-- Social Top Nav -->
@@ -33,132 +34,124 @@
             </li>
         </ul>
     </nav>
-    <!-- Hero Section with Nav &Background Image -->
-    <header class="inner-hero-section  ">
-        <div class="container">
-            <nav id="mainnav" class="navbar navbar-expand mainnav topnav-desktop">
-                <div class="mx-auto d-sm-flex d-block flex-sm-nowrap ">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav justify-content-center align-items-center">
-                            <li class="nav-item active font-weight-bold px-4">
-                                <a href="events.html" class="nav-link">Events</a>
-                            </li>
-                            <li class="nav-item font-weight-bold px-4">
-                                <a href="connect.html" class="nav-link">Connect</a>
-                            </li>
-                            
-                            <li class="nav-item"><a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a></li>
-                            <li class="nav-item font-weight-bold px-4">
-                                <a href="insights.html" class="nav-link">Insights</a>
-                            </li>
-                            <li class="nav-item font-weight-bold px-4">
-                                <a href="about.html" class="nav-link">About</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand inner-main-nav">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item active font-weight-bold px-4">
+                        <a href="events.html" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item font-weight-bold px-4">
+                        <a href="connect.html" class="nav-link">Connect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a>
+                    </li>
+                    <li class="nav-item font-weight-bold px-4">
+                        <a href="insights.html" class="nav-link">Insights</a>
+                    </li>
+                    <li class="nav-item font-weight-bold px-4">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <nav class="nav-events navbar navbar-expand-sm navbar-light bg-light ">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+            <a class="navbar-brand" href="events.html"><img class="img-fluid" src="img/events-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">North America</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="##">Europe</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Asia</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--  -->
+    <header class="inner-hero-section">
         <div class="container py-5">
             <div class="row">
-                <div class="col-md-12 py-5">
+                <div class="col-md-12">
                     <h1 class="display-4 text-white align-middle text-center">WBR Events</h1>
                 </div>
             </div>
         </div>
     </header>
+
     <!-- Page Content -->
-    <div class="container bg-grey mt-3 py-5" id="event-filter">
-        <div class="row">
-            <div class="col-12 col-lg-6 mt-4">
-                <h2>Filter by Region</h2>
-                <div class="row mt-3">
-                    <div class="col">
-                        <button class="btn-region" id="filter-americas" value="North America" type="submit">
-                            <img class="img-fluid " src="img/reg-northam.png"> North America
-                        </button>
-                    </div>
-                    <div class="col">
-                        <button class="btn-region" id="filter-europe" value="Europe" type="submit">
-                            <img class="img-fluid " src="img/reg-eur.png"> Europe
-                        </button>
-                    </div>
-                    <div class="col">
-                        <button class="btn-region" id="filter-asia" value="Asia" type="submit">
-                            <img class="img-fluid " src="img/reg-apac.png"> Asia
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 mt-4 d-none d-sm-none d-md-block">
-                <h2>Filter by Industry</h2>
-                <div class="row">
-                    <div class="col-12 col-md-6 mt-1">
-                        <button class="btn-industry" id="filter-cx" value="Customer Experience" type="submit"><i class="fa fa-heart fa-lg"></i> Customer Experience</button>
-                        <button class="btn-industry" id="filter-ecommerce" value="eCommerce / Retail" type="submit"><i class="fa fa-shopping-cart fa-lg"></i> eCommerce / Retail</button>
-                        <button class="btn-industry" id="filter-energy" value="Energy" type="submit"><i class="fa fa-bolt fa-lg"></i> Energy</button>
-                        <button class="btn-industry" id="filter-finance" value="Finance" type="submit"><i class="fa fa-line-chart fa-lg"></i> Finance / Investment</button>
-                        <button class="btn-industry" id="filter-govdef" value="Government / Defense" type="submit"><i class="fa fa-university fa-lg"></i> Government / Defense</button>
-                        <button class="btn-industry" id="filter-healthcare" value="Healthcare" type="submit"><i class="fa fa-plus-square fa-lg"></i> Healthcare</button>
-                        <button class="btn-connect" id="filter-connect" value="true" type="submit"><i class="fa fa-compress fa-lg"></i> <span>1-to-1</span> Networking</button>
-                    </div>
-                    <div class="col-12 col-md-6 mt-1">
-                        <button class="btn-industry" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
-                        <button class="btn-industry" id="filter-schain" value="Supply Chain" type="submit"><i class="fa fa-cog fa-lg"></i> Supply Chain</button>
-                        <button class="btn-industry" id="filter-pharma" value="Pharma / Biotech" type="submit"><i class="fa fa-medkit fa-lg"></i> Pharma / Biotech</button>
-                        <button class="btn-industry" id="filter-procurement" value="Procurement" type="submit"><i class="fa fa-search fa-lg"></i> Procurement</button>
-                        <button class="btn-industry" id="filter-servicesupport" value="Service / Support" type="submit"><i class="fa fa-wrench fa-lg"></i> Service / Support</button>
-                        <button class="btn-industry" id="filter-hr" value="Human Resources" type="submit"><i class="fa fa-users fa-lg"></i> Human Resources</button>
+    <div class="container mt-3">
+        <div class="col-lg-10 offset-lg-1 col-md-12 bg-white text-center filter-section">
+            <div class="row mt-2 ">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                    <div class="form-group justify-content-center">
+                        <label for="item-filter-select"><strong>Filter by Industry</strong></label>
+                        <select class="form-control" id="item-filter-select">
+                            <option value="all">Show All Industries</option>
+                            <option value="1-to-1 Networking">1-to-1 Networking</option>
+                            <option value="Customer Experience">Customer Experience</option>
+                            <option value="eCommerce / Retail">eCommerce / Retail</option>
+                            <option value="Energy">Energy</option>
+                            <option value="Finance / Investment">Finance / Investment</option>
+                            <option value="Government / Defense">Government / Defense</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="Human Resources">Human Resources</option>
+                            <option value="Info Management">Info Management</option>
+                            <option value="Supply Chain">Supply Chain</option>
+                            <option value="Pharma / Biotech">Pharma / Biotech</option>
+                            <option value="Procurement">Procurement</option>
+                            <option value="Service / Support">Service / Support</option>
+                        </select>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-12 mt-4 d-md-none d-lg-none d-xl-none ">
-                <h2 class="text-center">Filter by Industry</h2>
-                <div class="row">
-                    <div class="col-12 col-md-12 mt-1 d-flex justify-content-center ">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Select
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                    <label for="item-filter-select"><strong>Search Keywords</strong></label>
+                    <div class="input-group">
+                        <input class="form-control" type="search" value="" placeholder="" id="example-search-input">
+                        <span class="input-group-append">
+                            <button class="btn btn-outline-info" type="button">
+                                <i class="fa fa-search"></i>
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <button class="btn-industry dropdown-item" id="filter-cx" value="Customer Experience" type="submit"><i class="fa fa-heart fa-lg"></i> Customer Experience</button>
-                                <button class="btn-industry dropdown-item" id="filter-ecommerce" value="eCommerce / Retail" type="submit"><i class="fa fa-shopping-cart fa-lg"></i> eCommerce / Retail</button>
-                                <button class="btn-industry dropdown-item" id="filter-energy" value="Energy" type="submit"><i class="fa fa-bolt fa-lg"></i> Energy</button>
-                                <button class="btn-industry dropdown-item" id="filter-finance" value="Finance" type="submit"><i class="fa fa-line-chart fa-lg"></i> Finance / Investment</button>
-                                <button class="btn-industry dropdown-item" id="filter-govdef" value="Government / Defense" type="submit"><i class="fa fa-university fa-lg"></i> Government / Defense</button>
-                                <button class="btn-industry dropdown-item" id="filter-healthcare" value="Healthcare" type="submit"><i class="fa fa-plus-square fa-lg"></i> Healthcare</button>
-                                <button class="btn-connect dropdown-item" id="filter-connect" value="true" type="submit"><i class="fa fa-compress fa-lg"></i> <span>1-to-1</span> Networking</button>
-                                <button class="btn-industry dropdown-item" id="filter-infomgmt" value="Info Management" type="submit"><i class="fa fa-bar-chart fa-lg"></i> Info Management</button>
-                                <button class="btn-industry dropdown-item" id="filter-schain" value="Supply Chain" type="submit"><i class="fa fa-cog fa-lg"></i> Supply Chain</button>
-                                <button class="btn-industry dropdown-item" id="filter-pharma" value="Pharma / Biotech" type="submit"><i class="fa fa-medkit fa-lg"></i> Pharma / Biotech</button>
-                                <button class="btn-industry dropdown-item" id="filter-procurement" value="Procurement" type="submit"><i class="fa fa-search fa-lg"></i> Procurement</button>
-                                <button class="btn-industry dropdown-item" id="filter-servicesupport" value="Service / Support" type="submit"><i class="fa fa-wrench fa-lg"></i> Service / Support</button>
-                                <button class="btn-industry dropdown-item" id="filter-hr" value="Human Resources" type="submit"><i class="fa fa-users fa-lg"></i> Human Resources</button>
-                            </div>
-                        </div>
+                          </span>
                     </div>
                 </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 d-flex align-items-center mt-3">
+                    <button class="btn btn-wbr btn-sm btn-block btn-reset-2" id="filter-reset" value="" type="submit"><i class="fa fa-refresh fa-lg"></i> Reset  All</button>
+                    <!--<a class="btn btn-wbr btn-sm btn-block" href="#">Reset All</a>-->                
+                </div>
+
+
+ 
+
+
             </div>
         </div>
     </div>
-    <div class="container">
-                        <button class="btn-reset" id="filter-reset" value="" type="submit"><i class="fa fa-refresh fa-lg"></i> Reset | View All Events</button>
-
+    <div class="container mt-4">
         <table id="listings" class="table table-striped dt-responsive display nowrap no-footer" style="width:100%">
+            
             <thead>
                 <tr role="row">
                     <th class="never"></th>
                     <th class="all"></th>
                     <th class="all">Event Name</th>
                     <th class="min-mobile-l min-mobile-p">Date</th>
-                    <th class=""></th>
-                    <th class="never">Region</th>
-                    <th class="never">Industry</th>
-                    <th class="never">Connect</th>
+                    <th class="min-desktop"></th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="item" data-type="eCommerce / Retail">
                     <td></td>
                     <td class=""><a href="http://etaileast.wbresearch.com" target="_blank"><img alt="eTail East" src="img/logos/etail.png" class="img-fluid eventlogo p-3"/></a></td>
                     <td>
@@ -178,11 +171,9 @@
                             </div>
                         </div>
                     </td>
-                    <td>Americas</td>
-                    <td>eCommerce / Retail</td>
-                    <td>False</td>
+                    <!-- <td>eCommerce / Retail</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="eCommerce / Retail">
                     <td></td>
                     <td><a href="http://etailfrance.wbresearch.com" target="_blank"><img alt="eTail France" src="img/logos/etail.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -202,11 +193,9 @@
                             </div>
                         </div>
                     </td>
-                    <td>Europe</td>
-                    <td>eCommerce / Retail</td>
-                    <td>False</td>
+                    <!-- <td>eCommerce / Retail</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="Pharma / Biotech">
                     <td></td>
                     <td><a href="http://logipharmaeu.wbresearch.com" target="_blank"><img alt="LogiPharma" src="img/logos/logipharma.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -224,11 +213,9 @@
                                 <a class="btn btn-insights btn-sm btn-block" href="http://logipharmaeu.wbresearch.com/opportunities" target="_blank">Sponsor</a>
                             </div>
                     </td>
-                    <td>Europe</td>
-                    <td>Procurement, Pharma / Biotech</td>
-                    <td>False</td>
+                    <!-- <td>Pharma / Biotech</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="Procurement">
                     <td></td>
                     <td><a href="http://procureconindirecteu.wbresearch.com" target="_blank"><img alt="ProcureCon Indirect" src="img/logos/PConIndirectEurope.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -248,11 +235,9 @@
                             </div>
                         </div>
                     </td>
-                    <td>Europe</td>
-                    <td>Procurement</td>
-                    <td>False</td>
+                    <!-- <td>Procurement</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="eCommerce / Retail">
                     <td></td>
                     <td><a href="http://digitaltravel.wbresearch.com" target="_blank"><img alt="Digital Travel Summit" src="img/logos/digital-travel.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -270,11 +255,9 @@
                                 <a class="btn btn-insights btn-sm btn-block" href="http://digitaltravel.wbresearch.com/opportunities" target="_blank">Sponsor</a>
                             </div>
                     </td>
-                    <td>Americas</td>
-                    <td>eCommerce / Retail</td>
-                    <td>False</td>
+                    <!-- <td>eCommerce / Retail</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="Procurement">
                     <td></td>
                     <td><a href="http://procureconasia.wbresearch.com" target="_blank"><img alt="ProcureCon Asia" src="img/logos/PConAsia.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -294,11 +277,9 @@
                             </div>
                         </div>
                     </td>
-                    <td>Asia</td>
-                    <td>Procurement</td>
-                    <td>False</td>
+                    <!-- <td>Procurement</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="Procurement">
                     <td></td>
                     <td><a href="http://procureconwest.wbresearch.com" target="_blank"><img alt="ProcureCon Indirect West" src="img/logos/PConIndirectWest.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -318,11 +299,9 @@
                             </div>
                         </div>
                     </td>
-                    <td>Americas</td>
-                    <td>Procurement</td>
-                    <td>False</td>
+                    <!-- <td>Procurement</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="Pharma / Biotech">
                     <td></td>
                     <td><a href="http://bionetwork.wbresearch.com" target="_blank"><img alt="BioNetwork Partnering Summit" src="img/logos/bionetwork.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -342,11 +321,9 @@
                             </div>
                         </div>
                     </td>
-                    <td>Americas</td>
-                    <td>Pharma / Biotech, Healthcare</td>
-                    <td>False</td>
+                    <!-- <td>Pharma / Biotech, Healthcare</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="Pharma / Biotech">
                     <td></td>
                     <td><a href="http://logipharmaus.wbresearch.com" target="_blank"><img alt="LogiPharma" src="img/logos/LogiPharmaUS.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -366,11 +343,9 @@
                             </div>
                         </div>
                     </td>
-                    <td>Americas</td>
-                    <td>Pharma / Biotech, Supply Chain</td>
-                    <td>False</td>
+                    <!-- <td>Pharma / Biotech, Supply Chain</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="Service / Support">
                     <td></td>
                     <td><a href="http://fieldserviceusa.wbresearch.com" target="_blank"><img alt="Field Service USA" src="img/logos/FieldServiceUSA.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -390,11 +365,9 @@
                             </div>
                         </div>
                     </td>
-                    <td>Americas</td>
-                    <td>Service / Support</td>
-                    <td>False</td>
+                    <!-- <td>Service / Support</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="Service / Support">
                     <td></td>
                     <td><a href="http://fieldserviceeast.wbresearch.com" target="_blank"><img alt="Field Service East" src="img/logos/FieldServiceEast.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -414,11 +387,9 @@
                             </div>
                         </div>
                     </td>
-                    <td>Americas</td>
-                    <td>Service / Support</td>
-                    <td>False</td>
+                    <!-- <td>Service / Support</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="Service / Support">
                     <td></td>
                     <td><a href="http://fieldservicemd.wbresearch.com" target="_blank"><img alt="Field Service Medical" src="img/logos/FieldServiceMd.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -438,11 +409,9 @@
                             </div>
                         </div>
                     </td>
-                    <td>Americas</td>
-                    <td>Service / Support, Healthcare</td>
-                    <td>False</td>
+                    <!-- <td>Service / Support, Healthcare</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="Service / Support">
                     <td></td>
                     <td><a href="http://fieldservicemdeu.wbresearch.com" target="_blank"><img alt="Field Service Medical Europe" src="img/logos/FieldServiceMdEu.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -462,11 +431,9 @@
                             </div>
                         </div>
                     </td>
-                    <td>Europe</td>
-                    <td>Service / Support, Healthcare</td>
-                    <td>False</td>
+                    <!-- <td>Service / Support, Healthcare</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="Service / Support">
                     <td></td>
                     <td><a href="http://fieldserviceeu.wbresearch.com" target="_blank"><img alt="Field Service Europe" src="img/logos/FieldServiceEu.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -484,11 +451,9 @@
                                 <a class="btn btn-insights btn-sm btn-block" href="http://fieldserviceeu.wbresearch.com/opportunities" target="_blank">Sponsor</a>
                             </div>
                     </td>
-                    <td>Europe</td>
-                    <td>Service / Support</td>
-                    <td>False</td>
+                    <!-- <td>Service / Support</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="eCommerce / Retail">
                     <td></td>
                     <td><a href="http://mobileshoppingconnect.wbresearch.com" target="_blank"><img alt="Mobile Shopping Connect" src="img/logos/connect-mobileshopping.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -508,11 +473,9 @@
                             </div>
                         </div>
                     </td>
-                    <td>Americas</td>
-                    <td>eCommerce / Retail</td>
-                    <td>True</td>
+                    <!-- <td>eCommerce / Retail</td> -->
                 </tr>
-                <tr>
+                <tr class="item" data-type="eCommerce / Retail">
                     <td></td>
                     <td><a href="http://etailconnecteu.wbresearch.com" target="_blank"><img alt="eTail Connect" src="img/logos/connect-etail.png" class="img-fluid eventlogo p-3" /></a></td>
                     <td>
@@ -532,33 +495,28 @@
                             </div>
                         </div>
                     </td>
-                    <td>Europe</td>
-                    <td>eCommerce / Retail</td>
-                    <td>True</td>
+                    <!-- <td>eCommerce / Retail</td> -->
                 </tr>
             </tbody>
         </table>
     </div>
-    
     <!-- /.container -->
     <!-- Footer -->
     <footer class="">
-        <!-- Footer Mobile Nav  -->
         <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom footer-mobi-nav">
             <div class="mx-auto d-sm-flex d-block flex-sm-nowrap ">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav align-items-center">
-                        <li class="nav-item active font-weight-bold px-1">
+                        <li class="nav-item  font-weight-bold px-1">
                             <a href="events.html" class="nav-link">Events</a>
                         </li>
-                        
-
-<li class="nav-item font-weight-bold px-1">
+                        <li class="nav-item font-weight-bold px-1">
                             <a href="connect.html" class="nav-link">Connect</a>
                         </li>
-                        
-                        <li class="nav-item"><a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a></li>
-                        <li class="nav-item font-weight-bold px-1">
+                        <li class="nav-item">
+                            <a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a>
+                        </li>
+                        <li class="nav-item active font-weight-bold px-1">
                             <a href="insights.html" class="nav-link">Insights</a>
                         </li>
                         <li class="nav-item font-weight-bold px-1">
@@ -589,32 +547,12 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/headroom.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/datatables.min.js"></script>
-    <!-- <script>
-    $(document).ready(function() {
-        $('#listings').DataTable({
 
-            paging: false,
-            info:false,
-            responsive: {
-                details: {
-                    type: 'column',
-                    target: 'tr'
-                }
+    
 
-            },
-         
-            order: [3, 'asc'],
 
-            columnDefs: [{
-                className: 'control',
-                orderable: false,
-                targets: 0
-            }]
-
-        });
-    });
-    </script> -->
     <script>
     $(document).ready(function() {
         $('#listings').dataTable({
@@ -641,7 +579,7 @@
                 },
                 { //event name + info
                     "targets": [2],
-                    "orderable": false,
+                    "orderable": true,
                     "className": "infocol"
 
                 },
@@ -658,29 +596,33 @@
                 }
             ]
         });
+
         var table = $('#listings').DataTable();
-        $('.btn-region').click(function() {
-            table.column().search('')
-            table.column(5).search(this.value).draw();
-        });
-        $('.btn-industry').click(function() {
-            table.column().search('')
-            table.column(6).search(this.value).draw();
-        });
-        $('.btn-connect').click(function() {
-            table.column().search('')
-            table.column(7).search(this.value).draw();
-        });
-        $('.btn-reset').click(function() {
+
+        $('.btn-reset-2').click(function() {
             table.column().search('')
             table.columns([5, 6, 7]).search(this.value).draw();
         });
 
+        $('#example-search-input').on('keyup change', function () {
+            table.column(2).search(this.value).draw();
+            // table.search(this.value).draw();
+        });
+
     });
     </script>
-    <script src="js/headroom.js"></script>
     <script>
-    var myElement = document.querySelector("#mainnav");
+    $(document).ready(function() {
+        $('#item-filter-select').on('change', function() {
+            var elems = this.value == 'all' ? $('.item') : $('.item[data-type="' + this.value + '"]');
+            $('.item').not(elems.show()).hide();
+        });
+
+   
+    });
+    </script>
+    <script>
+    var myElement = document.querySelector(".inner-main-nav");
 
     var headroom = new Headroom(myElement, {
         "offset": 220,
@@ -689,7 +631,7 @@
             down: 0
         },
         "classes": {
-            "initial": "header--fixed",
+            "initial": "header--static",
             "pinned": "slideDown",
             "unpinned": "slideUp",
             "top": "top",
