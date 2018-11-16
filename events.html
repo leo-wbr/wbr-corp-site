@@ -12,11 +12,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
 </head>
+
+
+<style>
+    body {
+        min-height: 175px !important;
+    }
+
+    footer {
+        position: relative;
+        top: 175px;
+    }
+
+</style>
 
 <body>
     <!-- Social Top Nav -->
@@ -65,7 +77,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-
                     <li class="nav-item">
                         <a class="nav-link" href="#">North America</a>
                     </li>
@@ -127,20 +138,14 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 d-flex align-items-center mt-3">
-                    <button class="btn btn-wbr btn-sm btn-block btn-reset-2" id="filter-reset" value="" type="submit"><i class="fa fa-refresh fa-lg"></i> Reset  All</button>
-                    <!--<a class="btn btn-wbr btn-sm btn-block" href="#">Reset All</a>-->                
+                    <button class="btn btn-wbr btn-sm btn-block btn-reset-2" id="filter-reset" value="" type="submit"><i class="fa fa-refresh fa-lg"></i> Reset All</button>
+                    <!--<a class="btn btn-wbr btn-sm btn-block" href="#">Reset All</a>-->
                 </div>
-
-
- 
-
-
             </div>
         </div>
     </div>
     <div class="container mt-4">
         <table id="listings" class="table table-striped dt-responsive display nowrap no-footer" style="width:100%">
-            
             <thead>
                 <tr role="row">
                     <th class="never"></th>
@@ -507,7 +512,7 @@
             <div class="mx-auto d-sm-flex d-block flex-sm-nowrap ">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav align-items-center">
-                        <li class="nav-item  font-weight-bold px-1">
+                        <li class="nav-item active font-weight-bold px-1">
                             <a href="events.html" class="nav-link">Events</a>
                         </li>
                         <li class="nav-item font-weight-bold px-1">
@@ -516,7 +521,7 @@
                         <li class="nav-item">
                             <a href="index.html" class="navbar-brand mx-auto d-block text-center "><img src="https://www.wbresearch.com/img/navlogo.png" alt="WBR"></a>
                         </li>
-                        <li class="nav-item active font-weight-bold px-1">
+                        <li class="nav-item  font-weight-bold px-1">
                             <a href="insights.html" class="nav-link">Insights</a>
                         </li>
                         <li class="nav-item font-weight-bold px-1">
@@ -549,10 +554,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/headroom.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/datatables.min.js"></script>
-
-    
-
-
     <script>
     $(document).ready(function() {
         $('#listings').dataTable({
@@ -604,7 +605,7 @@
             table.columns([5, 6, 7]).search(this.value).draw();
         });
 
-        $('#example-search-input').on('keyup change', function () {
+        $('#example-search-input').on('keyup change', function() {
             table.column(2).search(this.value).draw();
             // table.search(this.value).draw();
         });
@@ -618,7 +619,7 @@
             $('.item').not(elems.show()).hide();
         });
 
-   
+
     });
     </script>
     <script>

@@ -287,14 +287,17 @@ a.nav-link:hover {color:#f7c996;}
 table#listings > thead > tr > th:nth-child(2){border-radius:10px 0px 0px 0px;}
 table#listings > thead > tr > th:last-child {border-radius:0px 10px 0px 0px;}
 table#listings > tbody > tr {outline: 1px solid #e9edf5;}
-table#listings .odd {background-color:#f9fbfb;}
+table#listings .odd {background-color:#f9fbfb;/* padding: 60px !important; */}
 table#listings thead{color:#fff;background:#3b62b0; }
 table#listings .eventname{font-weight:bold;}
 table#listings > tbody > tr > td, #listings > tbody > tr > th {vertical-align:middle;}
 table#listings p.venue {white-space: normal;}
 table#listings img.eventlogo { max-width: 20vh; max-height:20vh; }
 table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1, table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {background:none; }
-.ctacol {width:20%;}
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {border:none; }
+.ctacol {width:20% !important;}
+.logocol {width:20%;}
+.datecol {width:20%;  }
 .eventname { font-weight:700 !important; font-size:1em !important; letter-spacing:.5px !important; color:#446db8;}
 p.venue, td.datecol {color: #227479;font-size:.85em;font-weight:600;}
 
@@ -304,10 +307,14 @@ p.venue, td.datecol {color: #227479;font-size:.85em;font-weight:600;}
     table#listings th{padding:  0 0;}
     table#listings thead {visibility: hidden;} 
     table#listings thead th.datecol {display:none; }
-    table#listings .datecol  {font-size:.9em; font-weight:bold; line-height:6px; padding-top:0px;}
+    table#listings .datecol  {font-size:.9em;font-weight:bold;line-height:6px;/* padding-top:0px; */margin-bottom: 20px;}
     .table td  {border-top:none;padding: 0 0 12.5px 0;}
     .table tbody tr {outline: 1px solid #d1d2d6 !important; }
     .logocol, .infocol, .datecol{display:block; text-align:center; width:100%;}
+    table#listings > tbody > tr > td {padding: 0 0;}
+    
+    
+
 }
 
 
