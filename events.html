@@ -600,10 +600,7 @@
 
         var table = $('#listings').DataTable();
 
-        $('.btn-reset-2').click(function() {
-            table.column().search('')
-            table.columns([5, 6, 7]).search(this.value).draw();
-        });
+  
 
         $('#example-search-input').on('keyup change', function() {
             table.column(2).search(this.value).draw();
@@ -622,6 +619,13 @@
 
     });
     </script>
+
+    <script>
+        $('.btn-reset-2').click(function(){ 
+        $('#item-filter-select').val('all').trigger('change');
+    })
+    </script>
+
     <script>
     var myElement = document.querySelector(".inner-main-nav");
 
