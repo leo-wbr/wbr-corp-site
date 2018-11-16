@@ -295,11 +295,10 @@ table#listings p.venue {white-space: normal;}
 table#listings img.eventlogo { max-width: 20vh; max-height:20vh; }
 table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1, table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {background:none; }
 table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {border:none; }
-.ctacol {width:20% !important;}
-.logocol {width:20%;}
-.datecol {width:20%;  }
+.ctacol,.logocol,.datecol {width:20%;}
 .eventname { font-weight:700 !important; font-size:1em !important; letter-spacing:.5px !important; color:#446db8;}
 p.venue, td.datecol {color: #227479;font-size:.85em;font-weight:600;}
+.dataTables_empty {padding:20px !important; font-weight:700; letter-spacing:.5px; color:#25498e; font-size:1.2em;  }
 
 @media (max-width: 767.98px) and (min-width: 100px) {
     #listings_filter {width:100%; display:block; position:relative; top:1.8em; padding:1em 0 1em 0; z-index:9999;} 
